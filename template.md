@@ -23,19 +23,6 @@ description: "{{ description }}"
 - 📌 [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/Discussions/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/Discussions/discussions/categories/call-for-content)
 
-<!-- 
-
-PLEASE READ THIS BEFORE EDITING THIS FILE
-
-- This file is a template for the daily posts of the #30DaysOf series.
-
-- TWITTER IMAGE: 
-  - Create a image suitable for twitter and place it in the same folder as this file. 
-  - The image must be named twitter.png
-  - The ideal image size is 1600x900 pixels.
-
- -->
-
 ## Day _{{ day }}_ of #{{ campaign }}
 
 **{{ description }}**
