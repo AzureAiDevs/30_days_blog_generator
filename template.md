@@ -9,26 +9,19 @@ toc_max_heading_level: 3
 {% if keywords %}keywords: {{ keywords }}{% endif %}
 {% if tags %}tags: {{ tags }}{% endif %}
 
-image: https://microsoft.github.io/Low-Code/img/og/30-01.png
+image: "{{site_url}}/img/{{slug}}/banner-day{{day}}.png"
 description: "{{ description }}"
 ---
 
 <head>
-{% if twitter %}
-  <meta name="twitter:url" content="{{ blog_url }}/{{ slug }}-day{{ day }}" />
-  <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ description }}" />
-  <meta name="twitter:image" content="{{ blog_url }}/{{ slug }}-day{{ day }}/banner.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  {% if twitter['creator'] %}<meta name="twitter:creator" content="{{ twitter['creator'] }}" />{% endif %}
-  {% if twitter['site'] %}<meta name="twitter:site" content="@{{ twitter['site'] }}" /> {% endif %}
-  {% endif %}
+
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ blog_url }}/{{ slug }}-day{{ day }}" {% endif %} />
 
 </head>
 
 - 📧 [Subscribe to the Azure AI Developer Newsletter](https://microsoft.github.io/Low-Code/subscribe)
 - 📌 [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/Discussions/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
+- 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/Discussions/discussions/categories/call-for-content)
 
 <!-- 
 
@@ -54,13 +47,23 @@ PLEASE READ THIS BEFORE EDITING THIS FILE
 {% set template = "## What We'll Cover" %}
 {% include 'content/' + folder + '/covered.md' ignore missing %}
 
-<!--
-- Covered 1
-- Covered 2
-- Covered 3
- -->
+<!-- 
+- Main point 1
+- Main point 2
+- Main point 3 
+-->
 
-![Empty Banner Placeholder](banner.png)
+![Image shows authors and product icons](banner.png)
+<!-- ![Image shows authors and product icons](../../../static/img/2023/banner-day{{day}}) -->
+
+{% if references %}
+### References
+
+{% for item in references -%}
+- {{item}}
+{% endfor -%}
+{% endif %}
+
 
 {% set template = '## Introduction' %}
 {% include 'content/' + folder + '/body.md' ignore missing %}
@@ -72,3 +75,7 @@ PLEASE READ THIS BEFORE EDITING THIS FILE
 {% if canonical -%}
 To learn more, check out this [article]({{ canonical }}).
 {% endif %}
+
+## Questions?
+
+[Remember, you can ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/Discussions/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})

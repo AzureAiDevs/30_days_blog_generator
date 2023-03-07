@@ -119,6 +119,7 @@ def main(output_folder, blog_item):
         item['campaign'] = data['campaign']['name']
         item['slug'] = data['campaign']['slug']
         item['blog_url'] = data['campaign']['blog_url']
+        item['site_url'] = data['campaign']['site_url']
 
         if blog_item and item['folder'] != blog_item:
             continue

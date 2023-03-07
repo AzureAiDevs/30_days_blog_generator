@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome9",
+    "$ref": "#/definitions/Welcome10",
     "definitions": {
-        "Welcome9": {
+        "Welcome10": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -13,7 +13,7 @@
             "required": [
                 "campaign"
             ],
-            "title": "Welcome9"
+            "title": "Welcome10"
         },
         "Campaign": {
             "type": "object",
@@ -25,6 +25,13 @@
                 "slug": {
                     "type": "string",
                     "format": "integer"
+                },
+                "site_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
                 },
                 "blog_url": {
                     "type": "string",
@@ -47,6 +54,7 @@
                 "blog_url",
                 "days",
                 "name",
+                "site_url",
                 "slug",
                 "twitter"
             ],
@@ -103,8 +111,11 @@
                         }
                     ]
                 },
-                "twitter": {
-                    "$ref": "#/definitions/Twitter"
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             },
             "required": [
@@ -116,8 +127,7 @@
                 "folder",
                 "keywords",
                 "tags",
-                "title",
-                "twitter"
+                "title"
             ],
             "title": "Day"
         },
