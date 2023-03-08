@@ -29,7 +29,7 @@ description: "{{ description }}"
 
 {% include 'content/' + folder + '/intro.md' ignore missing %}
 
-## What We'll Cover
+## What we'll cover
 
 {% set template = "## What We'll Cover" %}
 {% include 'content/' + folder + '/covered.md' ignore missing %}
@@ -57,9 +57,10 @@ description: "{{ description }}"
 
 <!-- Content for the day goes here. -->
 
+{% if canonical -%}
+
 ## Learn More
 
-{% if canonical -%}
 To learn more, check out this [article]({{ canonical }}).
 {% endif %}
 

@@ -1,3 +1,3 @@
-1. Microsoft takes fairness, reliability, and other values into account when developing AI. 
-2. The company collaborates across disciplines to advance AI through research, creating more sophisticated, intuitive AI models. 
-3. Microsoft is responsible and purposeful in its approach to AI development and deployment, taking into account the risks and benefits of the technology.
+- Microsoft invests in AI to benefit everyone in organizations, with a focus on responsible AI.
+- Microsoft Research focuses on developing large-scale, sophisticated, and intuitive AI models. 
+- Microsoft recognizes the importance of responsible AI.
