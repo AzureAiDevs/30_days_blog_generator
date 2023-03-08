@@ -26,11 +26,24 @@ description: "{{ description }}"
 
 ## Day _{{ day }}_ of #{{ campaign }}
 
+<!-- README
+The following description is also used for the tweet. So it should be action oriented and grab attention 
+If you update the description, please update the description: in the frontmatter as well.
+-->
+
 **{{ description }}**
+
+<!-- README
+The following is the intro to the post. It should be a short teaser for the post.
+-->
 
 {% include 'content/' + folder + '/intro.md' ignore missing %}
 
 ## What we'll cover
+
+<!-- README
+The following list is the main points of the post. There should be 3-4 main points.
+ -->
 
 {% set template = "## What We'll Cover" %}
 {% include 'content/' + folder + '/covered.md' ignore missing %}
@@ -39,10 +52,15 @@ description: "{{ description }}"
 - Main point 1
 - Main point 2
 - Main point 3 
+- Main point 4
 -->
 
 ![Image shows authors and product icons](banner.png)
 <!-- ![Image shows authors and product icons](../../../static/img/2023/banner-day{{day}}) -->
+
+<!-- README
+Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.
+-->
 
 {% if references %}
 ### References
@@ -52,11 +70,13 @@ description: "{{ description }}"
 {% endfor -%}
 {% endif %}
 
+<!-- README
+The following is the body of the post. It should be an overview of the post that you are referencing.
+See the Learn More section, if you supplied a canonical link, then will be displayed here.
+-->
 
 {% set template = '## Introduction' %}
 {% include 'content/' + folder + '/body.md' ignore missing %}
-
-<!-- Content for the day goes here. -->
 
 {% if canonical -%}
 
