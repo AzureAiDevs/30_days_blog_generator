@@ -174,7 +174,6 @@ campaign:
         - "[Open Neural Network Exchange (ONNX) Open Standard](https://onnx.ai/index.html)"
 
 
-
     - folder: 2023-04-14-copilot
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
@@ -244,7 +243,6 @@ campaign:
         - "[What is Azure Machine Learning?](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-cxall)"
 
 
-
     - folder: 2023-04-18-azureml-pipelines
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
@@ -272,6 +270,7 @@ campaign:
         - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-cxall)"
         - "[What is Azure Machine Learning?](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-cxall)"
 
+
     - folder: 2023-04-20-rai-part-1
       emoji: 🧑🏽‍🔬
       audience: "Azure AI Developers"
@@ -284,7 +283,6 @@ campaign:
       references:
         - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-cxall)"
         - "[Meeting the AI moment: advancing the future through responsible AI](https://blogs.microsoft.com/on-the-issues/2023/02/02/responsible-ai-chatgpt-artificial-intelligence?WT.mc_id=aiml-89446-cxall)"
-
 
 
     - folder: 2023-04-21-mlops-intro
@@ -405,7 +403,6 @@ campaign:
         - "[Azure Cognitive Services APIs](https://azure.microsoft.com/en-us/products/cognitive-services/#api?WT.mc_id=aiml-89446-cxall)"
 
 
-
     - folder: 2023-04-30-recap-final
       emoji: 🏭
       audience: "Azure AI Developers"
@@ -415,4 +412,3 @@ campaign:
       keywords: [ Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, MLOps, rai, CoPilot, Blazor ]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals]
       canonical:
-
