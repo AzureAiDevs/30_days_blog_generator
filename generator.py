@@ -124,6 +124,8 @@ def main(blog_folder, blog_item, open_graph_folder):
         item['slug'] = data['campaign']['slug']
         item['blog_url'] = data['campaign']['blog_url']
         item['site_url'] = data['campaign']['site_url']
+        item['daily_blog_url'] = data['campaign']['daily_blog_url']
+        item['social_tags'] = data['campaign']['social_tags']
 
         if blog_item and item['folder'] != blog_item:
             continue

@@ -135,10 +135,10 @@ class BANNER:
                 img, draw, item, author_item["name"], author_item["tag"], author_item["image_url"])
             item += 1
 
-        filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
-        img.save(filename)
+        # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
+        # img.save(filename)
 
-# The open_graph_folder is the folder where static images will be stored for the open graph image for use on twitter and facebook
+        # The open_graph_folder is the folder where static images will be stored for the open graph image for use on twitter and facebook
 
         filename = os.path.join(
             banner_definition["open_graph_folder"], f'banner-day{banner_definition["day"]}.png')

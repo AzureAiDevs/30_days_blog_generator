@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome6",
+    "$ref": "#/definitions/Welcome5",
     "definitions": {
-        "Welcome6": {
+        "Welcome5": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -13,7 +13,7 @@
             "required": [
                 "campaign"
             ],
-            "title": "Welcome6"
+            "title": "Welcome5"
         },
         "Campaign": {
             "type": "object",
@@ -40,6 +40,9 @@
                         "https"
                     ]
                 },
+                "social_tags": {
+                    "type": "string"
+                },
                 "days": {
                     "type": "array",
                     "items": {
@@ -52,7 +55,8 @@
                 "days",
                 "name",
                 "site_url",
-                "slug"
+                "slug",
+                "social_tags"
             ],
             "title": "Campaign"
         },
@@ -106,6 +110,9 @@
                             ]
                         }
                     ]
+                },
+                "social_tag": {
+                    "type": "string"
                 },
                 "references": {
                     "type": "array",

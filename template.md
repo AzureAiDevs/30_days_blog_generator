@@ -10,7 +10,7 @@ toc_max_heading_level: 3
 {% if tags %}tags: {{ tags }}{% endif %}
 
 image: "{{site_url}}/img/{{slug}}/banner-day{{day}}.png"
-description: "{{ description }}"
+description: "{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}"
 ---
 
 <head>
@@ -19,10 +19,10 @@ description: "{{ description }}"
 
 </head>
 
-- 📧 [Sign up for the Azure AI Developer Newsletter](https://microsoft.github.io/Low-Code/subscribe)
+- 📧 [Sign up for the Azure AI Developer Newsletter](https://aka.ms/azure-ai-dev-newsletter)
 - 📰 [Subscribe to the #30DaysOfAzureAI RSS feed](https://azureaidevs.github.io/hub/blog/rss.xml)
-- 📌 [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/Discussions/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
-- 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/Discussions/discussions/categories/call-for-content)
+- 📌 [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
+- 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
 ## Day _{{ day }}_ of #{{ campaign }}
 
@@ -55,9 +55,7 @@ The following list is the main points of the post. There should be 3-4 main poin
 - Main point 4
 -->
 
-![Image shows authors and product icons](banner.png)
-<!-- ![Image shows authors and product icons](../../../static/img/2023/banner-day{{day}}) -->
-<!-- ![]({{site_url}}/img/{{slug}}/banner-day{{day}}.png) -->
+![Image banner for day {{day}}](./../../../static/img/2023/banner-day{{day}}.png)
 
 <!-- README
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.

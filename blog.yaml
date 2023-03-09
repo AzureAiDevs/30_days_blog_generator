@@ -4,7 +4,9 @@ campaign:
   name: 30DaysOfAzureAI
   slug: "2023"
   site_url: https://azureaidevs.github.io/hub
+  daily_blog_url: "https://azureaidevs.github.io/hub/blog"
   blog_url: "https://azureaidevs.github.io/hub/ai-april"
+  social_tags: "#30DaysOfAzureAI #AzureAiDevs #AI"
 
 
   days:
@@ -27,6 +29,7 @@ campaign:
       authors: [Dave]
       keywords: [Azure-OpenAI-Services, Machine-Learning, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
+      social_tag: "#OpenAI"
       canonical: https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706
       references:
       - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
@@ -42,6 +45,7 @@ campaign:
       authors: [Valentina]
       keywords: [Azure-OpenAI-Services, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
+      social_tag: "#OpenAI"
       canonical: https://medium.com/microsoftazure/azure-openai-playground-279f1f3da562
       references:
       - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
@@ -57,6 +61,7 @@ campaign:
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]
+      social_tag: "#AzureCognitiveServices"
       canonical: https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/how-copilot-helps-developers-generate-code-for-a-form-recognizer/ba-p/3753813
       references:
         - "[What is Azure Form Recognizer?](https://learn.microsoft.com/azure/applied-ai-services/form-recognizer/overview?view=form-recog-3.0.0&WT.mc_id=aiml-89446-dglover)"
@@ -74,6 +79,7 @@ campaign:
       authors: [Bea]
       keywords: [Machine-Learning, Azure-AI]
       tags: [azure-ai, azure-ml, 30-days-of-azure-ai]
+      social_tag: "#AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-introduction/
       references:
       - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
@@ -88,6 +94,7 @@ campaign:
       authors: [Ruth]
       keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
+      social_tag: "#AIEthics"
       canonical: https://www.microsoft.com/en-us/ai/our-approach
       references:
         - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
@@ -102,6 +109,7 @@ campaign:
       authors: [Henk]
       keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
+      social_tag: "#Accessibility"
       canonical: https://www.microsoft.com/ai/ai-for-accessibility
       references:
         - "[AI for Accessibility](https://www.microsoft.com/ai/ai-for-accessibility)"
@@ -126,6 +134,7 @@ campaign:
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
+      social_tag: "#OpenAI"
       canonical: https://github.com/Azure-Samples/azure-ai
       references:
         - "[Quickstart: Get started generating text using Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=programming-language-studio&WT.mc_id=aiml-89446-dglover)"
@@ -143,6 +152,7 @@ campaign:
       authors: [Heidi]
       keywords: [Azure-OpenAI-Services, Cognitive-Search, Azure-AI]
       tags: [ai-april, azure-open-ai, azure-cognitive-services, app-developers]
+      social_tag: "#OpenAI"
       canonical:
       references:
         - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
@@ -160,6 +170,7 @@ campaign:
       keywords: [dotnet, onnx, vscode, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       canonical: https://youtu.be/h6HWP5jpA5s
+      social_tag: "#ONNX"
       references:
         - "[Open Neural Network Exchange (ONNX) Open Standard](https://onnx.ai/index.html)"
         - "[.NET Multi-platform App UI](https://dotnet.microsoft.com/apps/maui?WT.mc_id=aiml-89446-dglover)"
@@ -175,6 +186,7 @@ campaign:
       authors: [Cassie]
       keywords: [onnx, JavaScript, Excel, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
+      social_tag: "#ONNX"
       canonical: https://onnxruntime.ai/docs/tutorials/web/excel-addin-bert-js.html
       references:
         - "[Open Neural Network Exchange (ONNX) Open Standard](https://onnx.ai/index.html)"
@@ -184,10 +196,11 @@ campaign:
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "Copilot's updated AI model"
-      description: "GitHub CoPilot Upgraded: Faster, More Accurate, and More Secure Code"
+      description: "GitHub Copilot Upgraded: Faster, More Accurate, and More Secure Code"
       authors: [Shuyin]
-      keywords: ['CoPilot','vscode',  Azure-AI]
+      keywords: ['Copilot','vscode',  Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot]
+      social_tag: "#Copilot"
       canonical: https://github.blog/2023-02-14-github-copilot-now-has-a-better-ai-model-and-new-capabilities/
       references:
         - "[Introducing GitHub Copilot: your AI pair programmer](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer?WT.mc_id=aiml-89446-dglover)"
@@ -201,6 +214,7 @@ campaign:
       authors: [Michael]
       keywords: ['Azure-OpenAI-Services', 'Blazor', 'vscode', Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot, open-ai]
+      social_tag: "#OpenAI"
       canonical: https://blazorhelpwebsite.com/ViewBlogPost/2065
       references:
       - "[Build beautiful, web apps with Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)"
@@ -243,6 +257,7 @@ campaign:
       authors: [Bea]
       keywords: [Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
+      social_tag: "#AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-command
       references:
         - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
@@ -257,6 +272,7 @@ campaign:
       authors: [Bea]
       keywords: [Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
+      social_tag: "#AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-pipeline/
       references:
         - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
@@ -271,6 +287,7 @@ campaign:
       authors: [Vlad]
       keywords: [Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
+      social_tag: "#AzureML"
       canonical: https://vladiliescu.net/aml-managed-endpoints-quickstart/
       references:
         - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
@@ -285,6 +302,7 @@ campaign:
       authors: [Ruth]
       keywords: [Machine-Learning, Azure-AI, rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers, 'machine-learning-debugging-tools', 'responsible-ai-tools']
+      social_tag: "#AIEthics"
       canonical: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948
       references:
         - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
@@ -299,6 +317,7 @@ campaign:
       authors: [Cassie]
       keywords: [MLOps, Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers]
+      social_tag: "#AzureMLOps"
       canonical: https://learn.microsoft.com/events/ignite-2022/cll99-learn-live-start-machine-learning-lifecycle-with-mlops
       references:
         - "[Machine learning operations (MLOps)](https://azure.microsoft.com/products/machine-learning/mlops/#features?WT.mc_id=aiml-89446-dglover)"
@@ -333,6 +352,7 @@ campaign:
       authors: [Setu]
       keywords: [MLOps, Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-mlops]
+      social_tag: "#AzureMLOps"
       canonical: https://github.com/Azure/mlops-v2
       references:
         - "[Machine learning operations (MLOps)](https://azure.microsoft.com/products/machine-learning/mlops/#features?WT.mc_id=aiml-89446-dglover)"
@@ -348,6 +368,7 @@ campaign:
       authors: [Gabriela]
       keywords: [Data_Science_Beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
+      social_tag: "#DataScience"
       canonical: https://microsoft.github.io/Data-Science-For-Beginners
       references:
         - "[learn Module: Understand data science for machine learning](https://learn.microsoft.com/training/paths/understand-machine-learning?WT.mc_id=aiml-89446-dglover)"
@@ -361,6 +382,7 @@ campaign:
       authors: [Gabriela]
       keywords: [AI_Beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
+      social_tag: "#MachineLearning"
       canonical: https://github.com/microsoft/ML-For-Beginners
       references:
         - "[Learn Module: Introduction to AI technology](https://learn.microsoft.com/training/modules/introduction-to-ai-technology?WT.mc_id=aiml-89446-dglover)"
@@ -374,6 +396,7 @@ campaign:
       authors: [Dave]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, Azure-AI]
       tags: [ai-april,30-days-of-azure-ai,azure-cognitive-services,app-developers,workshop]
+      social_tag: "#AzureFormRecognizer"
       canonical: https://newpatiente2e.github.io/docs/
       references:
         - "[Learn Module: Azure Form Recognizer Service](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-form-recognizer&WT.mc_id=aiml-89446-dglover"
@@ -390,6 +413,7 @@ campaign:
       authors: [Vlad]
       keywords: [Machine-Learning, Azure-AI, StableDiffusion]
       tags: [ai-april,30-days-of-azure-ai,azure-ml,ml-engineers,app-developers,workshop]
+      social_tag: "AzureML"
       canonical: https://vladiliescu.net/stable-diffusion-web-ui-on-azure-ml/
       references:
         - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
@@ -404,6 +428,7 @@ campaign:
       authors: [Arafat]
       keywords: [Personalizers, Cognitive-Services,  Azure-AI]
       tags: [ai-april,30-days-of-azure-ai,app-developers,workshop,azure-cognitive-services]
+      social_tag: "#AzurePersonalizer"
       canonical:
       references:
         - "[Azure Personalizer Cognitive Service](https://azure.microsoft.com/products/cognitive-services/personalizer?WT.mc_id=aiml-89446-dglover)"
