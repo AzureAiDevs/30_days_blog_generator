@@ -15,7 +15,7 @@ description: "{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ 
 
 <head>
 
-  <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ blog_url }}/{{ slug }}-day{{ day }}" {% endif %} />
+  <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" {% endif %} />
 
 </head>
 
