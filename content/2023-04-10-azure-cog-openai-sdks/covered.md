@@ -1,0 +1,3 @@
+- The Azure AI Hub is a repository for Azure AI developers with code samples and discussion channels.
+- The hub focuses on promoting responsible AI practices, such as transparency, fairness, and accountability.
+- The Azure AI Hub provides resources for developers to learn and implement responsible AI practices.

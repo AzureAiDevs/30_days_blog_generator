@@ -128,5 +128,8 @@ class BANNER:
             self.__add_profile_image(img, draw, item, author_item["name"], author_item["tag"], author_item["image_url"])
             item += 1
 
-        filename = os.path.join(banner_definition["folder"], 'banner.png')
+        filename = os.path.join(banner_definition["folder_blog"], 'banner.png')
+        img.save(filename)
+
+        filename = os.path.join(banner_definition["folder_open_graph"], f'banner-day{banner_definition["day"]}.png')
         img.save(filename)

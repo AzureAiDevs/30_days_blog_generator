@@ -1,0 +1,1 @@
+Welcome to The Azure AI Hub, your go-to destination for Azure AI developers, where we provide curated samples, discussions channels, and suggestions from the community, with a focus on responsible AI to ensure transparency, fairness, and accountability in AI systems.

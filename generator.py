@@ -135,7 +135,8 @@ def main(output_folder, blog_item):
             f.write(output_text)
 
         banner_definition = {
-            "folder": folder_name,
+            "folder_blog": folder_name,
+            "folder_open_graph": '/Users/dave/GitHub/AzureAiDevelopers/hub/website/static/img/2023',
             "audience": item["audience"],
             "title": item["title"],
             "day": day,

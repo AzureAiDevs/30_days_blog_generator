@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome10",
+    "$ref": "#/definitions/Welcome6",
     "definitions": {
-        "Welcome10": {
+        "Welcome6": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -13,7 +13,7 @@
             "required": [
                 "campaign"
             ],
-            "title": "Welcome10"
+            "title": "Welcome6"
         },
         "Campaign": {
             "type": "object",
@@ -40,9 +40,6 @@
                         "https"
                     ]
                 },
-                "twitter": {
-                    "$ref": "#/definitions/Twitter"
-                },
                 "days": {
                     "type": "array",
                     "items": {
@@ -55,8 +52,7 @@
                 "days",
                 "name",
                 "site_url",
-                "slug",
-                "twitter"
+                "slug"
             ],
             "title": "Campaign"
         },
@@ -130,23 +126,6 @@
                 "title"
             ],
             "title": "Day"
-        },
-        "Twitter": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "creator": {
-                    "type": "string"
-                },
-                "site": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "creator",
-                "site"
-            ],
-            "title": "Twitter"
         }
     }
 }

@@ -57,6 +57,7 @@ The following list is the main points of the post. There should be 3-4 main poin
 
 ![Image shows authors and product icons](banner.png)
 <!-- ![Image shows authors and product icons](../../../static/img/2023/banner-day{{day}}) -->
+<!-- ![]({{site_url}}/img/{{slug}}/banner-day{{day}}.png) -->
 
 <!-- README
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.
