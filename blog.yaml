@@ -26,7 +26,7 @@ campaign:
       audience: "Azure AI Developers"
       title: "Unleash the power of Azure OpenAI"
       description: "Unleashing the power of AI with Azure OpenAI: A simple guide to get started"
-      authors: [Dave]
+      authors: [Meer]
       keywords: [Azure-OpenAI-Services, Machine-Learning, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
       social_tag: "#OpenAI"
@@ -53,11 +53,11 @@ campaign:
       - "[Case Study: Azure OpenAI Service powers the next generation of startups](https://startups.microsoft.com/blog/azure-openai-service-for-startups?WT.mc_id=aiml-89446-dglover)"
 
 
-    - folder: 2023-04-05-exploring-cog-services
+    - folder: 2023-04-05-copilot-form-recognizer
       emoji: 🏁
       audience: "Azure AI Developers"
-      title: "Use CoPilot to build a AI Receipt App"
-      description: "Learn how to use CoPilot to build an intelligent Receipt Recognition App powered by Azure Form Recognizer"
+      title: "Build an AI Receipt App with Copilot"
+      description: "Learn how to use Copilot to build an intelligent Receipt Recognition App powered by Azure Form Recognizer"
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]

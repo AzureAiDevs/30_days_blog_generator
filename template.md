@@ -15,16 +15,13 @@ description: "{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ 
 
 <head>
 
-  <meta name="twitter:url" content="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" />
-  <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}" />
-  <meta name="twitter:image" content="{{site_url}}/img/{{slug}}/banner-day{{day}}.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  {% if twitter %}
-  {% if twitter['creator'] %}<meta name="twitter:creator" content="{{ twitter['creator'] }}" />{% endif %}
-  {% if twitter['site'] %}<meta name="twitter:site" content="@{{ twitter['site'] }}" /> {% endif %}
-  {% endif %}
+  <meta property="og:url" content="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}" />
+  <meta property="og:image" content="{{site_url}}/img/{{slug}}/banner-day{{day}}.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Azure AI Developer" />
+  
 
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" {% endif %} />
 

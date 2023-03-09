@@ -1,2 +1,3 @@
 .DS_Store
 *.pyc
+__pycache__/banner.cpython-311.pyc
