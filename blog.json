@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome5",
+    "$ref": "#/definitions/Welcome8",
     "definitions": {
-        "Welcome5": {
+        "Welcome8": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -13,7 +13,7 @@
             "required": [
                 "campaign"
             ],
-            "title": "Welcome5"
+            "title": "Welcome8"
         },
         "Campaign": {
             "type": "object",
@@ -27,6 +27,13 @@
                     "format": "integer"
                 },
                 "site_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "daily_blog_url": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
@@ -52,6 +59,7 @@
             },
             "required": [
                 "blog_url",
+                "daily_blog_url",
                 "days",
                 "name",
                 "site_url",
