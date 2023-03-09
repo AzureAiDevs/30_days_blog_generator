@@ -12,8 +12,9 @@ import argparse
 import banner
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-o", "--output")
-parser.add_argument("-f", "--folder")
+parser.add_argument("-b", "--blog_folder")
+parser.add_argument("-f", "--blog_item")
+parser.add_argument("-o", "--open_graph_folder")
 
 
 TEMPLATE_FILE = "template.md"
@@ -92,10 +93,13 @@ def validate_data(data):
     return True
 
 
-def main(output_folder, blog_item):
+def main(blog_folder, blog_item, open_graph_folder):
     """Generate blog items from yaml file."""
 
-    output_folder = output_folder if output_folder else 'blog'
+    blog_folder = blog_folder if blog_folder else 'blog'
+    open_graph_folder = open_graph_folder if open_graph_folder else 'img'
+
+    pathlib.Path(open_graph_folder).mkdir(parents=True, exist_ok=True)
 
     day = 0
 
@@ -126,7 +130,7 @@ def main(output_folder, blog_item):
 
         output_text = template.render(item)
 
-        folder_name = os.path.join(output_folder, item['folder'])
+        folder_name = os.path.join(blog_folder, item['folder'])
 
         pathlib.Path(folder_name).mkdir(parents=True, exist_ok=True)
         filename = os.path.join(folder_name, 'index.md')
@@ -135,8 +139,8 @@ def main(output_folder, blog_item):
             f.write(output_text)
 
         banner_definition = {
-            "folder_blog": folder_name,
-            "folder_open_graph": '/Users/dave/GitHub/AzureAiDevelopers/hub/website/static/img/2023',
+            "blog_folder": folder_name,
+            "open_graph_folder": open_graph_folder,
             "audience": item["audience"],
             "title": item["title"],
             "day": day,
@@ -153,4 +157,4 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    main(args.output, args.folder)
+    main(args.blog_folder, args.blog_item, args.open_graph_folder)

@@ -32,9 +32,6 @@ campaign:
       - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
       - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
       - "[Case Study: Making generative AI training simple and cost-efficient with PeriFlow and Azure](https://startups.microsoft.com/blog/making-generative-ai-training-simple?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Azure OpenAI Service powers the next generation of startups](https://startups.microsoft.com/blog/azure-openai-service-for-startups?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Trelent powers source code documentation with OpenAI Service](https://startups.microsoft.com/blog/trelent-openai-service?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Is data necessary for bootstrapping of AI models?](https://startups.microsoft.com/blog/bootstrapping-ai-models-pointers?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: 2023-04-04-openai-playground
@@ -49,10 +46,7 @@ campaign:
       references:
       - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
       - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Making generative AI training simple and cost-efficient with PeriFlow and Azure](https://startups.microsoft.com/blog/making-generative-ai-training-simple?WT.mc_id=aiml-89446-dglover)"
       - "[Case Study: Azure OpenAI Service powers the next generation of startups](https://startups.microsoft.com/blog/azure-openai-service-for-startups?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Trelent powers source code documentation with OpenAI Service](https://startups.microsoft.com/blog/trelent-openai-service?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Is data necessary for bootstrapping of AI models?](https://startups.microsoft.com/blog/bootstrapping-ai-models-pointers?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: 2023-04-05-exploring-cog-services
@@ -69,11 +63,8 @@ campaign:
         - "[Learn Module: Learn about Azure Cognitive Services](https://learn.microsoft.com/training/browse/?products=azure-cognitive-services&WT.mc_id=aiml-89446-dglover)"
         - "[Learn Module: Introduction to Form Recognizer](https://learn.microsoft.com/training/modules/intro-to-form-recognizer?WT.mc_id=aiml-89446-dglover)"
         - "[Introducing GitHub Copilot: your AI pair programmer](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Hypergrowth startup harnesses deep learning to redefine enterprise productivity](https://customers.microsoft.com/story/1376278902865681018-instabase-partner-professional-services-azure?WT.mc_id=aiml-89446-dglover)"
         - "[Case Study: How Qard went from idea to MVP](https://startups.microsoft.com/blog/qard-idea-to-mvp?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: VideoKen is improving video discovery and engagement using AI](https://startups.microsoft.com/blog/launchwithai-videoken?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Benefits of being cloud-native on Azure](https://startups.microsoft.com/blog/benefits-cloud-native-on-azure?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
+
 
     - folder: 2023-04-06-azure-ml-intro
       emoji: 🏁
@@ -97,7 +88,7 @@ campaign:
       authors: [Ruth]
       keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
-      canonical:
+      canonical: https://www.microsoft.com/en-us/ai/our-approach
       references:
         - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
         - "[Meeting the AI moment: advancing the future through responsible AI](https://blogs.microsoft.com/on-the-issues/2023/02/02/responsible-ai-chatgpt-artificial-intelligence?WT.mc_id=aiml-89446-dglover)"
@@ -140,13 +131,8 @@ campaign:
         - "[Quickstart: Get started generating text using Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=programming-language-studio&WT.mc_id=aiml-89446-dglover)"
         - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai&WT.mc_id=aiml-89446-dglover)"
         - "[Learn Module: Learn about Azure Cognitive Services](https://learn.microsoft.com/training/browse/?products=azure-cognitive-services&WT.mc_id=aiml-89446-dglover)"
-        - "[Case study: Duolingo makes learning language fun with help from AI](https://startups.microsoft.com/blog/duolingo-makes-learning-language-fun-with-help-from-ai?WT.mc_id=aiml-89446-dglover)"
-        # - "[Case Study: Metaverse training and AI-driven onboarding](https://startups.microsoft.com/blog/metaverse-training-stellarx?WT.mc_id=aiml-89446-dglover)"
-        # - "[Case Study: How Qard went from idea to MVP](https://startups.microsoft.com/blog/qard-idea-to-mvp?WT.mc_id=aiml-89446-dglover)"
         - "[Case Study: Trelent powers source code documentation with OpenAI Service](https://startups.microsoft.com/blog/trelent-openai-service?WT.mc_id=aiml-89446-dglover)"
-        # - "[Case Study: VideoKen is improving video discovery and engagement using AI](https://startups.microsoft.com/blog/launchwithai-videoken?WT.mc_id=aiml-89446-dglover)"
-        # - "[Case Study: Benefits of being cloud-native on Azure](https://startups.microsoft.com/blog/benefits-cloud-native-on-azure?WT.mc_id=aiml-89446-dglover)"
-        # - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
+        - "[Case Study: Hypergrowth startup harnesses deep learning to redefine enterprise productivity](https://customers.microsoft.com/story/1376278902865681018-instabase-partner-professional-services-azure?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: 2023-04-11-inside-openai
@@ -161,10 +147,8 @@ campaign:
       references:
         - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
         - "[Learn Module: Azure Cognitive Search](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-cognitive-search&WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Azure OpenAI Service powers the next generation of startups](https://startups.microsoft.com/blog/azure-openai-service-for-startups?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Trelent powers source code documentation with OpenAI Service](https://startups.microsoft.com/blog/trelent-openai-service?WT.mc_id=aiml-89446-dglover)"
         - "[Case Study: Is data necessary for bootstrapping of AI models?](https://startups.microsoft.com/blog/bootstrapping-ai-models-pointers?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
+        - "[Case Study: Metaverse training and AI-driven onboarding](https://startups.microsoft.com/blog/metaverse-training-stellarx?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: 2023-04-12-onnx-dotnet
@@ -222,9 +206,7 @@ campaign:
       - "[Build beautiful, web apps with Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)"
       - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
       - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Azure OpenAI Service powers the next generation of startups](https://startups.microsoft.com/blog/azure-openai-service-for-startups?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Trelent powers source code documentation with OpenAI Service](https://startups.microsoft.com/blog/trelent-openai-service?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
+
 
     - folder: 2023-04-16-recap-week-two
       emoji: 🧑‍💻
@@ -327,7 +309,7 @@ campaign:
     - folder: 2023-04-23-recap-week-three
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
-      title: "Recap: Azure Machine Learning Week✨"
+      title: "Recap: Azure ML Week✨"
       description: "30DaysOfAzureAI Recap for Azure Machine Learning Week"
       authors: [Dave]
       keywords: [Azure-AI, Machine-Learning, MLOps, rai]
@@ -396,12 +378,8 @@ campaign:
       references:
         - "[Learn Module: Azure Form Recognizer Service](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-form-recognizer&WT.mc_id=aiml-89446-dglover"
         - "[What is Azure Form Recognizer?](https://learn.microsoft.com/azure/applied-ai-services/form-recognizer/overview?view=form-recog-3.0.0&WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Hypergrowth startup harnesses deep learning to redefine enterprise productivity](https://customers.microsoft.com/story/1376278902865681018-instabase-partner-professional-services-azure?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Metaverse training and AI-driven onboarding](https://startups.microsoft.com/blog/metaverse-training-stellarx?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: How Qard went from idea to MVP](https://startups.microsoft.com/blog/qard-idea-to-mvp?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: VideoKen is improving video discovery and engagement using AI](https://startups.microsoft.com/blog/launchwithai-videoken?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Benefits of being cloud-native on Azure](https://startups.microsoft.com/blog/benefits-cloud-native-on-azure?WT.mc_id=aiml-89446-dglover)"
         - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
+        - "[Case study: Duolingo makes learning language fun with help from AI](https://startups.microsoft.com/blog/duolingo-makes-learning-language-fun-with-help-from-ai?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: 2023-04-28-stable-diffusion
@@ -431,8 +409,7 @@ campaign:
         - "[Azure Personalizer Cognitive Service](https://azure.microsoft.com/products/cognitive-services/personalizer?WT.mc_id=aiml-89446-dglover)"
         - "[Azure Cognitive Services](https://azure.microsoft.com/en-au/products/cognitive-services/#overview?WT.mc_id=aiml-89446-dglover)"
         - "[Azure Cognitive Services APIs](https://azure.microsoft.com/products/cognitive-services/#api?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
-
+        - "[Case Study: VideoKen is improving video discovery and engagement using AI](https://startups.microsoft.com/blog/launchwithai-videoken?WT.mc_id=aiml-89446-dglover)"
 
     - folder: 2023-04-30-recap-final
       emoji: 🏭

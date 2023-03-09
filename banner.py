@@ -56,21 +56,25 @@ class BANNER:
     def __add_banner_text(self, draw, audience, title, day):
         """Add text to the banner image"""
         # Define the font size and font type
-        font = ImageFont.truetype(os.path.join(self.font_folder, self.font_bold_name), 40)
-        
+        font = ImageFont.truetype(os.path.join(
+            self.font_folder, self.font_bold_name), 40)
+
         printable = set(string.printable)
         audience = ''.join(filter(lambda x: x in printable, audience))
         title = ''.join(filter(lambda x: x in printable, title))
 
         # Draw the text on the image
         draw.text((130, 60), audience, font=font, fill=(127, 127, 127))
-        draw.text((36, 76), "{:2d}".format(day), font=font, fill=(127, 127, 127))
+        draw.text((36, 76), "{:2d}".format(day),
+                  font=font, fill=(127, 127, 127))
         draw.text((100, 74), "|", font=font, fill=(127, 127, 127))
 
-        font = ImageFont.truetype(os.path.join(self.font_folder, self.font_bold_name), 24)
+        font = ImageFont.truetype(os.path.join(
+            self.font_folder, self.font_bold_name), 24)
         draw.text((130, 112), title, font=font, fill=(111, 61, 212))
 
-        font = ImageFont.truetype(os.path.join(self.font_folder, self.font_name), 14)
+        font = ImageFont.truetype(os.path.join(
+            self.font_folder, self.font_name), 14)
         draw.text((640, 6), self.blog_url, font=font, fill=(127, 127, 127))
 
     def __add_profile_image(self, img, draw, item, name, tag, image_url):
@@ -82,7 +86,8 @@ class BANNER:
         if item > len(name_loc) - 1:
             return
 
-        font = ImageFont.truetype(os.path.join(self.font_folder, self.font_name), 15)
+        font = ImageFont.truetype(os.path.join(
+            self.font_folder, self.font_name), 15)
         draw.text(name_loc[item], name, font=font, fill=(127, 127, 127))
         draw.text(tag_loc[item], tag, font=font, fill=(127, 127, 127))
 
@@ -94,7 +99,8 @@ class BANNER:
 
     def __add_keyword_image(self, img, draw, keywords):
         """Add keyword image to the banner image"""
-        keyword_loc = [(450, 160), (530, 160), (610, 160), (690, 160), (450, 230), (530, 230), (610, 230), (690, 230)]
+        keyword_loc = [(450, 160), (530, 160), (610, 160), (690, 160),
+                       (450, 230), (530, 230), (610, 230), (690, 230)]
         keyword_count = 0
         for keyword in keywords:
 
@@ -105,10 +111,9 @@ class BANNER:
             if os.path.exists(filename):
                 keyword_img = Image.open(filename)
                 img.paste(keyword_img, keyword_loc[keyword_count], keyword_img)
-                keyword_count += 1 
+                keyword_count += 1
             else:
                 print("Keyword image not found: " + filename)
-
 
     def create_banner(self, banner_definition):
         """Create the banner image"""
@@ -117,7 +122,8 @@ class BANNER:
         draw = ImageDraw.Draw(img)
         item = 0
 
-        self.__add_banner_text(draw, banner_definition["audience"], banner_definition["title"], banner_definition["day"])
+        self.__add_banner_text(
+            draw, banner_definition["audience"], banner_definition["title"], banner_definition["day"])
         self.__add_keyword_image(img, draw, banner_definition["keywords"])
         for author in banner_definition["authors"]:
             author_item = self.authors.get(author)
@@ -125,11 +131,15 @@ class BANNER:
             if not author_item:
                 continue
 
-            self.__add_profile_image(img, draw, item, author_item["name"], author_item["tag"], author_item["image_url"])
+            self.__add_profile_image(
+                img, draw, item, author_item["name"], author_item["tag"], author_item["image_url"])
             item += 1
 
-        filename = os.path.join(banner_definition["folder_blog"], 'banner.png')
+        filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
         img.save(filename)
 
-        filename = os.path.join(banner_definition["folder_open_graph"], f'banner-day{banner_definition["day"]}.png')
+# The open_graph_folder is the folder where static images will be stored for the open graph image for use on twitter and facebook
+
+        filename = os.path.join(
+            banner_definition["open_graph_folder"], f'banner-day{banner_definition["day"]}.png')
         img.save(filename)
