@@ -1,3 +1,3 @@
-- Classic Machine Learning.
-- The Scikit-learn Python library.
-- Learn in teams or on your own.
+- Machine Learning for Beginners curriculum.
+- Classic Machine Learning with the Scikit-learn Python library.
+- Introduction to Natural Language Processing and Time Series analysis.

@@ -110,7 +110,7 @@ campaign:
       keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
       social_tag: "#Accessibility"
-      canonical: https://www.microsoft.com/ai/ai-for-accessibility
+      canonical: https://azure.microsoft.com/en-us/blog/6-ways-to-improve-accessibility-with-azure-ai/
       references:
         - "[AI for Accessibility](https://www.microsoft.com/ai/ai-for-accessibility)"
 
@@ -312,7 +312,7 @@ campaign:
     - folder: 2023-04-21-mlops-intro
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
-      title: "Streamline with Azure MLOps"
+      title: "Streamline Ops w/ Azure MLOps"
       description: "Learn about Azure Machine Learning lifecycle and open source tooling to start building MLOps"
       authors: [Cassie]
       keywords: [MLOps, Machine-Learning, Azure-AI]

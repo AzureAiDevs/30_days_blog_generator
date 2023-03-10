@@ -1,3 +1,3 @@
-1. Built-in endpoint security.
-2. Native blue/green deployments.
-3. Auto-scaling with Azure Monitor.
+1. What are Azure ML managed online endpoints.
+2. The three main components of an online endpoint.
+3. How to deploy one or more models under the same endpoint.

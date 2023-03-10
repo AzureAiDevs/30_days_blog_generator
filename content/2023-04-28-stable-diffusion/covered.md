@@ -1,3 +1,3 @@
-- Stable Diffusion on Azure ML.
-- Stable Diffusion on different GPU types.
-- Code snippets to get started with Stable Diffusion on Azure ML.
+- The Azure ML resources necessary for running Stable Diffusion.
+- Installing and configuring Stable Diffusion Web UI on Azure ML GPU Compute Instances.
+- Tips and tricks for improving the performance and security of your installation.
