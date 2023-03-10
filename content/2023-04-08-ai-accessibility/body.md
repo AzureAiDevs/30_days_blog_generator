@@ -1,7 +1,9 @@
-## 🚌 Build accessible AI for everyone
+## 🚌 6 ways to improve accessibility with Azure AI
 
-Read [today's article]({{ canonical }}) for an overview of various AI for Accessibility projects that aim to improve the lives of people with disabilities. The projects range from education to employment, community, home, and low-cost assistive technology.  
+<!-- Read [today's article]({{ canonical }}) -->
 
-One of the projects highlighted is NWEA, which is developing math assessments to make them more accessible for students with vision disabilities, improving their access to higher-level math and STEM careers. Another project is AI4Bharat, which aims to improve accessibility for the deaf population in India by creating datasets to advance Indian Sign Language understanding.
+There are over one billion people in the world living with disabilities, and many face barriers to employment, education, and societal inclusion. 
 
-![](ai-for-accessiblity.jpeg)
+Read [today's article]({{ canonical }}) to learn about [Microsoft's five-year initiative](https://blogs.microsoft.com/blog/2021/04/28/doubling-down-on-accessibility-microsofts-next-steps-to-expand-accessibility-in-technology-the-workforce-and-workplace)) aimed at improving the accessibility of technology and creating opportunities for people with disabilities. 
+
+The initiative focuses on three priorities: developing more accessible technology, using this technology to create job opportunities for people with disabilities, and building a more inclusive workplace. 

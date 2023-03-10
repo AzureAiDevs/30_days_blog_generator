@@ -1,3 +1,2 @@
-- AI for Accessibility projects.
-- How AI can help people with disabilities.
-- Specific projects like NWEA and AI4Bharat that are making a difference.
+- Microsoft's five-year initiative to improve the accessibility of technology.
+- Azure AI accessibility solutions to create more inclusive experiences.

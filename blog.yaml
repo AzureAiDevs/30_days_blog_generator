@@ -104,8 +104,8 @@ campaign:
     - folder: 2023-04-08-ai-accessibility
       emoji: 🏁
       audience: "Azure AI Developers"
-      title: "Accessible AI Apps for Everyone"
-      description: "Learn to build AI for everyone with AI for Accessibility"
+      title: "Improve accessibility w/ Azure AI"
+      description: "Learn about the 6 ways to improve accessibility with Azure AI"
       authors: [Henk]
       keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]

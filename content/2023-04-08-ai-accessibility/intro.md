@@ -1,1 +1,1 @@
-Yesterday we talked about the importance of Responsible AI. Today is about ensuring the intelligent apps or the ML models you build are accessible to all.
+Yesterday we talked about the importance of Responsible AI. Today is about 6 ways to improve accessibility with Azure AI for the billion people living with disabilities.
