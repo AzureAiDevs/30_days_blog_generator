@@ -312,7 +312,7 @@ campaign:
     - folder: 2023-04-21-mlops-intro
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
-      title: "Learn MLOps for the ML Lifecycle"
+      title: "Streamline with Azure MLOps"
       description: "Learn about Azure Machine Learning lifecycle and open source tooling to start building MLOps"
       authors: [Cassie]
       keywords: [MLOps, Machine-Learning, Azure-AI]
@@ -429,7 +429,7 @@ campaign:
       keywords: [Personalizers, Cognitive-Services,  Azure-AI]
       tags: [ai-april,30-days-of-azure-ai,app-developers,workshop,azure-cognitive-services]
       social_tag: "#AzurePersonalizer"
-      canonical:
+      canonical: https://tbc
       references:
         - "[Azure Personalizer Cognitive Service](https://azure.microsoft.com/products/cognitive-services/personalizer?WT.mc_id=aiml-89446-dglover)"
         - "[Azure Cognitive Services](https://azure.microsoft.com/en-au/products/cognitive-services/#overview?WT.mc_id=aiml-89446-dglover)"

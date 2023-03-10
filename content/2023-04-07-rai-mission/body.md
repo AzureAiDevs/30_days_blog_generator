@@ -1,4 +1,4 @@
-## 🚌 Why Responsible AI?
+## 🚌 Why Responsible AI is so important
 
 Read [today's article]({{ canonical }}) to learn about Microsoft's mission to advance AI for everyone, and to understand the principles that guide Microsoft's approach to AI.
 

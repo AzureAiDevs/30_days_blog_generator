@@ -1,4 +1,4 @@
-## 🚌 Watch the Learn Live MLOps for the ML Lifecycle Session
+## 🚌 Learn Live MLOps to streamline the ML Lifecycle
 
 [Watch today's video]({{ canonical }}) about MLOps for the ML Lifecycle. The presenters, Cassie and Korey, start with an overview of MLOps, explaining that it is a set of practices and tools that help data scientists and developers work together to build and deploy machine learning models.
 

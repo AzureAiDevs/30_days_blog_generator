@@ -1,4 +1,4 @@
-## 🚌 Get Creative with Stable Diffusion on Azure ML
+## 🚌 Get creative with Stable Diffusion on Azure ML
 
 [Today's article]({{ canonical }}) is takes you into the fascinating world of Stable Diffusion's image generative model. Stable Diffusion is a generative model that can generate images of faces, animals, and other objects, it's a lot of fun to play with, so let your imagination run wild.
 

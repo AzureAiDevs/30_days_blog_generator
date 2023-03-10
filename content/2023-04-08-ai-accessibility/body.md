@@ -1,4 +1,4 @@
-## 🚌 Build Accessible AI for Everyone
+## 🚌 Build accessible AI for everyone
 
 Read [today's article]({{ canonical }}) for an overview of various AI for Accessibility projects that aim to improve the lives of people with disabilities. The projects range from education to employment, community, home, and low-cost assistive technology.  
 

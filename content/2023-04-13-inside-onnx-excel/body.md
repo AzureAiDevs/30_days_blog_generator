@@ -1,4 +1,4 @@
-## 🚌 Build an Excel Add-in with BERT-JS and ONNX Runtime
+## 🚌 Build an Excel Add-in with BERT-JS and ONNX runtime
 
 Read [today's article]({{ canonical }}) about building an Excel Add-in with BERT-JS and ONNX Runtime".  You'll learn about the use of BERT-JS and ONNX Runtime enables the creation of an Excel add-in that performs natural language processing tasks within a spreadsheet. 
 
