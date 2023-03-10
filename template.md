@@ -70,7 +70,7 @@ Add or update a list relevant references here. These could be links to other blo
 -->
 
 {% if references %}
-### 📚 References
+## 📚 References
 
 {% for item in references -%}
 - {{item}}

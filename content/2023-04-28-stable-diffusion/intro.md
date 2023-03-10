@@ -1,1 +1,1 @@
-"Unlock the full potential of Stable Diffusion with Azure Machine Learning. Discover the comprehensive guide provided by the author on how to create the ideal environment for running this powerful tool. From code snippets to costs, this guide will take you on a journey of discovery and awe."
+Yesterday we learned about how to build a Patient Registration app with Azure Form Recognizer. Today's your opportunity to be "wowed" by the power of image generative models and run Stable Diffusion on Azure ML. Let's go!

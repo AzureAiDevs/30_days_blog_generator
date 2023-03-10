@@ -1,0 +1,3 @@
+- Classic Machine Learning.
+- The Scikit-learn Python library.
+- Learn in teams or on your own.

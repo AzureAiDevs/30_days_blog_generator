@@ -1,0 +1,1 @@
+Yesterday we learned about the power of Stable Diffusion and Azure ML. Today's your chance to learn how you can personalixe your users' experience with Azure Personalizer at scale. Time to dive in!

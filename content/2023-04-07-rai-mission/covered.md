@@ -1,3 +1,3 @@
-- Microsoft invests in AI to benefit everyone in organizations, with a focus on responsible AI.
-- Microsoft Research focuses on developing large-scale, sophisticated, and intuitive AI models. 
-- Microsoft recognizes the importance of responsible AI.
+- Microsoft's commitment to Responsible AI.
+- Why you should care deeply about Responsible AI.
+- Microsoft's AI strategy.
