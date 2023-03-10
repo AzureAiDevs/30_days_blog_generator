@@ -1,1 +1,3 @@
-Microsoft and OpenAI have partnered to bring OpenAI's advanced natural language processing tools, including GPT-3, to Microsoft's Azure cloud. The Azure OpenAI Service, now in general availability, offers REST API access, security, compliance, and regional availability. The goal is democratize AI and use it to address global challenges. Start by learning about OpenAI's language models and familiarizing with key API concepts.
+Welcome to the first day of the Azure AI fundamentals week. This week is for everyone; you might be an ai app Developer, a Data Scientist, or an ML or MLOps Engineer. 
+
+The talk of the town is ChatGPT and generative AI, so what better place to start than an introduction to the Azure OpenAI Service.

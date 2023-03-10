@@ -1,1 +1,3 @@
-A fundamental challenge of any new technology is figuring out how to take the first step. In this session of Microsoft Mechanics, let’s listen to distinguished engineer Pablo Castro as he walks us through a progression of short examples that show us how to build more dynamic, interactive and differentiated experiences with Azure OpenAI.
+Yesterday was about the Azure AI Hub, a treasure trove of Azure AI SDK samples. Today, we're going to hear from 
+distinguished engineer Pablo Castro as he walks us through a progression of short examples that show us how to build 
+more dynamic, interactive, and differentiated experiences with the Azure OpenAI Service.

@@ -32,7 +32,7 @@ description: "{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ 
 - 📌 [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
-## Day _{{ day }}_ of #{{ campaign }}
+## 🗓️ Day _{{ day }}_ of #{{ campaign }}
 
 <!-- README
 The following description is also used for the tweet. So it should be action oriented and grab attention 
@@ -47,7 +47,7 @@ The following is the intro to the post. It should be a short teaser for the post
 
 {% include 'content/' + folder + '/intro.md' ignore missing %}
 
-## What we'll cover
+## 🎯 What we'll cover
 
 <!-- README
 The following list is the main points of the post. There should be 3-4 main points.
@@ -70,7 +70,7 @@ Add or update a list relevant references here. These could be links to other blo
 -->
 
 {% if references %}
-### References
+### 📚 References
 
 {% for item in references -%}
 - {{item}}
@@ -82,16 +82,16 @@ The following is the body of the post. It should be an overview of the post that
 See the Learn More section, if you supplied a canonical link, then will be displayed here.
 -->
 
-{% set template = '## Introduction' %}
+{% set template = '## 🚌 Introduction' %}
 {% include 'content/' + folder + '/body.md' ignore missing %}
 
 {% if canonical -%}
 
-## Learn More
+## 👓 Read today's article
 
-To learn more, check out this [article]({{ canonical }}).
+Today's [article]({{ canonical }}).
 {% endif %}
 
-## Questions?
+## 🙋🏾‍♂️ Questions?
 
 [Remember, you can ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/Discussions/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})

@@ -1,4 +1,4 @@
-**What's Azure OpenAI?**
+## 🚌 Learn how to use Azure OpenAI for your applications
 
 Azure's OpenAI Service lets you leverage large scale generative AI
 models based in Azure that have a deep understanding of language and

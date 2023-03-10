@@ -1,1 +1,1 @@
-The article overviews AI projects aimed at improving the lives of people with disabilities, from education to home and low-cost assistive technology. It highlights NWEA and AI4Bharat, and stresses the importance of FATE considerations in sign language AI, as well as Microsoft's AI for Accessibility grants. 
+Yesterday we talked about the importance of Responsible AI. Today is about ensuring the intelligent apps or the ML models you build are accessible to all.

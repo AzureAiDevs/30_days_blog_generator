@@ -1,3 +1,3 @@
-- The main concepts in Azure ML to become effective at using the platform. 
-- Understanding these concepts will make working with code samples easier. 
-- The goal is to become more proficient using Azure ML.
+- Why use Azure ML
+- The main resources used to train and deploy models in Azure ML 
+- The four different ways of creating those resources

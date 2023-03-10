@@ -363,9 +363,9 @@ campaign:
     - folder: 2023-04-25-data-science-beginners
       emoji: 🏭
       audience: "Azure AI Workshop"
-      title: "Data Science for beginners"
+      title: "Data Science for Beginners"
       description: "Foundations of Data Science: Workshops for Beginners"
-      authors: [Gabriela]
+      authors: [Bethany]
       keywords: [Data_Science_Beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "#DataScience"
@@ -377,13 +377,13 @@ campaign:
     - folder: 2023-04-26-ml-ai-workshops
       emoji: 🏭
       audience: "Azure AI Workshop"
-      title: "ML and AI for beginners"
-      description: "learn about the ML and AI for beginner workshops"
-      authors: [Gabriela]
-      keywords: [AI_Beginners]
+      title: "Machine Learning for Beginners"
+      description: "Learn about the Microsoft Machine Learning for Beginners Curriculum"
+      authors: [Bethany]
+      keywords: [ml-for-beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "#MachineLearning"
-      canonical: https://github.com/microsoft/ML-For-Beginners
+      canonical: "https://microsoft.github.io/ML-For-Beginners/"
       references:
         - "[Learn Module: Introduction to AI technology](https://learn.microsoft.com/training/modules/introduction-to-ai-technology?WT.mc_id=aiml-89446-dglover)"
 
