@@ -95,7 +95,7 @@ campaign:
       keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
       social_tag: "#AIEthics"
-      canonical: https://www.microsoft.com/en-us/ai/our-approach
+      canonical: https://www.microsoft.com/ai/our-approach
       references:
         - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
         - "[Meeting the AI moment: advancing the future through responsible AI](https://blogs.microsoft.com/on-the-issues/2023/02/02/responsible-ai-chatgpt-artificial-intelligence?WT.mc_id=aiml-89446-dglover)"
@@ -110,7 +110,7 @@ campaign:
       keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
       social_tag: "#Accessibility"
-      canonical: https://azure.microsoft.com/en-us/blog/6-ways-to-improve-accessibility-with-azure-ai/
+      canonical: https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai/
       references:
         - "[AI for Accessibility](https://www.microsoft.com/ai/ai-for-accessibility)"
 
