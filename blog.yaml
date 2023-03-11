@@ -57,7 +57,7 @@ campaign:
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "Build an AI receipt app with Copilot"
-      description: "Learn how to use Copilot to build an intelligent Receipt Recognition App powered by Azure Form Recognizer"
+      description: "Learn how to use Copilot to build an intelligent Receipt App powered by Azure Form Recognizer"
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]
