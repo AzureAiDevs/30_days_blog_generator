@@ -13,15 +13,7 @@ image: "{{site_url}}/img/{{slug}}/banner-day{{day}}.png"
 description: "{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}"
 ---
 
-<head>
-
-  <meta property="og:url" content="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" />
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}" />
-  <meta property="og:image" content="{{site_url}}/img/{{slug}}/banner-day{{day}}.png" />
-  <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Azure AI Developer" />
-  
+<head>  
 
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" {% endif %} />
 
