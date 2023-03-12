@@ -129,7 +129,7 @@ campaign:
     - folder: 2023-04-10-azure-cog-openai-sdks
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "Build intelligent Apps w/ Azure AI SDKs"
+      title: "Build intelligent apps w/ Azure AI SDKs"
       description: "Building intelligent apps? Then explore the Azure AI Hub for OpenAI and Cognitive Services SDK samples"
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
@@ -209,7 +209,7 @@ campaign:
     - folder: 2023-04-15-openai-blazer
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "Blazor Apps and Azure OpenAI"
+      title: "Blazor apps and Azure OpenAI"
       description: "Build Interactive Web Applications with Microsoft Blazor and Azure OpenAI"
       authors: [Michael]
       keywords: ['Azure-OpenAI-Services', 'Blazor', 'vscode', Azure-AI]
