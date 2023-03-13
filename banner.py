@@ -141,5 +141,5 @@ class BANNER:
         # The open_graph_folder is the folder where static images will be stored for the open graph image for use on twitter and facebook
 
         filename = os.path.join(
-            banner_definition["open_graph_folder"], f'banner-day{banner_definition["day"]}.png')
+            banner_definition["static_image_folder"], f'banner-day{banner_definition["day"]}.png')
         img.save(filename)

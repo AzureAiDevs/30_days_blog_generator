@@ -12,9 +12,9 @@ import argparse
 import banner
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-b", "--blog_folder")
-parser.add_argument("-f", "--blog_item")
-parser.add_argument("-o", "--open_graph_folder")
+parser.add_argument("-f", "--folder_item")
+parser.add_argument("-w", "--website_folder")
+parser.add_argument("-c", "--content_name")
 
 
 TEMPLATE_FILE = "template.md"
@@ -43,14 +43,14 @@ def validate_data(data):
     if 'campaign' not in data:
         print("Missing campaign in yaml file")
         return False
-    if 'slug' not in data['campaign']:
-        print("Missing slug in yaml file")
-        return False
+    # if 'slug' not in data['campaign']:
+    #     print("Missing slug in yaml file")
+    #     return False
     if 'name' not in data['campaign']:
         print("Missing name in yaml file")
         return False
-    if 'blog_url' not in data['campaign']:
-        print("Missing blog_url in yaml file")
+    if 'daily_blog_url' not in data['campaign']:
+        print("Missing daily_blog_url in yaml file")
         return False
 
     for item in data['campaign']['days']:
@@ -93,13 +93,14 @@ def validate_data(data):
     return True
 
 
-def main(blog_folder, blog_item, open_graph_folder):
+def main(website_folder, content_name, folder_item):
     """Generate blog items from yaml file."""
 
-    blog_folder = blog_folder if blog_folder else 'blog'
-    open_graph_folder = open_graph_folder if open_graph_folder else 'img'
+    blog_folder = os.path.join(website_folder, content_name) if website_folder else 'blog'
+    static_image_folder = os.path.join(website_folder, "static", "img", content_name) if content_name else 'img'
 
-    pathlib.Path(open_graph_folder).mkdir(parents=True, exist_ok=True)
+    pathlib.Path(blog_folder).mkdir(parents=True, exist_ok=True)
+    pathlib.Path(static_image_folder).mkdir(parents=True, exist_ok=True)
 
     day = 0
 
@@ -121,13 +122,12 @@ def main(blog_folder, blog_item, open_graph_folder):
         day += 1
         item['day'] = day
         item['campaign'] = data['campaign']['name']
-        item['slug'] = data['campaign']['slug']
-        item['blog_url'] = data['campaign']['blog_url']
-        item['site_url'] = data['campaign']['site_url']
+        item['static_img_folder'] = data['campaign']['static_img_folder']
+        item['static_img_path'] = data['campaign']['static_img_path']
         item['daily_blog_url'] = data['campaign']['daily_blog_url']
         item['social_tags'] = data['campaign']['social_tags']
 
-        if blog_item and item['folder'] != blog_item:
+        if folder_item and item['folder'] != folder_item:
             continue
 
         output_text = template.render(item)
@@ -142,7 +142,7 @@ def main(blog_folder, blog_item, open_graph_folder):
 
         banner_definition = {
             "blog_folder": folder_name,
-            "open_graph_folder": open_graph_folder,
+            "static_image_folder": static_image_folder,
             "audience": item["audience"],
             "title": item["title"],
             "day": day,
@@ -159,4 +159,4 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    main(args.blog_folder, args.blog_item, args.open_graph_folder)
+    main(args.website_folder, args.content_name, args.folder_item)

@@ -1,5 +1,5 @@
 ---
-slug: {{slug}}-day{{day}}
+slug: "day{{ day }}"
 title: "{{ day }}. {{ emoji }}{{ title }}"
 authors: {{ authors }}
 draft: false
@@ -9,18 +9,18 @@ toc_max_heading_level: 3
 {% if keywords %}keywords: {{ keywords }}{% endif %}
 {% if tags %}tags: {{ tags }}{% endif %}
 
-image: "{{site_url}}/img/{{slug}}/banner-day{{day}}.png"
-description: "{{ description }} {{ daily_blog_url }}/{{ slug }}-day{{ day }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}"
+image: "{{ static_img_path }}/banner-day{{ day }}.png"
+description: "{{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags -}} {% if social_tag %} {{ social_tag }}{% endif %}"
 ---
 
 <head>  
 
-  <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/{{ slug }}-day{{ day }}" {% endif %} />
+  <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/day{{ day }}" {% endif %} />
 
 </head>
 
 - 📧 [Sign up for the Azure AI Developer Newsletter](https://aka.ms/azure-ai-dev-newsletter)
-- 📰 [Subscribe to the #30DaysOfAzureAI RSS feed](https://azureaidevs.github.io/hub/blog/rss.xml)
+- 📰 [Subscribe to the #30DaysOfAzureAI RSS feed]({{ daily_blog_url }}/rss.xml)
 - 📌 [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
@@ -55,7 +55,7 @@ The following list is the main points of the post. There should be 3-4 main poin
 - Main point 4
 -->
 
-![Image banner for day {{day}}](./../../../static/img/2023/banner-day{{day}}.png)
+![Image banner for day {{day}}]({{ static_img_folder }}/banner-day{{day}}.png)
 
 <!-- README
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.

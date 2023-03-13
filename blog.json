@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome8",
+    "$ref": "#/definitions/Welcome6",
     "definitions": {
-        "Welcome8": {
+        "Welcome6": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -13,7 +13,7 @@
             "required": [
                 "campaign"
             ],
-            "title": "Welcome8"
+            "title": "Welcome6"
         },
         "Campaign": {
             "type": "object",
@@ -22,11 +22,10 @@
                 "name": {
                     "type": "string"
                 },
-                "slug": {
-                    "type": "string",
-                    "format": "integer"
+                "static_img_folder": {
+                    "type": "string"
                 },
-                "site_url": {
+                "static_img_path": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
@@ -34,13 +33,6 @@
                     ]
                 },
                 "daily_blog_url": {
-                    "type": "string",
-                    "format": "uri",
-                    "qt-uri-protocols": [
-                        "https"
-                    ]
-                },
-                "blog_url": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
@@ -58,13 +50,12 @@
                 }
             },
             "required": [
-                "blog_url",
                 "daily_blog_url",
                 "days",
                 "name",
-                "site_url",
-                "slug",
-                "social_tags"
+                "social_tags",
+                "static_img_folder",
+                "static_img_path"
             ],
             "title": "Campaign"
         },
@@ -76,10 +67,10 @@
                     "type": "string"
                 },
                 "emoji": {
-                    "type": "string"
+                    "$ref": "#/definitions/Emoji"
                 },
                 "audience": {
-                    "type": "string"
+                    "$ref": "#/definitions/Audience"
                 },
                 "title": {
                     "type": "string"
@@ -115,6 +106,9 @@
                             "format": "uri",
                             "qt-uri-protocols": [
                                 "https"
+                            ],
+                            "qt-uri-extensions": [
+                                ".html"
                             ]
                         }
                     ]
@@ -141,6 +135,26 @@
                 "title"
             ],
             "title": "Day"
+        },
+        "Audience": {
+            "type": "string",
+            "enum": [
+                "Azure AI Developers",
+                "Azure AI App Developers",
+                "Azure ML Developers",
+                "Azure AI Workshop"
+            ],
+            "title": "Audience"
+        },
+        "Emoji": {
+            "type": "string",
+            "enum": [
+                "🏁",
+                "🧑‍💻",
+                "🧑🏽‍🔬",
+                "🏭"
+            ],
+            "title": "Emoji"
         }
     }
 }
