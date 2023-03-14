@@ -398,7 +398,7 @@ campaign:
       social_tag: "#AzureFormRecognizer"
       canonical: https://newpatiente2e.github.io/docs/
       references:
-        - "[Learn Module: Azure Form Recognizer Service](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-form-recognizer&WT.mc_id=aiml-89446-dglover"
+        - "[Learn Module: Azure Form Recognizer Service](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-form-recognizer&WT.mc_id=aiml-89446-dglover)"
         - "[What is Azure Form Recognizer?](https://learn.microsoft.com/azure/applied-ai-services/form-recognizer/overview?view=form-recog-3.0.0&WT.mc_id=aiml-89446-dglover)"
         - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
         - "[Case study: Duolingo makes learning language fun with help from AI](https://startups.microsoft.com/blog/duolingo-makes-learning-language-fun-with-help-from-ai?WT.mc_id=aiml-89446-dglover)"
@@ -428,7 +428,7 @@ campaign:
       keywords: [Personalizers, Cognitive-Services,  Azure-AI]
       tags: [ai-april,30-days-of-azure-ai,app-developers,workshop,azure-cognitive-services]
       social_tag: "#AzurePersonalizer"
-      canonical: https://tbc
+      canonical: https://www.arafattehsin.com/reinforcement-learning-in-apps-bots-websites-with-azure-personalizer-part-1
       references:
         - "[Azure Personalizer Cognitive Service](https://azure.microsoft.com/products/cognitive-services/personalizer?WT.mc_id=aiml-89446-dglover)"
         - "[Azure Cognitive Services](https://azure.microsoft.com/en-au/products/cognitive-services/#overview?WT.mc_id=aiml-89446-dglover)"
@@ -443,4 +443,4 @@ campaign:
       authors: [Dave]
       keywords: [ Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, MLOps, rai, CoPilot, Blazor ]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals]
-      canonical:
+      canonical: 
