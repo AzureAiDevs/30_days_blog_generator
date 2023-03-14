@@ -15,7 +15,7 @@ campaign:
       title: "Kick Starting AI April!"
       description: "Welcome to #AiApril! Join us for #30DaysOfAzureAI learning, skilling and discussions at [AI April](https://aka.ms/ai-april)"
       authors: [Dave]
-      keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, Cognitive-Search, dotnet, onnx, CoPilot]
+      keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai]
       canonical:
 
