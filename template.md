@@ -22,8 +22,11 @@ description: "{{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags
 {% if canonical -%}- 👓 [Read today's article]({{ canonical }}){% endif %}
 - 📬 [Sign up for the Microsoft AI and Machine Learning Newsletter](https://aka.ms/azure-ai-dev-newsletter)
 <!-- - 📰 [Subscribe to the #30DaysOfAzureAI RSS feed]({{ daily_blog_url }}/rss.xml) -->
+- 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
+- 🏫 [Bookmark the Azure AI Technical Community](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI)
 - 🙋🏾‍♂️ [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
+
 
 ## 🗓️ Day _{{ day }}_ of #{{ campaign }}
 
@@ -92,3 +95,5 @@ Today's [article]({{ canonical }}).
 ## 📍 30 days roadmap
 
 What's next? View the [#30DaysOfAzureAI Roadmap](/hub/roadmap/30days)
+
+[![]({{ static_img_folder }}/rss.png) Click to subscribe](https://azureaidevs.github.io/hub/2023-aia/rss.xml)
