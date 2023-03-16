@@ -19,7 +19,7 @@ description: "{{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags
 
 </head>
 
-{% if canonical -%}- 👓 [Read today's article]({{ canonical }}){% endif %}
+{% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
 - 📬 [Sign up for the Microsoft AI and Machine Learning Newsletter](https://aka.ms/azure-ai-dev-newsletter)
 <!-- - 📰 [Subscribe to the #30DaysOfAzureAI RSS feed]({{ daily_blog_url }}/rss.xml) -->
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
@@ -65,17 +65,12 @@ The following list is the main points of the post. There should be 3-4 main poin
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.
 -->
 
+{% if no_reference_section != true %}
 
 ## 📚 References
 
 {% include 'content/' + folder + '/references.md' ignore missing %}
-
-<!-- {% if references %}
-
-{% for item in references -%}
-- {{item}}
-{% endfor -%}
-{% endif %} -->
+{% endif %}
 
 <!-- README
 The following is the body of the post. It should be an overview of the post that you are referencing.
@@ -87,7 +82,7 @@ See the Learn More section, if you supplied a canonical link, then will be displ
 
 {% if canonical -%}
 
-## 👓 Read today's article
+## 👓 View today's article
 
 Today's [article]({{ canonical }}).
 {% endif %}

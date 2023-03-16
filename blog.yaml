@@ -10,15 +10,16 @@ campaign:
 
   days:
     - folder: "2023-03-29-kickoff"
-      visible: false
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
-      title: "Kick Starting AI April!"
-      description: "Welcome to #AiApril! Join us for #30DaysOfAzureAI learning, skilling and discussions at [AI April](https://aka.ms/ai-april)"
+      title: "Kick Starting AI April Keynote"
+      description: "Join us for 30 Days Of Azure AI learning, skilling and discussions"
       authors: [Dave]
       keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai]
       canonical: https://youtu.be/D7_RN5Gc-RE
+      no_reference_section: true
 
     - folder: "2023-04-03-azure-openai-services"
       emoji: 🏁
