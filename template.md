@@ -20,7 +20,7 @@ description: "{{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags
 </head>
 
 {% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
-- 📬 [Sign up for the Microsoft AI and Machine Learning Newsletter](https://aka.ms/azure-ai-dev-newsletter)
+- 📬 [Sign up for AI and Machine Learning Microsoft Tech News](https://developer.microsoft.com/en-us/Newsletter/)
 <!-- - 📰 [Subscribe to the #30DaysOfAzureAI RSS feed]({{ daily_blog_url }}/rss.xml) -->
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
 - 🏫 [Bookmark the Azure AI Technical Community](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI)
