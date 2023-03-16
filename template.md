@@ -2,7 +2,7 @@
 slug: "day{{ day }}"
 title: "{{ day }}. {{ emoji }}{{ title }}"
 authors: {{ authors }}
-draft: false
+{% if visible %}draft: false{% else %}draft: true{% endif %}
 hide_table_of_contents: false
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -28,7 +28,7 @@ description: "{{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
 
-## 🗓️ Day _{{ day }}_ of #{{ campaign }}
+## 🗓️ Day {{ day }} of #30DaysOfAzureAI
 
 <!-- README
 The following description is also used for the tweet. So it should be action oriented and grab attention 
@@ -65,13 +65,17 @@ The following list is the main points of the post. There should be 3-4 main poin
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.
 -->
 
-{% if references %}
+
 ## 📚 References
+
+{% include 'content/' + folder + '/references.md' ignore missing %}
+
+<!-- {% if references %}
 
 {% for item in references -%}
 - {{item}}
 {% endfor -%}
-{% endif %}
+{% endif %} -->
 
 <!-- README
 The following is the body of the post. It should be an overview of the post that you are referencing.

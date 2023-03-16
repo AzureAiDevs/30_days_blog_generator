@@ -10,6 +10,7 @@ campaign:
 
   days:
     - folder: "2023-03-29-kickoff"
+      visible: false
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "Kick Starting AI April!"
@@ -17,8 +18,7 @@ campaign:
       authors: [Dave]
       keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai]
-      canonical:
-
+      canonical: https://youtu.be/D7_RN5Gc-RE
 
     - folder: "2023-04-03-azure-openai-services"
       emoji: 🏁
@@ -30,10 +30,6 @@ campaign:
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
       social_tag: "#OpenAI"
       canonical: https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706
-      references:
-      - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
-      - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Making generative AI training simple and cost-efficient with PeriFlow and Azure](https://startups.microsoft.com/blog/making-generative-ai-training-simple?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-04-openai-playground"
@@ -46,28 +42,19 @@ campaign:
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
       social_tag: "#OpenAI"
       canonical: https://medium.com/microsoftazure/azure-openai-playground-279f1f3da562
-      references:
-      - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
-      - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
-      - "[Case Study: Azure OpenAI Service powers the next generation of startups](https://startups.microsoft.com/blog/azure-openai-service-for-startups?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-05-copilot-form-recognizer"
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
-      title: "Build an AI receipts app with Copilot"
+      title: "Build a receipts app with Copilot"
       description: "Learn how to use Copilot to build an intelligent receipts app powered by Azure Form Recognizer"
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]
       social_tag: "#AzureCognitiveServices"
       canonical: https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/how-copilot-helps-developers-generate-code-for-a-form-recognizer/ba-p/3753813
-      references:
-        - "[What is Azure Form Recognizer?](https://learn.microsoft.com/azure/applied-ai-services/form-recognizer/overview?view=form-recog-3.0.0&WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Learn about Azure Cognitive Services](https://learn.microsoft.com/training/browse/?products=azure-cognitive-services&WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Introduction to Form Recognizer](https://learn.microsoft.com/training/modules/intro-to-form-recognizer?WT.mc_id=aiml-89446-dglover)"
-        - "[Introducing GitHub Copilot: your AI pair programmer](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: How Qard went from idea to MVP](https://startups.microsoft.com/blog/qard-idea-to-mvp?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-06-azure-ml-intro"
@@ -80,9 +67,6 @@ campaign:
       tags: [azure-ai, azure-ml, 30-days-of-azure-ai]
       social_tag: "#AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-introduction/
-      references:
-      - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-      - "[What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-07-rai-mission"
@@ -95,9 +79,6 @@ campaign:
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
       social_tag: "#AIEthics"
       canonical: https://www.microsoft.com/ai/our-approach
-      references:
-        - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
-        - "[Meeting the AI moment: advancing the future through responsible AI](https://blogs.microsoft.com/on-the-issues/2023/02/02/responsible-ai-chatgpt-artificial-intelligence?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-08-ai-accessibility"
@@ -110,8 +91,6 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
       social_tag: "#Accessibility"
       canonical: https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai/
-      references:
-        - "[AI for Accessibility](https://www.microsoft.com/ai/ai-for-accessibility)"
 
 
     - folder: "2023-04-09-recap-fundamentals"
@@ -126,6 +105,7 @@ campaign:
 
 
     - folder: "2023-04-10-azure-cog-openai-sdks"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "Build intelligent apps w/ Azure AI SDKs"
@@ -135,29 +115,19 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       social_tag: "#OpenAI"
       canonical: https://github.com/Azure-Samples/azure-ai
-      references:
-        - "[Quickstart: Get started generating text using Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=programming-language-studio&WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai&WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Learn about Azure Cognitive Services](https://learn.microsoft.com/training/browse/?products=azure-cognitive-services&WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Trelent powers source code documentation with OpenAI Service](https://startups.microsoft.com/blog/trelent-openai-service?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Hypergrowth startup harnesses deep learning to redefine enterprise productivity](https://customers.microsoft.com/story/1376278902865681018-instabase-partner-professional-services-azure?WT.mc_id=aiml-89446-dglover)"
 
 
-    - folder: "2023-04-11-inside-openai"
+    - folder: "2023-04-11-build-chatgpt"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "Inside look at Azure OpenAI for Devs"
-      description: "Get ready to build dynamic, interactive and differentiated experiences with Azure OpenAI"
+      title: "How to build your own ChatGPT"
+      description: "Build your own ChatGPT with Azure Cognitive Search + Azure OpenAI Service"
       authors: [Heidi]
       keywords: [Azure-OpenAI-Services, Cognitive-Search, Azure-AI]
       tags: [ai-april, azure-open-ai, azure-cognitive-services, app-developers]
       social_tag: "#OpenAI"
-      canonical:
-      references:
-        - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Azure Cognitive Search](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-cognitive-search&WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Is data necessary for bootstrapping of AI models?](https://startups.microsoft.com/blog/bootstrapping-ai-models-pointers?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Metaverse training and AI-driven onboarding](https://startups.microsoft.com/blog/metaverse-training-stellarx?WT.mc_id=aiml-89446-dglover)"
+      canonical: https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087?WT.mc_id=aiml-89446-dglover
 
 
     - folder: "2023-04-12-onnx-dotnet"
@@ -170,25 +140,19 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       canonical: https://youtu.be/h6HWP5jpA5s
       social_tag: "#ONNX"
-      references:
-        - "[Open Neural Network Exchange (ONNX) Open Standard](https://onnx.ai/index.html)"
-        - "[.NET Multi-platform App UI](https://dotnet.microsoft.com/apps/maui?WT.mc_id=aiml-89446-dglover)"
-        - "[ONNX and Azure Machine Learning: Create and accelerate ML models](https://learn.microsoft.com/azure/machine-learning/concept-onnx?WT.mc_id=aiml-89446-dglover)"
-        - "[Create a machine learning model for offline use on a Windows device](https://learn.microsoft.com/training/modules/add-machine-learning-to-uwp-app?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-13-inside-onnx-excel"
+      visible: false
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "Run BERT NLP models locally in Excel"
-      description: "Run BERT NLP models locally in Excel with ONNX and JavaScript"
+      title: "NLP Models in Excel w/ ONNX Runtime"
+      description: "Build an Excel Add-in with ONNX Runtime Web for NLP Tasks"
       authors: [Cassie]
       keywords: [onnx, JavaScript, Excel, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       social_tag: "#ONNX"
       canonical: https://onnxruntime.ai/docs/tutorials/web/excel-addin-bert-js.html
-      references:
-        - "[Open Neural Network Exchange (ONNX) Open Standard](https://onnx.ai/index.html)"
 
 
     - folder: "2023-04-14-copilot"
@@ -201,11 +165,10 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot]
       social_tag: "#Copilot"
       canonical: https://github.blog/2023-02-14-github-copilot-now-has-a-better-ai-model-and-new-capabilities/
-      references:
-        - "[Introducing GitHub Copilot: your AI pair programmer](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-15-openai-blazer"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "Blazor apps and Azure OpenAI"
@@ -215,10 +178,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot, open-ai]
       social_tag: "#OpenAI"
       canonical: https://blazorhelpwebsite.com/ViewBlogPost/2065
-      references:
-      - "[Build beautiful, web apps with Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)"
-      - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
-      - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-16-recap-week-two"
@@ -230,22 +189,6 @@ campaign:
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI, Cognitive-Search, onnx, dotnet, Blazor, CoPilot]
       tags: [ai-april, 30-days-of-azure-ai,app-developers,azure-open-ai,azure-cognitive-services]
       canonical:
-      references:
-
-        - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai?WT.mc_id=aiml-89446-dglover)"
-        - "[Quickstart: Get started generating text using Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?pivots=programming-language-studio&WT.mc_id=aiml-89446-dglover)"
-
-        - "[Azure Cognitive Services APIs](https://azure.microsoft.com/products/cognitive-services/#api?WT.mc_id=aiml-89446-dglover)"
-        - "[Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service?WT.mc_id=aiml-89446-dglover)"
-
-        - "[ONNX and Azure Machine Learning: Create and accelerate ML models](https://learn.microsoft.com/azure/machine-learning/concept-onnx?WT.mc_id=aiml-89446-dglover)"
-        - "[Open Neural Network Exchange (ONNX) Open Standard](https://onnx.ai/index.html)"
-
-        - "[Introducing GitHub Copilot: your AI pair programmer](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer?WT.mc_id=aiml-89446-dglover)"
-        - "[.NET Multi-platform App UI](https://dotnet.microsoft.com/apps/maui?WT.mc_id=aiml-89446-dglover)"
-        - "[Build beautiful, web apps with Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)"
-        - "[Create a machine learning model for offline use on a Windows device](https://learn.microsoft.com/training/modules/add-machine-learning-to-uwp-app?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-17-inside-azureml-train-deploy"
@@ -258,9 +201,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "#AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-command
-      references:
-        - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-        - "[What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-18-azureml-pipelines"
@@ -273,9 +213,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "#AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-pipeline/
-      references:
-        - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-        - "[What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-19-azureml-endpoints"
@@ -288,9 +225,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "#AzureML"
       canonical: https://vladiliescu.net/aml-managed-endpoints-quickstart/
-      references:
-        - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-        - "[What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-20-rai-part-1"
@@ -303,12 +237,10 @@ campaign:
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers, 'machine-learning-debugging-tools', 'responsible-ai-tools']
       social_tag: "#AIEthics"
       canonical: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948
-      references:
-        - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
-        - "[Meeting the AI moment: advancing the future through responsible AI](https://blogs.microsoft.com/on-the-issues/2023/02/02/responsible-ai-chatgpt-artificial-intelligence?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-21-mlops-intro"
+      visible: false
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Streamline Ops w/ Azure MLOps"
@@ -318,10 +250,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers]
       social_tag: "#AzureMLOps"
       canonical: https://learn.microsoft.com/events/ignite-2022/cll99-learn-live-start-machine-learning-lifecycle-with-mlops
-      references:
-        - "[Machine learning operations (MLOps)](https://azure.microsoft.com/products/machine-learning/mlops/#features?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Introduction to machine learning operations (MLOps)](https://learn.microsoft.com/training/paths/introduction-machine-learn-operations?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Start the machine learning lifecycle with MLOps](https://learn.microsoft.com/training/modules/start-ml-lifecycle-mlops?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-23-recap-week-three"
@@ -333,14 +261,6 @@ campaign:
       keywords: [Azure-AI, Machine-Learning, MLOps, rai]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-mlops]
       canonical:
-      references:
-        - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Introduction to machine learning operations (MLOps)](https://learn.microsoft.com/training/paths/introduction-machine-learn-operations?WT.mc_id=aiml-89446-dglover)"
-        - "[What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Start the machine learning lifecycle with MLOps](https://learn.microsoft.com/training/modules/start-ml-lifecycle-mlops?WT.mc_id=aiml-89446-dglover)"
-        - "[Machine learning operations (MLOps)](https://azure.microsoft.com/products/machine-learning/mlops/#features?WT.mc_id=aiml-89446-dglover)"
-        - "[Meeting the AI moment: advancing the future through responsible AI](https://blogs.microsoft.com/on-the-issues/2023/02/02/responsible-ai-chatgpt-artificial-intelligence?WT.mc_id=aiml-89446-dglover)"
-        - "[Microsoft's approach to using AI responsibly](https://news.microsoft.com/source/features/ai/microsoft-approach-to-ai/#using-ai-responsibly?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-24-mlops-accelerator"
@@ -353,10 +273,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-mlops]
       social_tag: "#AzureMLOps"
       canonical: https://github.com/Azure/mlops-v2
-      references:
-        - "[Machine learning operations (MLOps)](https://azure.microsoft.com/products/machine-learning/mlops/#features?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Introduction to machine learning operations (MLOps)](https://learn.microsoft.com/training/paths/introduction-machine-learn-operations?WT.mc_id=aiml-89446-dglover)"
-        - "[Learn Module: Start the machine learning lifecycle with MLOps](https://learn.microsoft.com/training/modules/start-ml-lifecycle-mlops?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-25-data-science-beginners"
@@ -369,8 +285,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "#DataScience"
       canonical: https://microsoft.github.io/Data-Science-For-Beginners
-      references:
-        - "[learn Module: Understand data science for machine learning](https://learn.microsoft.com/training/paths/understand-machine-learning?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-26-ml-ai-workshops"
@@ -383,8 +297,6 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "#MachineLearning"
       canonical: "https://microsoft.github.io/ML-For-Beginners/"
-      references:
-        - "[Learn Module: Introduction to AI technology](https://learn.microsoft.com/training/modules/introduction-to-ai-technology?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-27-patient-rego-workshop"
@@ -397,11 +309,6 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,azure-cognitive-services,app-developers,workshop]
       social_tag: "#AzureFormRecognizer"
       canonical: https://newpatiente2e.github.io/docs/
-      references:
-        - "[Learn Module: Azure Form Recognizer Service](https://learn.microsoft.com/training/browse/?expanded=azure&roles=ai-engineer&products=azure-form-recognizer&WT.mc_id=aiml-89446-dglover)"
-        - "[What is Azure Form Recognizer?](https://learn.microsoft.com/azure/applied-ai-services/form-recognizer/overview?view=form-recog-3.0.0&WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: Powering Speech-to-Text AI that iterates at the speed of business](https://startups.microsoft.com/blog/powering-speech-to-text-ai?WT.mc_id=aiml-89446-dglover)"
-        - "[Case study: Duolingo makes learning language fun with help from AI](https://startups.microsoft.com/blog/duolingo-makes-learning-language-fun-with-help-from-ai?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-28-stable-diffusion"
@@ -414,9 +321,6 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,azure-ml,ml-engineers,app-developers,workshop]
       social_tag: "AzureML"
       canonical: https://vladiliescu.net/stable-diffusion-web-ui-on-azure-ml/
-      references:
-        - "[Learn Module: Introduction to Azure Machine Learning](https://learn.microsoft.com/training/modules/intro-to-azure-ml?WT.mc_id=aiml-89446-dglover)"
-        - "[What is Azure Machine Learning?](https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?WT.mc_id=aiml-89446-dglover)"
 
 
     - folder: "2023-04-29-azure-personalizer"
@@ -429,16 +333,12 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,app-developers,workshop,azure-cognitive-services]
       social_tag: "#AzurePersonalizer"
       canonical: https://www.arafattehsin.com/reinforcement-learning-in-apps-bots-websites-with-azure-personalizer-part-1
-      references:
-        - "[Azure Personalizer Cognitive Service](https://azure.microsoft.com/products/cognitive-services/personalizer?WT.mc_id=aiml-89446-dglover)"
-        - "[Azure Cognitive Services](https://azure.microsoft.com/en-au/products/cognitive-services/#overview?WT.mc_id=aiml-89446-dglover)"
-        - "[Azure Cognitive Services APIs](https://azure.microsoft.com/products/cognitive-services/#api?WT.mc_id=aiml-89446-dglover)"
-        - "[Case Study: VideoKen is improving video discovery and engagement using AI](https://startups.microsoft.com/blog/launchwithai-videoken?WT.mc_id=aiml-89446-dglover)"
+
 
     - folder: "2023-04-30-recap-final"
       emoji: 🏭
       audience: "Azure AI Developers"
-      title: "Continuing your Azure AI Journey✨"
+      title: "Continuing your AI Journey✨"
       description: "Continuing your Azure AI Journey"
       authors: [Dave]
       keywords: [ Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, MLOps, rai, CoPilot, Blazor ]

@@ -1,35 +1,23 @@
-## 🚌 Learn how to use Azure OpenAI for your applications
+## 🚌 Introduction
 
-Azure's OpenAI Service lets you leverage large scale generative AI
-models based in Azure that have a deep understanding of language and
-code as you build new applications. "Language understanding" means that
-you can type or "talk" to an app to get it do the things you want.
+In today's post, distinguished engineer Pablo Castro covers two questions we hear most often:
 
-In Azure OpenAI, you can work with these models:
+1. How do I build my own ChatGPT that uses my own data as the basis for its responses?
+1. How do I integrate Azure OpenAI Service into my application?
 
--   GPT-3 generates content based on natural language input.
+## Building your own ChatGPT
 
--   Codex translates natural language instructions directly into code.
+Read the full article that addresses the question [“How do I build something like ChatGPT that uses my own data as the basis for its responses?”]({{ canonical }})
 
--   DALL-E 2 generates realistic images and art from natural language
-    descriptions.
+<!-- In summary, the combination of Azure Cognitive Search and Azure OpenAI Service yields an effective solution for this scenario. 
+It integrates the enterprise-grade characteristics of Azure, the ability of Cognitive Search to index, understand and retrieve the right pieces of your own data across large knowledge bases, 
+and ChatGPT’s impressive capability for interacting in natural language to answer questions or take turns in a conversation. -->
 
-These models are hosted on Azure, accessible to apps through REST APIs,
-or through Azure OpenAI Studio for interactive exploration.
+![The image shows the architecture](architecture.png)
 
-Azure OpenAI models include built-in content filtering. If inputs or
-generated outputs include inappropriate content, the Azure OpenAI
-Service catches it. Detection and mitigation of harmful use follows the
-responsible AI principles, which you can find more about at
-[aka.ms/AIprinciples](https://aka.ms/AIprinciples).
+## Integrating Azure OpenAI Service into my apps
 
-In this session, we'll unpack the core concepts for interacting with
-models, using prompts, and demonstrate how you can use Azure's OpenAI
-Studio to experiment with and test your models before bringing them into
-your code to deliver differentiated app experiences, all with Azure's
-enterprise-grade security for your app's foundation.
-
-## Scenario One: Converse with Minecraft
+### Scenario One: Converse with Minecraft
 
 Transforming the surface area of an app might be easier than you think!
 In this video segment, Pablo shows us how he used Minecraft's extension
@@ -48,7 +36,7 @@ module that accepts text prompts as inputs, and then pass that input to
 Codex to interpret the user intent. Codex returns native code that can
 then be processed by your application.
 
-## Scenario Two: Combine Content Discovery and Language Understanding to Create New Information
+### Scenario Two: Combine Content Discovery and Language Understanding to Create New Information
 
 The next example combines the content discovery capabilities of Azure
 Cognitive Search with the language understanding of the GPT-3 model.

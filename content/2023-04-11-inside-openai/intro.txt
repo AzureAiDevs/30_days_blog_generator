@@ -1,3 +1,0 @@
-Yesterday was about the Azure AI Hub, a treasure trove of Azure AI SDK samples. Today, we're going to hear from 
-distinguished engineer Pablo Castro as he walks us through a progression of short examples that show us how to build 
-more dynamic, interactive, and differentiated experiences with the Azure OpenAI Service.
