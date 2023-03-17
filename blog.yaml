@@ -120,6 +120,7 @@ campaign:
 
 
     - folder: "2023-04-11-build-chatgpt"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "How to build your own ChatGPT"
