@@ -22,6 +22,7 @@ campaign:
       no_reference_section: true
 
     - folder: "2023-04-03-azure-openai-services"
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "Unleash the power of Azure OpenAI"
@@ -54,7 +55,7 @@ campaign:
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]
-      social_tag: "#AzureCognitiveServices"
+      social_tag: "#AzureCognitiveServices #IntelligentApps"
       canonical: https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/how-copilot-helps-developers-generate-code-for-a-form-recognizer/ba-p/3753813
 
 
@@ -78,7 +79,7 @@ campaign:
       authors: [Ruth]
       keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
-      social_tag: "#AIEthics"
+      social_tag: "#AIEthics #AIforAll"
       canonical: https://www.microsoft.com/ai/our-approach
 
 
@@ -90,7 +91,7 @@ campaign:
       authors: [Henk]
       keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
-      social_tag: "#Accessibility"
+      social_tag: "#Accessibility #AIforAll"
       canonical: https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai/
 
 
@@ -114,12 +115,11 @@ campaign:
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "#OpenAI"
+      social_tag: "#OpenAI #IntelligentApps"
       canonical: https://github.com/Azure-Samples/azure-ai
 
 
     - folder: "2023-04-11-build-chatgpt"
-      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "How to build your own ChatGPT"
@@ -144,7 +144,6 @@ campaign:
 
 
     - folder: "2023-04-13-inside-onnx-excel"
-      visible: false
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "NLP Models in Excel w/ ONNX Runtime"
@@ -236,12 +235,11 @@ campaign:
       authors: [Ruth]
       keywords: [Machine-Learning, Azure-AI, rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers, 'machine-learning-debugging-tools', 'responsible-ai-tools']
-      social_tag: "#AIEthics"
+      social_tag: "#AIEthics #AIforAll"
       canonical: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948
 
 
     - folder: "2023-04-21-mlops-intro"
-      visible: false
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Streamline Ops w/ Azure MLOps"
