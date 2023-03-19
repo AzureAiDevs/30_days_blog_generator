@@ -1,1 +1,0 @@
-Unleashing the power of AI with Azure OpenAI! Data Scientists, ML or MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, reasoning over data, and the DALL-E 2 model!

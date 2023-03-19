@@ -1,6 +1,8 @@
 {% set image_url = static_img_path ~ '/banner-day' ~ day ~ '.png' -%}
 {% set blog_url = daily_blog_url ~ '/' ~ slug ~ 'day' ~ day -%}
-{% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ description -%}
+{% set twitter_description = description -%}
+{% if tweet %}{% set twitter_description = tweet %}{% endif -%}
+{% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ twitter_description -%}
 ---
 slug: "day{{ day }}"
 title: "{{ day }}. {{ emoji }}{{ title }}"

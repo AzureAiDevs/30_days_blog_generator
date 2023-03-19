@@ -6,9 +6,9 @@ and index.md markdown file from a template
 import datetime
 import os
 import pathlib
+import argparse
 import jinja2   # https://pypi.org/project/Jinja2/
 import oyaml as yaml
-import argparse
 import banner
 
 parser = argparse.ArgumentParser()
@@ -21,18 +21,6 @@ TEMPLATE_FILE = "template.md"
 DAYS_FILE = "blog.yaml"
 
 banner = banner.BANNER("authors.yml", "https://aka-ms/ai-april")
-
-# banner_definition = {
-#     "folder": "assets/test",
-#     "audience": "All AI Developers",
-#     "title": "Introduction to Azure ML",
-#     "day": "1",
-#     "keywords": [ 'test', 'Azure-OpenAI-Services', 'Azure-Applied-AI-Services', 'Cognitive-Services', 'Custom-Vision', 'Azure-Applied-AI-Services' ],
-#     "authors": [ 'Dave', 'Bea' ]
-# }
-
-# banner.create_banner(banner_definition)
-
 
 
 def validate_data(data):
