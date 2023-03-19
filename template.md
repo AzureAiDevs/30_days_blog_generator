@@ -1,3 +1,6 @@
+{% set image_url = static_img_path ~ '/banner-day' ~ day ~ '.png' -%}
+{% set blog_url = daily_blog_url ~ '/' ~ slug ~ 'day' ~ day -%}
+{% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ description -%}
 ---
 slug: "day{{ day }}"
 title: "{{ day }}. {{ emoji }}{{ title }}"
@@ -9,24 +12,34 @@ toc_max_heading_level: 3
 {% if keywords %}keywords: {{ keywords }}{% endif %}
 {% if tags %}tags: {{ tags }}{% endif %}
 
-image: "{{ static_img_path }}/banner-day{{ day }}.png"
-description: "{{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags -}} {% if social_tag %} {{ social_tag }}{% endif %}"
+image: {{ image_url }}
+description: "{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags -}} {% if social_tag %} {{ social_tag }}{% endif %}"
 ---
 
-<head>  
+import Social from '@site/src/components/social';
+
+<head>
 
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/day{{ day }}" {% endif %} />
 
 </head>
 
 {% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
-- 📬 [Monthly AI and Machine Learning Microsoft Tech Newsletter](https://developer.microsoft.com/en-us/Newsletter/)
-<!-- - 📰 [Subscribe to the #30DaysOfAzureAI RSS feed]({{ daily_blog_url }}/rss.xml) -->
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
 - 🏫 [Bookmark the Azure AI Technical Community](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI)
 - 🙋🏾‍♂️ [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ day }}-{{ title|lower|replace(":", "")|replace(" ", "-") }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
+### Please share
+
+<Social
+    page_url="{{ blog_url }}"
+    image_url="{{ image_url }}"
+    title="{{ title }}"
+    description= "{% if tweet %}{{ emoji}}Day {{ day }} of #{{ campaign }}. {{ tweet }}{% else %}{{ twitter_description }}{% endif %}"
+    hashtags="{{ social_tags }}{% if social_tag %},{{ social_tag }}{% endif %}"
+    hashtag="#30DaysOfAzureAi"
+/>
 
 ## 🗓️ Day {{ day }} of #30DaysOfAzureAI
 
