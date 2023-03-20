@@ -1,4 +1,3 @@
 - Azure OpenAI Service.
 - Using large-scale generative AI models.
 - Code generation and reasoning over data.
-- DALL-E 2 model.

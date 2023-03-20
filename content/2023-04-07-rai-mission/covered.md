@@ -1,3 +1,3 @@
+- Why Responsible AI is important.
 - Microsoft's commitment to Responsible AI.
-- Why you should care deeply about Responsible AI.
 - Microsoft's AI strategy.

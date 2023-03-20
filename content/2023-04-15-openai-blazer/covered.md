@@ -1,3 +1,3 @@
-- Microsoft Blazor and Azure OpenAI consumption.
+- Microsoft Blazor and Azure OpenAI integration.
 - Set up guide for Azure OpenAI service.
 - Code for wrapping the OpenAIClient class and creating a UI.

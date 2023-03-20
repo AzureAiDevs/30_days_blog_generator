@@ -1,3 +1,3 @@
-- The Azure AI Hub repo
+- The Azure AI Hub GitHub repo
 - Code samples and discussion channels.
 - Best practices for using the Azure AI SDKs.

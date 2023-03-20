@@ -1,3 +1,3 @@
 - Azure OpenAI Playground.
-- Custom data sets, experiment management, and model visualization.
+- Custom datasets, experiment management, and model visualization.
 - Flexible Azure OpenAI service offerings.

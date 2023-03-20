@@ -346,7 +346,7 @@ campaign:
       audience: "Azure AI Developers"
       title: "Continuing your AI Journey✨"
       description: "Continuing your Azure AI Journey"
-      authors: [Dave]
+      authors: [Dave, Meer, Valentina, Ruth, Bea, Henk, Arun, Heidi, Cassie, Shuyin, Michael, Vlad, Setu, Bethany, Arafat ]
       keywords: [ Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, MLOps, rai, CoPilot, Blazor ]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals]
       canonical: 
