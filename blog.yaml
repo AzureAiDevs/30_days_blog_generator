@@ -33,7 +33,7 @@ campaign:
       keywords: [Azure-OpenAI-Services, Machine-Learning, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
       social_tag: "OpenAI"
-      canonical: https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706
+      canonical: "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover"
       tweet: "Unleashing the power of AI with Azure OpenAI! Data Scientists, ML, MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, and DALL-E 2"
 
     - folder: "2023-04-04-openai-playground"
@@ -58,7 +58,7 @@ campaign:
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]
       social_tag: "CognitiveServices,IntelligentApps,GitHubCopilot"
-      canonical: https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/how-copilot-helps-developers-generate-code-for-a-form-recognizer/ba-p/3753813
+      canonical: "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/how-copilot-helps-developers-generate-code-for-a-form-recognizer/ba-p/3753813?WT.mc_id=aiml-89446-dglover"
       tweet: "Today, we're diving into GitHub Copilot and Azure #FormRecognizer to build a receipts app. Learn how Copilot can increase productivity."
 
     - folder: "2023-04-06-azure-ml-intro"
@@ -82,7 +82,7 @@ campaign:
       keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
       social_tag: "AIEthics,AIforAll"
-      canonical: https://www.microsoft.com/ai/our-approach
+      canonical: "https://www.microsoft.com/ai/our-approach?WT.mc_id=aiml-89446-dglover"
 
 
     - folder: "2023-04-08-ai-accessibility"
@@ -94,7 +94,7 @@ campaign:
       keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
       social_tag: "Accessibility,AIforAll"
-      canonical: https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai/
+      canonical: "https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai?WT.mc_id=aiml-89446-dglover"
 
 
     - folder: "2023-04-09-recap-fundamentals"
@@ -132,7 +132,7 @@ campaign:
       keywords: [Azure-OpenAI-Services, Cognitive-Search, Azure-AI]
       tags: [ai-april, azure-open-ai, azure-cognitive-services, app-developers]
       social_tag: "OpenAI,ChatGPT"
-      canonical: https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087?WT.mc_id=aiml-89446-dglover
+      canonical: "https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087?WT.mc_id=aiml-89446-dglover"
       tweet: "Build your ChatGPT with the power of Azure Cognitive Search and Azure OpenAI Service! Distinguished engineer Pablo Castro will show you how to create a ChatGPT using your own data."
 
     - folder: "2023-04-12-onnx-dotnet"
@@ -242,7 +242,7 @@ campaign:
       keywords: [Machine-Learning, Azure-AI, rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers, 'machine-learning-debugging-tools', 'responsible-ai-tools']
       social_tag: "AIEthics,AIforAll"
-      canonical: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948
+      canonical: "https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948?WT.mc_id=aiml-89446-dglover"
 
 
     - folder: "2023-04-21-mlops-intro"
@@ -254,7 +254,7 @@ campaign:
       keywords: [MLOps, Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers]
       social_tag: "AzureMLOps"
-      canonical: https://learn.microsoft.com/events/ignite-2022/cll99-learn-live-start-machine-learning-lifecycle-with-mlops
+      canonical: "https://learn.microsoft.com/events/ignite-2022/cll99-learn-live-start-machine-learning-lifecycle-with-mlops?WT.mc_id=aiml-89446-dglover"
 
 
     - folder: "2023-04-23-recap-week-three"
@@ -290,7 +290,7 @@ campaign:
       keywords: [Data_Science_Beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "DataScience"
-      canonical: https://microsoft.github.io/Data-Science-For-Beginners
+      canonical: "https://microsoft.github.io/Data-Science-For-Beginners?WT.mc_id=aiml-89446-dglover"
 
 
     - folder: "2023-04-26-ml-ai-workshops"
@@ -302,7 +302,7 @@ campaign:
       keywords: [ml-for-beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "MachineLearning"
-      canonical: "https://microsoft.github.io/ML-For-Beginners/"
+      canonical: "https://microsoft.github.io/ML-For-Beginners?WT.mc_id=aiml-89446-dglover"
 
 
     - folder: "2023-04-27-patient-rego-workshop"
