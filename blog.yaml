@@ -20,7 +20,7 @@ campaign:
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai]
       canonical: https://youtu.be/D7_RN5Gc-RE
       no_reference_section: true
-      social_tag: "OpenAI"
+      social_tag: "AzureOpenAI"
       tweet: "Today, we're excited to share the Global AI Dev Conf keynote featuring senior Azure AI leaders John Montgomery and Bob Breynaert. Let's get started!"
 
     - folder: "2023-04-03-azure-openai-services"
@@ -32,7 +32,7 @@ campaign:
       authors: [Meer]
       keywords: [Azure-OpenAI-Services, Machine-Learning, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
-      social_tag: "OpenAI"
+      social_tag: "AzureOpenAI"
       canonical: "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover"
       tweet: "Unleashing the power of AI with Azure OpenAI! Data Scientists, ML, MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, and DALL-E 2"
 
@@ -44,8 +44,9 @@ campaign:
       authors: [Valentina]
       keywords: [Azure-OpenAI-Services, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
-      social_tag: "OpenAI"
+      social_tag: "AzureOpenAI,ConversationalAI"
       canonical: https://medium.com/microsoftazure/azure-openai-playground-279f1f3da562
+      tweet: "Ready to dive into the world of conversational AI? Join us today as we explore the Azure OpenAI Service Playground! From custom datasets to model visualization."
 
 
     - folder: "2023-04-05-copilot-form-recognizer"
@@ -71,6 +72,7 @@ campaign:
       tags: [azure-ai, azure-ml, 30-days-of-azure-ai]
       social_tag: "AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-introduction/
+      tweet: "Unlock the power of machine learning with Azure ML! Learn about the benefits of cloud computing for ML projects and explore key Azure ML concepts with our primer."
 
 
     - folder: "2023-04-07-rai-mission"
@@ -81,8 +83,9 @@ campaign:
       authors: [Ruth]
       keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
-      social_tag: "AIEthics,AIforAll"
+      social_tag: "AIEthics,AIforAll,ResponsibleAI"
       canonical: "https://www.microsoft.com/ai/our-approach?WT.mc_id=aiml-89446-dglover"
+      tweet: "Discover why Responsible AI matters and how Microsoft is leading the charge. Learn about the principles guiding Microsoft's approach to AI and how it's investing in a future that's beneficial for all."
 
 
     - folder: "2023-04-08-ai-accessibility"
@@ -95,7 +98,7 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
       social_tag: "Accessibility,AIforAll"
       canonical: "https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai?WT.mc_id=aiml-89446-dglover"
-
+      tweet: "Join Microsoft's mission to break down barriers! Learn about the 6 ways to improve accessibility with Azure AI and empower the 1 billion ppl living with disabilities."
 
     - folder: "2023-04-09-recap-fundamentals"
       emoji: 🏁
@@ -117,7 +120,7 @@ campaign:
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "OpenAI,IntelligentApps"
+      social_tag: "AzureOpenAI,IntelligentApps"
       canonical: https://github.com/Azure-Samples/azure-ai
       tweet: "AI App developers don't miss out on exploring the Azure AI Hub for OpenAI and Cognitive Services SDK samples. Build intelligent apps with Azure AI Services."
 
@@ -131,7 +134,7 @@ campaign:
       authors: [Heidi]
       keywords: [Azure-OpenAI-Services, Cognitive-Search, Azure-AI]
       tags: [ai-april, azure-open-ai, azure-cognitive-services, app-developers]
-      social_tag: "OpenAI,ChatGPT"
+      social_tag: "AzureOpenAI,ChatGPT"
       canonical: "https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087?WT.mc_id=aiml-89446-dglover"
       tweet: "Build your ChatGPT with the power of Azure Cognitive Search and Azure OpenAI Service! Distinguished engineer Pablo Castro will show you how to create a ChatGPT using your own data."
 
@@ -144,7 +147,8 @@ campaign:
       keywords: [dotnet, onnx, vscode, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       canonical: https://youtu.be/h6HWP5jpA5s
-      social_tag: "ONNX"
+      social_tag: "ONNX,dotnet"
+      tweet: "Cross-platform AI support is here! Build intelligent apps with ONNX and .NET. Learn how AI integrates with traditional programming in today's video!"
 
 
     - folder: "2023-04-13-inside-onnx-excel"
@@ -157,6 +161,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       social_tag: "ONNX"
       canonical: https://onnxruntime.ai/docs/tutorials/web/excel-addin-bert-js.html
+      tweet: "Excel + NLP + ONNX = 🔥! Get ready to build a powerful Excel add-in with BERT NLP using the ONNX Runtime."
 
 
     - folder: "2023-04-14-copilot"
@@ -167,9 +172,9 @@ campaign:
       authors: [Shuyin]
       keywords: ['Copilot','vscode',  Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot]
-      social_tag: "GitHubCopilot"
+      social_tag: "GitHubCopilot,IntelligentCoding,CodeSynthesis"
       canonical: https://github.blog/2023-02-14-github-copilot-now-has-a-better-ai-model-and-new-capabilities/
-
+      tweet: "Unlock the full potential of your code with GitHub Copilot's latest updates: faster, more accurate, and secure suggestions to boost productivity and build smarter, safer apps."
 
     - folder: "2023-04-15-openai-blazer"
       visible: true
@@ -180,7 +185,7 @@ campaign:
       authors: [Michael]
       keywords: ['Azure-OpenAI-Services', 'Blazor', 'vscode', Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot, open-ai]
-      social_tag: "OpenAI,Blazor,IntelligentApps"
+      social_tag: "AzureOpenAI,Blazor,IntelligentApps"
       canonical: https://blazorhelpwebsite.com/ViewBlogPost/2065
       tweet: "Learn how to build interactive web apps with Microsoft Blazor and Azure OpenAI. Create intelligent intuitive experiences. Take your web development to the next level!"
 
@@ -219,6 +224,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-pipeline/
+      tweet: "Unlock the potential of your ML projects with Azure ML Components & Pipelines. Streamline your development, boost productivity and take your hardwork to new heights. Begin with Azure ML today!"
 
 
     - folder: "2023-04-19-azureml-endpoints"
@@ -231,6 +237,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "AzureML"
       canonical: https://vladiliescu.net/aml-managed-endpoints-quickstart/
+      tweet: "Check out Azure Machine Learning's managed online endpoints feature! With built-in security, blue/green deployments, and auto-scaling, it's the perfect way to deploy and scale your models. 🚀"
 
 
     - folder: "2023-04-20-rai-part-1"
@@ -243,7 +250,7 @@ campaign:
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers, 'machine-learning-debugging-tools', 'responsible-ai-tools']
       social_tag: "AIEthics,AIforAll"
       canonical: "https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948?WT.mc_id=aiml-89446-dglover"
-
+      tweet: "Unlock the power of Responsible AI with the RAI Dashboard, a suite of open-source tools for model debugging, fairness assessment, and more, now available on Azure Machine Learning."
 
     - folder: "2023-04-21-mlops-intro"
       emoji: 🧑🏽‍🔬
@@ -255,7 +262,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers]
       social_tag: "AzureMLOps"
       canonical: "https://learn.microsoft.com/events/ignite-2022/cll99-learn-live-start-machine-learning-lifecycle-with-mlops?WT.mc_id=aiml-89446-dglover"
-
+      tweet: "Unleash your #MachineLearning potential! Join Cassie and Korey in today's #LearnLive and discover #Azure MLOps. Streamline your ML lifecycle with open source tooling, and take your models to the next level!"
 
     - folder: "2023-04-23-recap-week-three"
       emoji: 🧑🏽‍🔬
@@ -291,7 +298,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "DataScience"
       canonical: "https://microsoft.github.io/Data-Science-For-Beginners?WT.mc_id=aiml-89446-dglover"
-
+      tweet: "Just starting your #DataScience journey? Check out Microsoft's free 10-week, 20-lesson course for beginners! Learn about ethics, preparation, visualization, and more. Dive in and extract insights from data today!"
 
     - folder: "2023-04-26-ml-ai-workshops"
       emoji: 🏭
@@ -303,6 +310,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "MachineLearning"
       canonical: "https://microsoft.github.io/ML-For-Beginners?WT.mc_id=aiml-89446-dglover"
+      tweet: "Are you interested in starting your journey into Machine Learning? Check out the Microsoft Machine Learning for Beginners Curriculum, a free 12-week, 26-lesson course covering classic ML with Scikit-learn, NLP, and Time Series analysis. Let's dive in!"
 
 
     - folder: "2023-04-27-patient-rego-workshop"
@@ -315,6 +323,7 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,azure-cognitive-services,app-developers,workshop]
       social_tag: "AzureFormRecognizer"
       canonical: https://newpatiente2e.github.io/docs/
+      tweet: "Learn how to automate patient registration using Azure Form Recognizer with our one-hour hands-on lab. Develop a custom model, integrate it with a web app, and define application roles. Say goodbye to manual form filling and hello to the power of AI."
 
 
     - folder: "2023-04-28-stable-diffusion"
@@ -327,6 +336,7 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,azure-ml,ml-engineers,app-developers,workshop]
       social_tag: "AzureML"
       canonical: https://vladiliescu.net/stable-diffusion-web-ui-on-azure-ml/
+      tweet: "Ready to explore Stable Diffusion's image generative model on Azure ML? Learn how to install and configure the web UI on GPU compute instances, and improve performance and security with our tips and tricks."
 
 
     - folder: "2023-04-29-azure-personalizer"
@@ -339,7 +349,7 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,app-developers,workshop,azure-cognitive-services]
       social_tag: "AzurePersonalizer"
       canonical: https://www.arafattehsin.com/reinforcement-learning-in-apps-bots-websites-with-azure-personalizer-part-1
-
+      tweet: "Maximize your business results with Azure Personalizer - a machine learning-based service that creates personalized experiences for your customers based on their preferences and behavior. Learn how to build and integrate this powerful tool to provide tailored content and actions to a large user base."
 
     - folder: "2023-04-30-recap-final"
       emoji: 🏭

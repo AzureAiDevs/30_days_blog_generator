@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome6",
+    "$ref": "#/definitions/Welcome1",
     "definitions": {
-        "Welcome6": {
+        "Welcome1": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -13,7 +13,7 @@
             "required": [
                 "campaign"
             ],
-            "title": "Welcome6"
+            "title": "Welcome1"
         },
         "Campaign": {
             "type": "object",
@@ -66,11 +66,14 @@
                 "folder": {
                     "type": "string"
                 },
+                "visible": {
+                    "type": "boolean"
+                },
                 "emoji": {
-                    "$ref": "#/definitions/Emoji"
+                    "type": "string"
                 },
                 "audience": {
-                    "$ref": "#/definitions/Audience"
+                    "type": "string"
                 },
                 "title": {
                     "type": "string"
@@ -106,21 +109,18 @@
                             "format": "uri",
                             "qt-uri-protocols": [
                                 "https"
-                            ],
-                            "qt-uri-extensions": [
-                                ".html"
                             ]
                         }
                     ]
                 },
+                "no_reference_section": {
+                    "type": "boolean"
+                },
                 "social_tag": {
                     "type": "string"
                 },
-                "references": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                "tweet": {
+                    "type": "string"
                 }
             },
             "required": [
@@ -132,29 +132,10 @@
                 "folder",
                 "keywords",
                 "tags",
-                "title"
+                "title",
+                "tweet"
             ],
             "title": "Day"
-        },
-        "Audience": {
-            "type": "string",
-            "enum": [
-                "Azure AI Developers",
-                "Azure AI App Developers",
-                "Azure ML Developers",
-                "Azure AI Workshop"
-            ],
-            "title": "Audience"
-        },
-        "Emoji": {
-            "type": "string",
-            "enum": [
-                "🏁",
-                "🧑‍💻",
-                "🧑🏽‍🔬",
-                "🏭"
-            ],
-            "title": "Emoji"
         }
     }
 }
