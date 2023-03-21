@@ -15,7 +15,7 @@ toc_max_heading_level: 3
 {% if tags %}tags: {{ tags }}{% endif %}
 
 image: {{ image_url }}
-description: "{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }} {{ daily_blog_url }}/day{{ day }} {{ social_tags -}} {% if social_tag %} {{ social_tag }}{% endif %}"
+description: "{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }} {{ daily_blog_url }}/day{{ day }}"
 ---
 
 import Social from '@site/src/components/social';
