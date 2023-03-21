@@ -22,6 +22,19 @@ import Social from '@site/src/components/social';
 
 <head>
 
+  <meta name="twitter:url" content="{{ blog_url }}" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }}" />
+  <meta name="twitter:image" content="{{ image_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta property="og:url" content="{{ blog_url }}" />
+  <meta property="og:title" content="Welcome to day {{day}} {{ emoji }}{{ title }}" />
+  <meta property="og:description" content="{{ description }} {{ blog_url }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}" />
+  <meta property="og:image" content="{{ image_url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Azure AI Developer" />
+
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/day{{ day }}" {% endif %} />
 
 </head>
