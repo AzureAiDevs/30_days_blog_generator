@@ -277,7 +277,7 @@ campaign:
 
     - folder: "2023-04-24-mlops-accelerator"
       emoji: 🏭
-      audience: "Azure AI Workshop"
+      audience: "Azure AI Workshops"
       title: "MLOps Accelerator Explained"
       description: "Accelerating MLOps with the v2 Solution Accelerator"
       authors: [Setu]
@@ -290,7 +290,7 @@ campaign:
 
     - folder: "2023-04-25-data-science-beginners"
       emoji: 🏭
-      audience: "Azure AI Workshop"
+      audience: "Azure AI Workshops"
       title: "Data Science for Beginners"
       description: "Foundations of Data Science: Workshops for Beginners"
       authors: [Bethany]
@@ -302,7 +302,7 @@ campaign:
 
     - folder: "2023-04-26-ml-ai-workshops"
       emoji: 🏭
-      audience: "Azure AI Workshop"
+      audience: "Azure AI Workshops"
       title: "Machine Learning for Beginners"
       description: "Learn about the Microsoft Machine Learning for Beginners Curriculum"
       authors: [Bethany]
@@ -315,7 +315,7 @@ campaign:
 
     - folder: "2023-04-27-patient-rego-workshop"
       emoji: 🏭
-      audience: "Azure AI Workshop"
+      audience: "Azure AI Workshops"
       title: "Build a Patient Registration App"
       description: "Building a Patient Registration Web App with Azure Form Recognizer"
       authors: [Dave]
@@ -328,7 +328,7 @@ campaign:
 
     - folder: "2023-04-28-stable-diffusion"
       emoji: 🏭
-      audience: "Azure AI Workshop"
+      audience: "Azure AI Workshops"
       title: "Stable Diffusion on Azure ML"
       description: "How to run Stable Diffusion Web UI on Azure ML compute instances"
       authors: [Vlad]
@@ -341,7 +341,7 @@ campaign:
 
     - folder: "2023-04-29-azure-personalizer"
       emoji: 🏭
-      audience: "Azure AI Workshop"
+      audience: "Azure AI Workshops"
       title: "Enhance CX with Azure Personalizer"
       description: "Maximizing Business Results with Azure Personalizer: A Machine Learning-Based Service for Personalized Customer Experiences"
       authors: [Arafat]
