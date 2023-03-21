@@ -167,7 +167,7 @@ campaign:
       authors: [Shuyin]
       keywords: ['Copilot','vscode',  Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot]
-      social_tag: "Copilot"
+      social_tag: "GitHubCopilot"
       canonical: https://github.blog/2023-02-14-github-copilot-now-has-a-better-ai-model-and-new-capabilities/
 
 

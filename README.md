@@ -122,3 +122,10 @@ If you wish to update a blog item, then specify the folder name defined in the b
 ```bash
 python3 generator.py -f "2023-04-04-openai-playground"
 ```
+
+
+### Convert Blog.yaml to JSON
+
+```bash
+python3 -c 'import sys, oyaml as yaml, json; json.dump (yaml.load (sys.stdin, Loader=yaml.Loader), sys.stdout, indent=4)' < blog.yaml > tweets.json
+```
