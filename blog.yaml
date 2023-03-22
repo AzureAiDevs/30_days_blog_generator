@@ -11,7 +11,7 @@ campaign:
   days:
     - folder: "2023-03-29-kickoff"
       visible: true
-      emoji: 🏁
+      emoji: 🚀
       audience: "Azure AI Developers"
       title: "Kick Starting AI April Keynote"
       description: "Join us for 30 Days Of Azure AI learning, skilling and discussions"
@@ -120,7 +120,7 @@ campaign:
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "AzureOpenAI,IntelligentApps"
+      social_tag: "AzureOpenAI,IntelligentApps,AzureSDK"
       canonical: https://github.com/Azure-Samples/azure-ai
       tweet: "AI App developers don't miss out on exploring the Azure AI Hub for OpenAI and Cognitive Services SDK samples. Build intelligent apps with Azure AI Services."
 
@@ -147,7 +147,7 @@ campaign:
       keywords: [dotnet, onnx, vscode, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
       canonical: https://youtu.be/h6HWP5jpA5s
-      social_tag: "ONNX,dotnet"
+      social_tag: "ONNXRuntime,dotnet"
       tweet: "Cross-platform AI support is here! Build intelligent apps with ONNX and .NET. Learn how AI integrates with traditional programming in today's video!"
 
 
@@ -159,7 +159,7 @@ campaign:
       authors: [Cassie]
       keywords: [onnx, JavaScript, Excel, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "ONNX"
+      social_tag: "ONNXRuntime"
       canonical: https://onnxruntime.ai/docs/tutorials/web/excel-addin-bert-js.html
       tweet: "Excel + NLP + ONNX = 🔥! Get ready to build a powerful Excel add-in with BERT NLP using the ONNX Runtime."
 

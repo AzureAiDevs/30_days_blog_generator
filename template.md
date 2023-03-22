@@ -87,7 +87,11 @@ The following list is the main points of the post. There should be 3-4 main poin
 - Main point 4
 -->
 
+{% if canonical -%}
+[![Image banner for day {{day}}]({{ static_img_folder }}/banner-day{{day}}.png)]({{ canonical }})
+{% else %}
 ![Image banner for day {{day}}]({{ static_img_folder }}/banner-day{{day}}.png)
+{% endif %}
 
 <!-- README
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.
