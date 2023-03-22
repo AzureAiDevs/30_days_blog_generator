@@ -4,6 +4,7 @@
 {% if tweet %}{% set twitter_description = tweet %}{% endif -%}
 {% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ twitter_description -%}
 {% set discussion_url = 'https://github.com/AzureAiDevs/hub/discussions/categories/' ~ audience | lower | replace(" ", "-") -%}
+{% set tech_community_url = 'https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI' -%}
 ---
 slug: "day{{ day }}"
 title: "{{ day }}. {{ emoji }}{{ title }}"
@@ -42,7 +43,7 @@ import Social from '@site/src/components/social';
 
 {% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
-- 🏫 [Bookmark the Azure AI Technical Community](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI)
+- 🏫 [Bookmark the Azure AI Technical Community]({{ tech_community_url }})
 - 🙋🏾‍♂️ [Ask a question about this post on GitHub Discussions]({{ discussion_url }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
