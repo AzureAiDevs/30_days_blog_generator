@@ -3,6 +3,7 @@
 {% set twitter_description = description -%}
 {% if tweet %}{% set twitter_description = tweet %}{% endif -%}
 {% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ twitter_description -%}
+{% set discussion_url = 'https://github.com/AzureAiDevs/hub/discussions/categories/' ~ audience | lower | replace(" ", "-") -%}
 ---
 slug: "day{{ day }}"
 title: "{{ day }}. {{ emoji }}{{ title }}"
@@ -29,8 +30,8 @@ import Social from '@site/src/components/social';
   <meta name="twitter:card" content="summary_large_image" />
 
   <meta property="og:url" content="{{ blog_url }}" />
-  <meta property="og:title" content="Welcome to day {{day}} {{ emoji }}{{ title }}" />
-  <meta property="og:description" content="{{ description }} {{ blog_url }} {{ social_tags }} {% if social_tag %}{{ social_tag }}{% endif %}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }}" />
   <meta property="og:image" content="{{ image_url }}" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Azure AI Developer" />
@@ -42,7 +43,7 @@ import Social from '@site/src/components/social';
 {% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
 - 🏫 [Bookmark the Azure AI Technical Community](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI)
-- 🙋🏾‍♂️ [Ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ audience | lower | replace(" ", "-") }})
+- 🙋🏾‍♂️ [Ask a question about this post on GitHub Discussions]({{ discussion_url }})
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
 ### Please share
@@ -121,7 +122,7 @@ Today's [article]({{ canonical }}).
 
 ## 🙋🏾‍♂️ Questions?
 
-[Remember, you can ask a question about this post on GitHub Discussions](https://github.com/AzureAiDevs/hub/discussions/categories/{{ audience | lower | replace(" ", "-") }})
+[Remember, you can ask a question about this post on GitHub Discussions]({{ discussion_url }})
 
 ## 📍 30 days roadmap
 
