@@ -129,4 +129,4 @@ Today's [article]({{ canonical }}).
 
 What's next? View the [#30DaysOfAzureAI Roadmap](/hub/roadmap/30days)
 
-[![]({{ static_img_folder }}/rss.png) Click to subscribe](https://azureaidevs.github.io/hub/2023-aia/rss.xml)
+[![The image is the RSS feed available icon]({{ static_img_folder }}/rss.png) Click to subscribe](https://azureaidevs.github.io/hub/2023-aia/rss.xml)

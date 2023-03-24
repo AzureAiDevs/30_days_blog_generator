@@ -9,7 +9,7 @@ import pathlib
 import argparse
 import jinja2   # https://pypi.org/project/Jinja2/
 import oyaml as yaml
-import banner
+import banner_1080p
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--folder_item")
@@ -20,7 +20,7 @@ parser.add_argument("-c", "--content_name")
 TEMPLATE_FILE = "template.md"
 DAYS_FILE = "blog.yaml"
 
-banner = banner.BANNER("authors.yml", "https://aka-ms/ai-april")
+banner = banner_1080p.BANNER_1080p("authors.yml", "https://aka-ms/ai-april")
 
 
 def validate_data(data):
@@ -139,6 +139,8 @@ def main(website_folder, content_name, folder_item):
         }
 
         banner.create_banner(banner_definition)
+
+        # return
 
     print("Done")
 

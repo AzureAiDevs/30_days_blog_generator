@@ -81,7 +81,7 @@ campaign:
       title: "The Mission of Responsible AI"
       description: "Why you should care about Responsible AI and Microsoft role"
       authors: [Ruth]
-      keywords: [rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
+      keywords: [rai-accountable,  rai-inclusion, rai-transparency, rai-fairness, rai-privacy-security ]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
       social_tag: "AIEthics,AIforAll,ResponsibleAI"
       canonical: "https://www.microsoft.com/ai/our-approach?WT.mc_id=aiml-89446-dglover"
@@ -94,7 +94,7 @@ campaign:
       title: "Improve accessibility w/ Azure AI"
       description: "Learn about the 6 ways to improve accessibility with Azure AI"
       authors: [Henk]
-      keywords: [Accessibility-Employment, Accessibility-Modern-Life, Accessibility-Human-Connection]
+      keywords: [Accessibility-Employment, Accessibility-Human-Connection, Accessibility-Modern-Life]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
       social_tag: "Accessibility,AIforAll"
       canonical: "https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai?WT.mc_id=aiml-89446-dglover"
