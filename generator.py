@@ -135,7 +135,8 @@ def main(website_folder, content_name, folder_item):
             "title": item["title"],
             "day": day,
             "keywords": item['keywords'],
-            "authors": item['authors']
+            "authors": item['authors'],
+            "date": item['folder'][:10]
         }
 
         banner.create_banner(banner_definition)

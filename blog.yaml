@@ -13,7 +13,7 @@ campaign:
       visible: true
       emoji: 🚀
       audience: "Azure AI Developers"
-      title: "Kick Starting AI April Keynote"
+      title: "Kick Start AI April Keynote"
       description: "Join us for 30 Days Of Azure AI learning, skilling and discussions"
       authors: [Dave]
       keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning]
@@ -202,6 +202,7 @@ campaign:
 
 
     - folder: "2023-04-17-inside-azureml-train-deploy"
+      visible: true
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Scaling Model Dev with Azure ML"
@@ -276,6 +277,7 @@ campaign:
 
 
     - folder: "2023-04-24-mlops-accelerator"
+      visible: true
       emoji: 🏭
       audience: "Azure AI Workshops"
       title: "MLOps Accelerator Explained"
