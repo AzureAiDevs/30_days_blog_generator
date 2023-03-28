@@ -5,7 +5,7 @@ campaign:
   static_img_folder: "./../../static/img/2023-aia"
   static_img_path: "https://azureaidevs.github.io/hub/img/2023-aia"
   daily_blog_url: "https://azureaidevs.github.io/hub/2023-aia"
-  social_tags: "AzureAiDevs,AI"
+  social_tags: "AI"
 
 
   days:
@@ -44,7 +44,7 @@ campaign:
       authors: [Valentina]
       keywords: [Azure-OpenAI-Services, Azure-AI]
       tags: [azure-ai, azure-open-ai, 30-days-of-azure-ai]
-      social_tag: "AzureOpenAI,ConversationalAI"
+      social_tag: "AzureOpenAI"
       canonical: https://medium.com/microsoftazure/azure-openai-playground-279f1f3da562
       tweet: "Ready to dive into the world of conversational AI? Join us today as we explore the Azure OpenAI Service Playground! From custom datasets to model visualization."
 
@@ -58,7 +58,7 @@ campaign:
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
       tags: [azure-ai, azure-cognitive-services, 30-days-of-azure-ai]
-      social_tag: "CognitiveServices,IntelligentApps,GitHubCopilot"
+      social_tag: "IntelligentApps"
       canonical: "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/how-copilot-helps-developers-generate-code-for-a-form-recognizer/ba-p/3753813?WT.mc_id=aiml-89446-dglover"
       tweet: "Today, we're diving into GitHub Copilot and Azure #FormRecognizer to build a receipts app. Learn how Copilot can increase productivity."
 
@@ -83,7 +83,7 @@ campaign:
       authors: [Ruth]
       keywords: [rai-accountable,  rai-inclusion, rai-transparency, rai-fairness, rai-privacy-security ]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
-      social_tag: "AIEthics,AIforAll,ResponsibleAI"
+      social_tag: "ResponsibleAI"
       canonical: "https://www.microsoft.com/ai/our-approach?WT.mc_id=aiml-89446-dglover"
       tweet: "Discover why Responsible AI matters, how Microsoft is leading the charge, and the principles guiding Microsoft's approach to AI."
 
@@ -96,7 +96,7 @@ campaign:
       authors: [Henk]
       keywords: [Accessibility-Employment, Accessibility-Human-Connection, Accessibility-Modern-Life]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,ai-for-accessibility]
-      social_tag: "Accessibility,AIforAll"
+      social_tag: "Accessibility"
       canonical: "https://azure.microsoft.com/blog/6-ways-to-improve-accessibility-with-azure-ai?WT.mc_id=aiml-89446-dglover"
       tweet: "Join Microsoft's mission to break down barriers! Learn about the 6 ways to improve accessibility with Azure AI and empower the 1 billion ppl living with disabilities."
 
@@ -120,7 +120,7 @@ campaign:
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "AzureOpenAI,IntelligentApps,AzureSDK"
+      social_tag: "AzureOpenAI,AzureSDK"
       canonical: https://github.com/Azure-Samples/azure-ai
       tweet: "AI App developers don't miss out on exploring the Azure AI Hub for OpenAI and Cognitive Services SDK samples. Build intelligent apps with Azure AI Services."
 
@@ -172,7 +172,7 @@ campaign:
       authors: [Shuyin]
       keywords: ['Copilot','vscode',  Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot]
-      social_tag: "GitHubCopilot,IntelligentCoding,CodeSynthesis"
+      social_tag: "GitHubCopilot"
       canonical: https://github.blog/2023-02-14-github-copilot-now-has-a-better-ai-model-and-new-capabilities/
       tweet: "Unlock the full potential of your code with GitHub Copilot's latest updates: faster, more accurate, and secure suggestions to boost productivity and build smarter, safer apps."
 
@@ -185,7 +185,7 @@ campaign:
       authors: [Michael]
       keywords: ['Azure-OpenAI-Services', 'Blazor', 'vscode', Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers, copilot, open-ai]
-      social_tag: "AzureOpenAI,Blazor,IntelligentApps"
+      social_tag: "AzureOpenAI,Blazor"
       canonical: https://blazorhelpwebsite.com/ViewBlogPost/2065
       tweet: "Learn how to build interactive web apps with Microsoft Blazor and Azure OpenAI. Create intelligent intuitive experiences. Take your web development to the next level!"
 
@@ -249,7 +249,7 @@ campaign:
       authors: [Ruth]
       keywords: [Machine-Learning, Azure-AI, rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers, 'machine-learning-debugging-tools', 'responsible-ai-tools']
-      social_tag: "AIEthics,AIforAll"
+      social_tag: "AIforAll"
       canonical: "https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/getting-started-with-azure-machine-learning-responsible-ai/ba-p/3746948?WT.mc_id=aiml-89446-dglover"
       tweet: "Unlock the power of Responsible AI with the RAI Dashboard, a suite of open-source tools for model debugging, fairness assessment, and more, now available on Azure Machine Learning."
 
@@ -285,7 +285,7 @@ campaign:
       authors: [Setu]
       keywords: [MLOps, Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-mlops]
-      social_tag: "AzureMLOps,MLOps"
+      social_tag: "AzureMLOps"
       canonical: https://github.com/Azure/mlops-v2
       tweet: "We're taking MLOps to the next level with the v2 Solution Accelerator! 🤖 Learn how to supercharge your machine learning workflows with a simplified, customizable enterprise-ready approach."
 
