@@ -91,9 +91,9 @@ class BANNER_1080p:
 
     def __add_profile_image(self, img, draw, item, name, tag, image_url):
         """Add profile image to the banner image"""
-        name_loc = [(520, 530), (520, 780)]
-        tag_loc = [(520, 586), (520, 836)]
-        image_loc = [(320, 515), (320, 750)]
+        name_loc = [(520, 530), (1320, 530)]
+        tag_loc = [(520, 586), (1320, 586)]
+        image_loc = [(320, 515), (1120, 515)]
         font_size = 46
 
         if item > len(name_loc) - 1:
@@ -110,8 +110,8 @@ class BANNER_1080p:
 
     def __add_keyword_image(self, img, draw, keywords):
         """Add keyword image to the banner image"""
-        keyword_loc = [(1030, 520), (1230, 520), (1430, 520), (1630, 520),
-                       (1030, 754), (1230, 754), (1430, 754), (1630, 754)]
+        keyword_loc = [(320, 800), (520, 800), (720, 800), (920, 800),
+                       (1120, 800), (1320, 800), (1520, 800), (1720, 800)]
         keyword_count = 0
         for keyword in keywords:
 
