@@ -18,7 +18,6 @@ campaign:
       authors: [Dave]
       keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai]
-      canonical: https://youtu.be/D7_RN5Gc-RE
       no_reference_section: true
       social_tag: "AzureOpenAI"
       tweet: "Today, we're excited to share the Global AI Dev Conf keynote featuring senior Azure AI leaders John Montgomery and Bob Breynaert. Let's get started!"
