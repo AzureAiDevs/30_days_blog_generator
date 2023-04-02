@@ -2,7 +2,7 @@
 {% set blog_url = daily_blog_url ~ '/' ~ slug ~ 'day' ~ day -%}
 {% set twitter_description = description -%}
 {% if tweet %}{% set twitter_description = tweet %}{% endif -%}
-{% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ twitter_description -%}
+{% set twitter_description = emoji ~ "Welcome to day " ~ day ~ " of #" ~ campaign ~ ". " ~ twitter_description-%}
 {% set discussion_url = 'https://github.com/AzureAiDevs/hub/discussions/categories/' ~ audience | lower | replace(" ", "-") -%}
 {% set tech_community_url = 'https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI' -%}
 ---

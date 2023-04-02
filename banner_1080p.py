@@ -10,7 +10,7 @@ import oyaml as yaml
 import datetime
 import random
 
-SUPERHERO_URL = 'https://raw.githubusercontent.com/AzureAiDevs/30_days_blog_generator/main/assets/superheros/superhero-{hero}.png'
+SUPERHERO_FILEPATH = 'assets/superheros/superhero-{hero}.png'
 
 
 class BANNER_1080p:
@@ -39,16 +39,20 @@ class BANNER_1080p:
         with open(file_path, "r", encoding="utf8") as f:
             self.authors = yaml.load(f, Loader=yaml.Loader)
 
-    def __get_image_circle(self, url):
+    def __get_image_circle(self, url, hero_filename):
         """Get image from URL and convert to circle"""
 
-        try:
-            response = requests.get(url, timeout=10)
-            response.raise_for_status()  # Raise an HTTPError if status code >= 400
-        except BaseException as error:
-            raise Exception("Failed to fetch image: " + str(error))
-
-        image = Image.open(BytesIO(response.content))
+        if hero_filename is None:
+            try:
+                response = requests.get(url, timeout=10)
+                response.raise_for_status()  # Raise an HTTPError if status code >= 400
+                image = Image.open(BytesIO(response.content))
+            except BaseException as error:
+                raise Exception("Failed to fetch image: " + str(error))
+        else:
+            # read the image from the local file
+            response = open(hero_filename, 'rb')
+            image = Image.open(response)
 
         size = image.size
         mask = Image.new('L', size, 0)
@@ -60,8 +64,6 @@ class BANNER_1080p:
         draw.ellipse((0, 0) + size, fill=None, outline='black', width=4)
 
         output.putalpha(mask)
-
-
 
         return output.resize((240, 240))
 
@@ -103,7 +105,7 @@ class BANNER_1080p:
         self.__add_text(draw, title, title_loc, title_font_size, self.font_bold_name, (111, 61, 212))
 
 
-    def __add_profile_image(self, img, draw, item, name, tag, image_url):
+    def __add_profile_image(self, img, draw, item, name, tag, image_url, hero_filename=None):
         """Add profile image to the banner image"""
         name_loc = [(580, 550), (1380, 550)]
         tag_loc = [(580, 606), (1380, 606)]
@@ -117,12 +119,12 @@ class BANNER_1080p:
         self.__add_text(draw, tag, tag_loc[item], font_size, self.font_name, (0, 0, 0))
 
         try:
-            output = self.__get_image_circle(image_url)
+            output = self.__get_image_circle(image_url, hero_filename=hero_filename)
             img.paste(output, image_loc[item], output)
         except BaseException as e:
             print(e)
 
-    def __add_keyword_image(self, img, draw, keywords):
+    def __add_keyword_image(self, img, keywords):
         """Add keyword image to the banner image"""
         keyword_loc = [(320, 800), (520, 800), (720, 800), (920, 800),
                        (1120, 800), (1320, 800), (1520, 800), (1720, 800)]
@@ -149,7 +151,7 @@ class BANNER_1080p:
 
         self.__add_banner_text(
             draw, banner_definition["audience"], banner_definition["title"], banner_definition["day"], banner_definition["date"])
-        self.__add_keyword_image(img, draw, banner_definition["keywords"])
+        self.__add_keyword_image(img, banner_definition["keywords"])
         for author in banner_definition["authors"]:
             author_item = self.authors.get(author)
 
@@ -161,8 +163,8 @@ class BANNER_1080p:
             item += 1
 
         if item == 1:
-            hero_url = SUPERHERO_URL.format(hero = self.hero_count)
-            self.__add_profile_image(img, draw, 1, "AI Superhero", "#dalle2 art", hero_url)
+            hero_filename = SUPERHERO_FILEPATH.format(hero = self.hero_count)
+            self.__add_profile_image(img, draw, 1, "AI Superhero", "#dalle2 art", None, hero_filename)
             self.hero_count += 1
 
         # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
