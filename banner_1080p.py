@@ -18,7 +18,7 @@ class BANNER_1080p:
 
     def __init__(self, file_path, blog_url):
         random.seed()
-        self.used_heroes = []
+        self.hero_count = 1
 
         self.blog_url = blog_url
 
@@ -64,7 +64,7 @@ class BANNER_1080p:
 
 
         return output.resize((240, 240))
-    
+
     def __add_text(self, draw, text, loc, font_size, font_name, color):
         """Add text to the image"""
         font = ImageFont.truetype(os.path.join(self.font_folder, font_name), font_size)
@@ -143,7 +143,6 @@ class BANNER_1080p:
     def create_banner(self, banner_definition):
         """Create the banner image"""
 
-        folder_count = banner_definition["folder_count"]
         img = Image.open('assets/banner-1080p.png')
         draw = ImageDraw.Draw(img)
         item = 0
@@ -160,23 +159,11 @@ class BANNER_1080p:
             self.__add_profile_image(
                 img, draw, item, author_item["name"], author_item["tag"], author_item["image_url"])
             item += 1
-        
+
         if item == 1:
-            # write code to generate a random ai superhero between 1 and 30 (inclusive) check if the number has been used before
-
-            hero = random.randint(1, folder_count)
-            # has this hero been used before?
-            if hero in self.used_heroes:
-                # if so, generate a new hero
-                while hero in self.used_heroes:
-                    hero = random.randint(1, folder_count)
-            # add the hero to the list of used heroes
-            self.used_heroes.append(hero)
-            # generate the url
-            hero_url = SUPERHERO_URL.format(hero = hero)
-
+            hero_url = SUPERHERO_URL.format(hero = self.hero_count)
             self.__add_profile_image(img, draw, 1, "AI Superhero", "#dalle2 art", hero_url)
- 
+            self.hero_count += 1
 
         # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
         # img.save(filename)
