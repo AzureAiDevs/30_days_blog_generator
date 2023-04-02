@@ -42,9 +42,10 @@ import Social from '@site/src/components/social';
 </head>
 
 {% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
+- 🍿 [Tune into the AI Show](https://aka.ms/ai-april-ai-show)
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
 - 🏫 [Bookmark the Azure AI Technical Community]({{ tech_community_url }})
-- 🙋🏾‍♂️ [Ask a question about this post on GitHub Discussions]({{ discussion_url }})
+- ❤️ [Learn about the Microsoft MVP Program](https://aka.ms/ai-april-mvp-program)
 - 💡 [Suggest a topic for a future post](https://github.com/AzureAiDevs/hub/discussions/categories/call-for-content)
 
 ### Please share

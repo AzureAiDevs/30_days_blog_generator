@@ -17,8 +17,8 @@ class BANNER_1080p:
         self.blog_url = blog_url
 
         self.font_folder = '/System/Library/Fonts/Supplemental'
-        self.font_name = 'Verdana.ttf'
-        self.font_bold_name = 'Verdana Bold.ttf'
+        self.font_name = 'Arial.ttf'
+        self.font_bold_name = 'Arial Bold.ttf'
 
         if platform.system() == 'Windows':
             self.font_folder = 'C:\\Windows\\Fonts'
@@ -49,9 +49,13 @@ class BANNER_1080p:
         draw = ImageDraw.Draw(mask)
         draw.ellipse((0, 0) + size, fill=255)
         output = ImageOps.fit(image, mask.size, centering=(0.5, 0.5))
+
         output.putalpha(mask)
 
-        return output.resize((180, 180))
+        draw = ImageDraw.Draw(output)
+        draw.ellipse((0, 0) + size, fill=None, outline='black', width=4)
+
+        return output.resize((240, 240))
     
     def __add_text(self, draw, text, loc, font_size, font_name, color):
         """Add text to the image"""
@@ -61,14 +65,16 @@ class BANNER_1080p:
     def __add_banner_text(self, draw, audience, title, day, date):
         """Add text to the banner image"""
         audience_loc = (310, 180)
+        date_loc = (50, 305)
+        day_loc = (50, 221)
+        divider_loc = (236, 150)
+        title_loc = (310, 312)
+
         audience_font_size = 110
-        day_loc = (120, 236)
-        day_font_size = 100
-        divider_loc = (236, 160)
-        divider_font_size = 201
-        title_loc = (310, 330)
-        title_font_size = 70
-        # Define the font size and font type
+        date_font_size = 55
+        day_font_size = 80
+        divider_font_size = 220
+        title_font_size = 80
 
 
         printable = set(string.printable)
@@ -78,29 +84,29 @@ class BANNER_1080p:
         date_string = datetime.datetime.strptime(date, '%Y-%m-%d')
         date = date_string.strftime('%b %d')
 
-        self.__add_text(draw, date_string.strftime('%a'), (50, 192), 80, self.font_bold_name, (111, 61, 212))
-        self.__add_text(draw, date, (50, 280), 55, self.font_bold_name, (111, 61, 212))
-        self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (127, 127, 127))
+        self.__add_text(draw, date_string.strftime('%a'), day_loc, day_font_size, self.font_bold_name, (111, 61, 212))
+        self.__add_text(draw, date, date_loc, date_font_size, self.font_bold_name, (111, 61, 212))
+        self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (0, 0, 0))
 
-        # self.__add_text(draw, 'DAY', (45, 307), 30, self.font_name, (127, 127, 127))
-        # self.__add_text(draw, "{:d}".format(day), day_loc, day_font_size, self.font_name, (127, 127, 127))
+        # self.__add_text(draw, 'DAY', (45, 307), 30, self.font_name, (0, 0, 0))
+        # self.__add_text(draw, "{:d}".format(day), day_loc, day_font_size, self.font_name, (0, 0, 0))
 
-        self.__add_text(draw, audience, audience_loc, audience_font_size, self.font_bold_name, (127, 127, 127))
+        self.__add_text(draw, audience, audience_loc, audience_font_size, self.font_bold_name, (0, 0, 0))
         self.__add_text(draw, title, title_loc, title_font_size, self.font_bold_name, (111, 61, 212))
 
 
     def __add_profile_image(self, img, draw, item, name, tag, image_url):
         """Add profile image to the banner image"""
-        name_loc = [(520, 530), (1320, 530)]
-        tag_loc = [(520, 586), (1320, 586)]
-        image_loc = [(320, 515), (1120, 515)]
+        name_loc = [(580, 550), (1380, 550)]
+        tag_loc = [(580, 606), (1380, 606)]
+        image_loc = [(320, 500), (1120, 500)]
         font_size = 46
 
         if item > len(name_loc) - 1:
             return
 
-        self.__add_text(draw, name, name_loc[item], font_size, self.font_name, (127, 127, 127))
-        self.__add_text(draw, tag, tag_loc[item], font_size, self.font_name, (127, 127, 127))
+        self.__add_text(draw, name, name_loc[item], font_size, self.font_name, (0, 0, 0))
+        self.__add_text(draw, tag, tag_loc[item], font_size, self.font_name, (0, 0, 0))
 
         try:
             output = self.__get_image_circle(image_url)
