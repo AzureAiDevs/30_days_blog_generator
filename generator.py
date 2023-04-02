@@ -130,6 +130,7 @@ def main(website_folder, content_name, folder_item):
 
         banner_definition = {
             "blog_folder": folder_name,
+            "folder_count": len(data['campaign']['days']),
             "static_image_folder": static_image_folder,
             "audience": item["audience"],
             "title": item["title"],

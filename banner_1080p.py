@@ -11,7 +11,6 @@ import datetime
 import random
 
 SUPERHERO_URL = 'https://raw.githubusercontent.com/AzureAiDevs/30_days_blog_generator/main/assets/superheros/superhero-{hero}.png'
-SUPERHERO_WOMAN = 'https://raw.githubusercontent.com/AzureAiDevs/30_days_blog_generator/main/assets/superheros/ai-developer-superhero-woman.png'
 
 
 class BANNER_1080p:
@@ -19,6 +18,7 @@ class BANNER_1080p:
 
     def __init__(self, file_path, blog_url):
         random.seed()
+        self.used_heroes = []
 
         self.blog_url = blog_url
 
@@ -143,6 +143,7 @@ class BANNER_1080p:
     def create_banner(self, banner_definition):
         """Create the banner image"""
 
+        folder_count = banner_definition["folder_count"]
         img = Image.open('assets/banner-1080p.png')
         draw = ImageDraw.Draw(img)
         item = 0
@@ -161,8 +162,20 @@ class BANNER_1080p:
             item += 1
         
         if item == 1:
-            hero_url = SUPERHERO_URL.format(hero = random.randint(1, 22))
-            self.__add_profile_image(img, draw, 1, "AI Superhero", "DALL-E 2 Digital Art", hero_url)
+            # write code to generate a random ai superhero between 1 and 30 (inclusive) check if the number has been used before
+
+            hero = random.randint(1, folder_count)
+            # has this hero been used before?
+            if hero in self.used_heroes:
+                # if so, generate a new hero
+                while hero in self.used_heroes:
+                    hero = random.randint(1, folder_count)
+            # add the hero to the list of used heroes
+            self.used_heroes.append(hero)
+            # generate the url
+            hero_url = SUPERHERO_URL.format(hero = hero)
+
+            self.__add_profile_image(img, draw, 1, "AI Superhero", "DALL-E 2 Art", hero_url)
  
 
         # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
