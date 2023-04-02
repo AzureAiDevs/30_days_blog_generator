@@ -28,13 +28,13 @@ class BANNER_1080p:
 
         if platform.system() == 'Windows':
             self.font_folder = 'C:\\Windows\\Fonts'
-            self.font_name = 'verdana.ttf'
-            self.font_bold_name = 'verdanab.ttf'
+            self.font_name = 'arial.ttf'
+            self.font_bold_name = 'arialbd.ttf'
 
-        if platform.system() == 'Linux':
-            self.font_folder = '/usr/share/fonts/truetype/dejavu'
-            self.font_name = 'DejaVuSans.ttf'
-            self.font_bold_name = 'DejaVuSans-Bold.ttf'
+        # if platform.system() == 'Linux':
+        #     self.font_folder = '/usr/share/fonts/truetype/dejavu'
+        #     self.font_name = 'DejaVuSans.ttf'
+        #     self.font_bold_name = 'DejaVuSans-Bold.ttf'
 
         with open(file_path, "r", encoding="utf8") as f:
             self.authors = yaml.load(f, Loader=yaml.Loader)
