@@ -175,7 +175,7 @@ class BANNER_1080p:
             # generate the url
             hero_url = SUPERHERO_URL.format(hero = hero)
 
-            self.__add_profile_image(img, draw, 1, "AI Superhero", "DALL-E 2 Art", hero_url)
+            self.__add_profile_image(img, draw, 1, "AI Superhero", "#dalle2 art", hero_url)
  
 
         # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
