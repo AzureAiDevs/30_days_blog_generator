@@ -8,12 +8,18 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 import requests
 import oyaml as yaml
 import datetime
+import random
+
+SUPERHERO_URL = 'https://raw.githubusercontent.com/AzureAiDevs/30_days_blog_generator/main/assets/superheros/superhero-{hero}.png'
+SUPERHERO_WOMAN = 'https://raw.githubusercontent.com/AzureAiDevs/30_days_blog_generator/main/assets/superheros/ai-developer-superhero-woman.png'
 
 
 class BANNER_1080p:
     """Load YAML file"""
 
     def __init__(self, file_path, blog_url):
+        random.seed()
+
         self.blog_url = blog_url
 
         self.font_folder = '/System/Library/Fonts/Supplemental'
@@ -50,10 +56,12 @@ class BANNER_1080p:
         draw.ellipse((0, 0) + size, fill=255)
         output = ImageOps.fit(image, mask.size, centering=(0.5, 0.5))
 
-        output.putalpha(mask)
-
         draw = ImageDraw.Draw(output)
         draw.ellipse((0, 0) + size, fill=None, outline='black', width=4)
+
+        output.putalpha(mask)
+
+
 
         return output.resize((240, 240))
     
@@ -151,6 +159,11 @@ class BANNER_1080p:
             self.__add_profile_image(
                 img, draw, item, author_item["name"], author_item["tag"], author_item["image_url"])
             item += 1
+        
+        if item == 1:
+            hero_url = SUPERHERO_URL.format(hero = random.randint(1, 22))
+            self.__add_profile_image(img, draw, 1, "AI Superhero", "DALL-E 2 Digital Art", hero_url)
+ 
 
         # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
         # img.save(filename)
