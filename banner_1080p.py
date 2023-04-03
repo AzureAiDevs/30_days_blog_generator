@@ -19,7 +19,7 @@ class BANNER_1080p:
 
     def __init__(self, file_path, blog_url):
         random.seed()
-        self.hero_count = 1
+        self.hero_id = 1
 
         self.blog_url = blog_url
 
@@ -40,12 +40,12 @@ class BANNER_1080p:
         with open(file_path, "r", encoding="utf8") as f:
             self.authors = yaml.load(f, Loader=yaml.Loader)
 
-    def __get_image_circle(self, author, url, hero_filepath):
+    def __get_image_circle(self, author_key, url, hero_id):
         """Get image from URL and convert to circle"""
 
         # get author from author folder cache
-        if author:
-            author_filename = AUTHOR_FILEPATH.format(author=author)
+        if author_key:
+            author_filename = AUTHOR_FILEPATH.format(author=author_key)
             # does author image exist in cache
             if os.path.exists(author_filename):
                 response = open(author_filename, 'rb')
@@ -53,6 +53,7 @@ class BANNER_1080p:
                 # fill in the background of the png file with white
                 if image.mode in ("RGBA", "P"):
                     # fill with a vibrate blue color
+                    # 69	116	199	
                     background = Image.new(image.mode[:-1], image.size, (73, 161, 233))
                     background.paste(image, image.split()[-1])
                     image = background
@@ -65,9 +66,8 @@ class BANNER_1080p:
                 except BaseException as error:
                     raise Exception("Failed to fetch image: " + str(error))
         else:
-            if hero_filepath:
-                # hero_filepath = SUPERHERO_FILEPATH.format(hero=random.randint(1, self.hero_count))
-                # read the image from the local file
+            if hero_id:
+                hero_filepath = SUPERHERO_FILEPATH.format(hero = self.hero_id)
                 response = open(hero_filepath, 'rb')
                 image = Image.open(response)
 
@@ -122,7 +122,7 @@ class BANNER_1080p:
         self.__add_text(draw, title, title_loc, title_font_size, self.font_bold_name, (111, 61, 212))
 
 
-    def __add_profile_image(self, img, draw, item, author, name, tag, image_url, hero_filepath=None):
+    def __add_profile_image(self, img, draw, item, author, name, tag, image_url, hero_id=None):
         """Add profile image to the banner image"""
         name_loc = [(580, 550), (1380, 550)]
         tag_loc = [(580, 606), (1380, 606)]
@@ -136,7 +136,7 @@ class BANNER_1080p:
         self.__add_text(draw, tag, tag_loc[item], font_size, self.font_name, (0, 0, 0))
 
         try:
-            output = self.__get_image_circle(author, image_url, hero_filepath=hero_filepath)
+            output = self.__get_image_circle(author, image_url, hero_id=hero_id)
             img.paste(output, image_loc[item], output)
         except BaseException as e:
             print(e)
@@ -176,13 +176,12 @@ class BANNER_1080p:
                 continue
 
             self.__add_profile_image(
-                img, draw, item, author, author_item["name"], author_item["tag"], author_item["image_url"])
+                img, draw, item, author, author_item["name"], author_item["tag"], author_item["source_image_url"])
             item += 1
 
         if item == 1:
-            hero_filepath = SUPERHERO_FILEPATH.format(hero = self.hero_count)
-            self.__add_profile_image(img, draw, 1, None, "AI Superhero", "#dalle2 art", None, hero_filepath)
-            self.hero_count += 1
+            self.__add_profile_image(img, draw, 1, None, "AI Superhero", "#dalle2 art", None, self.hero_id)
+            self.hero_id += 1
 
         # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
         # img.save(filename)
