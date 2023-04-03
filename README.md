@@ -129,3 +129,14 @@ python3 generator.py -f "2023-04-04-openai-playground"
 ```bash
 python3 -c 'import sys, oyaml as yaml, json; json.dump (yaml.load (sys.stdin, Loader=yaml.Loader), sys.stdout, indent=4)' < blog.yaml > tweets.json
 ```
+
+## Including Videos
+
+In the .md file add the following:
+
+```markdown
+import ReactPlayer from 'react-player'
+
+// Render a YouTube video player
+<ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+```
