@@ -14,7 +14,7 @@ SUPERHERO_FILEPATH = 'assets/superheros/superhero-{hero}.png'
 AUTHOR_FILEPATH = 'assets/authors/{author}.png'
 
 
-class BANNER_1080p:
+class Banner1080p:
     """Load YAML file"""
 
     def __init__(self, file_path, blog_url):
@@ -53,7 +53,7 @@ class BANNER_1080p:
                 # fill in the background of the png file with white
                 if image.mode in ("RGBA", "P"):
                     # fill with a vibrate blue color
-                    # 69	116	199	
+                    # 69	116	199
                     background = Image.new(image.mode[:-1], image.size, (73, 161, 233))
                     background.paste(image, image.split()[-1])
                     image = background
@@ -89,20 +89,27 @@ class BANNER_1080p:
         font = ImageFont.truetype(os.path.join(self.font_folder, font_name), font_size)
         draw.text(loc, text, font=font, fill=color)
 
-    def __add_banner_text(self, draw, audience, title, day, date):
+    def __add_banner_text(self, draw, blog_item):
         """Add text to the banner image"""
         audience_loc = (310, 180)
         date_loc = (50, 305)
         day_loc = (50, 221)
         divider_loc = (236, 150)
         title_loc = (310, 312)
+        week_loc = (50, 221)
+        week_number_loc = (50, 305)
 
         audience_font_size = 110
         date_font_size = 55
         day_font_size = 80
         divider_font_size = 220
         title_font_size = 80
+        week_font_size = 60
+        week_number_font_size = 55
 
+        audience = blog_item.get("audience")
+        title = blog_item.get("title")
+        date = blog_item.get("date")
 
         printable = set(string.printable)
         audience = ''.join(filter(lambda x: x in printable, audience))
@@ -111,12 +118,16 @@ class BANNER_1080p:
         date_string = datetime.datetime.strptime(date, '%Y-%m-%d')
         date = date_string.strftime('%b %d')
 
-        self.__add_text(draw, date_string.strftime('%a'), day_loc, day_font_size, self.font_bold_name, (111, 61, 212))
-        self.__add_text(draw, date, date_loc, date_font_size, self.font_bold_name, (111, 61, 212))
-        self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (0, 0, 0))
+        if blog_item.get("recap"):
+            self.__add_text(draw, 'Recap', week_loc, week_font_size, self.font_bold_name, (111, 61, 212))
+            # format the week number with four leading spaces
+            self.__add_text(draw, 'Week {:d}'.format(blog_item.get("recap")), week_number_loc, week_number_font_size, self.font_bold_name, (111, 61, 212))
+            self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (0, 0, 0))
 
-        # self.__add_text(draw, 'DAY', (45, 307), 30, self.font_name, (0, 0, 0))
-        # self.__add_text(draw, "{:d}".format(day), day_loc, day_font_size, self.font_name, (0, 0, 0))
+        else:
+            self.__add_text(draw, date_string.strftime('%a'), day_loc, day_font_size, self.font_bold_name, (111, 61, 212))
+            self.__add_text(draw, date, date_loc, date_font_size, self.font_bold_name, (111, 61, 212))
+            self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (0, 0, 0))
 
         self.__add_text(draw, audience, audience_loc, audience_font_size, self.font_bold_name, (0, 0, 0))
         self.__add_text(draw, title, title_loc, title_font_size, self.font_bold_name, (111, 61, 212))
@@ -141,11 +152,14 @@ class BANNER_1080p:
         except BaseException as e:
             print(e)
 
-    def __add_keyword_image(self, img, keywords):
+    def __add_keyword_image(self, img, blog_item):
         """Add keyword image to the banner image"""
         keyword_loc = [(320, 800), (520, 800), (720, 800), (920, 800),
                        (1120, 800), (1320, 800), (1520, 800), (1720, 800)]
         keyword_count = 0
+
+        keywords = blog_item.get("keywords")
+
         for keyword in keywords:
 
             if keyword_count > len(keyword_loc) - 1:
@@ -159,17 +173,15 @@ class BANNER_1080p:
             else:
                 print("Keyword image not found: " + filename)
 
-    def create_banner(self, banner_definition):
-        """Create the banner image"""
-
-        img = Image.open('assets/banner-1080p.png')
-        draw = ImageDraw.Draw(img)
+    def __create_author_image(self, blog_item, img, draw):
         item = 0
+        if blog_item.get("recap"):
+            # check that there is more than one author
+            if len(blog_item["authors"]) > 1:
+                # remove all the banner authors except the first one
+                blog_item["authors"] = blog_item["authors"][0:1]
 
-        self.__add_banner_text(
-            draw, banner_definition["audience"], banner_definition["title"], banner_definition["day"], banner_definition["date"])
-        self.__add_keyword_image(img, banner_definition["keywords"])
-        for author in banner_definition["authors"]:
+        for author in blog_item["authors"]:
             author_item = self.authors.get(author)
 
             if not author_item:
@@ -179,15 +191,19 @@ class BANNER_1080p:
                 img, draw, item, author, author_item["name"], author_item["tag"], author_item["source_image_url"])
             item += 1
 
-        if item == 1:
-            self.__add_profile_image(img, draw, 1, None, "AI Superhero", "#dalle2 art", None, self.hero_id)
+        if item < 2:
+            self.__add_profile_image(img, draw, item, None, "AI Superhero", "#dalle2 art", None, self.hero_id)
             self.hero_id += 1
 
-        # filename = os.path.join(banner_definition["blog_folder"], 'banner.png')
-        # img.save(filename)
+    def create_banner(self, blog_item):
+        """Create the banner image"""
 
-        # The open_graph_folder is the folder where static images will be stored for the open graph image for use on twitter and facebook
+        img = Image.open('assets/banner-1080p.png')
+        draw = ImageDraw.Draw(img)
 
-        filename = os.path.join(
-            banner_definition["static_image_folder"], f'banner-day{banner_definition["day"]}.png')
+        self.__add_banner_text(draw, blog_item)
+        self.__add_keyword_image(img, blog_item)
+        self.__create_author_image(blog_item, img, draw)
+
+        filename = os.path.join(blog_item.get("static_image_folder"), f'banner-day{blog_item.get("day")}.png')
         img.save(filename)

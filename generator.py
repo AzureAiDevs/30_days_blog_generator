@@ -20,7 +20,7 @@ parser.add_argument("-c", "--content_name")
 TEMPLATE_FILE = "template.md"
 DAYS_FILE = "blog.yaml"
 
-banner = banner_1080p.BANNER_1080p("authors.yml", "https://aka-ms/ai-april")
+banner = banner_1080p.Banner1080p("authors.yml", "https://aka-ms/ai-april")
 
 
 def validate_data(data):
@@ -128,19 +128,15 @@ def main(website_folder, content_name, folder_item):
         with open(filename, 'w', encoding='utf8') as f:
             f.write(output_text)
 
-        banner_definition = {
-            "blog_folder": folder_name,
-            "folder_count": len(data['campaign']['days']),
-            "static_image_folder": static_image_folder,
-            "audience": item["audience"],
-            "title": item["title"],
-            "day": day,
-            "keywords": item['keywords'],
-            "authors": item['authors'],
-            "date": item['folder'][:10]
-        }
+        # add an value to the item dictionary
 
-        banner.create_banner(banner_definition)
+        item['folder_name'] = folder_name
+        item['folder_count'] = len(data['campaign']['days'])
+        item['static_image_folder'] = static_image_folder
+        item['day'] = day
+        item['date'] = item['folder'][:10]
+
+        banner.create_banner(item)
 
         # return
 

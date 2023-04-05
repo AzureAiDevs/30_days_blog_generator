@@ -3,9 +3,9 @@
 campaign:
   name: "30DaysOfAzureAI"
   static_img_folder: "./../../static/img/2023-aia"
-  static_img_path: "https://azureaidevs.github.io/hub/img/2023-aia"
+  static_img_path: "https://raw.githubusercontent.com/AzureAiDevs/hub/main/website/static/img/2023-aia"
   daily_blog_url: "https://azureaidevs.github.io/hub/2023-aia"
-  social_tags: "AI"
+  social_tags: ""
 
 
   days:
@@ -36,6 +36,7 @@ campaign:
       tweet: "Unleashing the power of AI with Azure OpenAI! Data Scientists, ML, MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, and DALL-E 2"
 
     - folder: "2023-04-04-openai-playground"
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "Explore the Azure OpenAI Playground"
@@ -52,7 +53,7 @@ campaign:
       visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
-      title: "Build a receipts app with Copilot"
+      title: "Build a receipts app with GitHub Copilot"
       description: "Learn how to use Copilot to build an intelligent receipts app powered by Azure Form Recognizer"
       authors: [Ruth]
       keywords: [Form-Recognizers, Azure-Applied-AI-Services, CoPilot, vscode, Azure-AI]
@@ -83,14 +84,14 @@ campaign:
       keywords: [rai-accountable,  rai-inclusion, rai-transparency, rai-fairness, rai-privacy-security ]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
       social_tag: "ResponsibleAI"
-      canonical: "https://www.microsoft.com/ai/our-approach?WT.mc_id=aiml-89446-dglover"
+      canonical: "https://medium.com/@ruyakubu/mission-of-responsible-ai-8b4f3cc4aaf6"
       tweet: "Discover why Responsible AI matters, how Microsoft is leading the charge, and the principles guiding Microsoft's approach to AI."
 
 
     - folder: "2023-04-08-ai-accessibility"
       emoji: 🏁
       audience: "Azure AI Developers"
-      title: "Improve accessibility w/ Azure AI"
+      title: "Improve accessibility with Azure AI"
       description: "Learn about the 6 ways to improve accessibility with Azure AI"
       authors: [Henk]
       keywords: [Accessibility-Employment, Accessibility-Human-Connection, Accessibility-Modern-Life]
@@ -101,10 +102,12 @@ campaign:
 
     - folder: "2023-04-09-recap-fundamentals"
       emoji: 🏁
+      recap: 1
       audience: "Azure AI Developers"
       title: "Recap: Azure AI Fundamentals Week✨"
-      description: "30DaysOfAzureAI Recap - Fundamentals"
-      authors: [Dave]
+      description: "Week 1 Recap - Fundamentals"
+      no_reference_section: true
+      authors: [Dave, Meer, Valentina, Ruth, Bea, Henk]
       keywords: [Azure-OpenAI-Services, Azure-AI,  Machine-Learning, Cognitive-Services, vscode, rai, Accessibility-Human-Connection]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai,]
       canonical:
@@ -114,12 +117,12 @@ campaign:
       visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "Build intelligent apps w/ Azure AI SDKs"
+      title: "Build intelligent apps with Azure AI SDKs"
       description: "Building intelligent apps? Then explore the Azure AI Hub for OpenAI and Cognitive Services SDK samples"
       authors: [Arun]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "AzureOpenAI,AzureSDK"
+      social_tag: "AzureSDK"
       canonical: https://github.com/Azure-Samples/azure-ai
       tweet: "AI App developers don't miss out on exploring the Azure AI Hub for OpenAI and Cognitive Services SDK samples. Build intelligent apps with Azure AI Services."
 
@@ -153,7 +156,7 @@ campaign:
     - folder: "2023-04-13-inside-onnx-excel"
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "NLP Models in Excel w/ ONNX Runtime"
+      title: "NLP Models in Excel with ONNX Runtime"
       description: "Build an Excel Add-in with ONNX Runtime Web for NLP Tasks"
       authors: [Cassie]
       keywords: [onnx, JavaScript, Excel, Azure-AI]
@@ -162,11 +165,10 @@ campaign:
       canonical: https://onnxruntime.ai/docs/tutorials/web/excel-addin-bert-js.html
       tweet: "Excel + NLP + ONNX = 🔥! Get ready to build a powerful Excel add-in with BERT NLP using the ONNX Runtime."
 
-
     - folder: "2023-04-14-copilot"
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
-      title: "Copilot's updated AI model"
+      title: "GitHub Copilot's updated AI model"
       description: "GitHub Copilot Upgraded: Faster, More Accurate, and More Secure Code"
       authors: [Shuyin]
       keywords: ['Copilot','vscode',  Azure-AI]
@@ -191,6 +193,8 @@ campaign:
 
     - folder: "2023-04-16-recap-week-two"
       emoji: 🧑‍💻
+      visible: false
+      recap: 2
       audience: "Azure AI App Developers"
       title: "Recap: Azure AI App Developers✨"
       description: "30DaysOfAzureAI Recap for Azure AI App Developers Week"
@@ -205,7 +209,7 @@ campaign:
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Scaling Model Dev with Azure ML"
-      description: "Azure ML: Train and Deploy ML Models at Scale"
+      description: "Train and Deploy ML Models at Scale"
       authors: [Bea]
       keywords: [Machine-Learning, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
@@ -243,7 +247,7 @@ campaign:
     - folder: "2023-04-20-rai-part-1"
       emoji: 🧑🏽‍🔬
       audience: "Azure AI Developers"
-      title: "Debug models w/ Responsible AI"
+      title: "Debug models with Responsible AI"
       description: "Guide to analyzing ML models for Responsible AI issues (Part 1)"
       authors: [Ruth]
       keywords: [Machine-Learning, Azure-AI, rai-privacy-security, rai-fairness, rai-transparency, rai-accountable, rai-inclusion, rai-reliable]
@@ -255,7 +259,7 @@ campaign:
     - folder: "2023-04-21-mlops-intro"
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
-      title: "Streamline Ops w/ Azure MLOps"
+      title: "Streamline Ops with Azure MLOps"
       description: "Learn about Azure Machine Learning lifecycle and open source tooling to start building MLOps"
       authors: [Cassie]
       keywords: [MLOps, Machine-Learning, Azure-AI]
@@ -266,6 +270,8 @@ campaign:
 
     - folder: "2023-04-23-recap-week-three"
       emoji: 🧑🏽‍🔬
+      visible: false
+      recap: 3
       audience: "Azure ML Developers"
       title: "Recap: Azure ML Week✨"
       description: "30DaysOfAzureAI Recap for Azure Machine Learning Week"
@@ -354,6 +360,8 @@ campaign:
 
     - folder: "2023-04-30-recap-final"
       emoji: 🏭
+      visible: false
+      recap: 4
       audience: "Azure AI Developers"
       title: "Continuing your AI Journey✨"
       description: "Continuing your Azure AI Journey"

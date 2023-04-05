@@ -1,1 +1,1 @@
-Yesterday we talked was an introduction to the Azure OpenAI Service. Today we'll dig deeper into the Azure OpenAI Service Playground, so come along, it'll be fun.
+Yesterday was an introduction to the Azure OpenAI Service. Today, we'll dig deeper into the Azure OpenAI Service Playground, so come along, it'll be fun.

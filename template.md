@@ -23,20 +23,9 @@ import Social from '@site/src/components/social';
 
 <head>
 
-  <meta name="twitter:url" content="{{ blog_url }}" />
-  <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }}" />
-  <meta name="twitter:image" content="{{ image_url }}" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <meta property="og:url" content="{{ blog_url }}" />
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }}" />
-  <meta property="og:image" content="{{ image_url }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Azure AI Developer" />
-
+  {% if canonical -%}
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/day{{ day }}" {% endif %} />
+  {% endif -%}
 
 </head>
 
@@ -54,7 +43,7 @@ import Social from '@site/src/components/social';
     image_url="{{ image_url }}"
     title="{{ title }}"
     description= "{% if tweet %}{{ emoji}}Day {{ day }} of #{{ campaign }}. {{ tweet }}{% else %}{{ twitter_description }}{% endif %}"
-    hashtags="{{ social_tags }}{% if social_tag %},{{ social_tag }}{% endif %}"
+    hashtags="{% if social_tag %}{{ social_tag }}{% endif %}"
     hashtag="#30DaysOfAzureAi"
 />
 
@@ -123,10 +112,13 @@ Today's [article]({{ canonical }}).
 
 ## 🙋🏾‍♂️ Questions?
 
-[Remember, you can ask a question about this post on GitHub Discussions]({{ discussion_url }})
+[You can ask questions about this post on GitHub Discussions]({{ discussion_url }})
 
 ## 📍 30 days roadmap
 
 What's next? View the [#30DaysOfAzureAI Roadmap](/hub/roadmap/30days)
 
-[![The image is the RSS feed available icon]({{ static_img_folder }}/rss.png) Click to subscribe](https://azureaidevs.github.io/hub/2023-aia/rss.xml)
+## 🧲 Subscribe
+
+- 📬 [Subscribe to the monthly Azure AI and Machine Learning Tech Newsletter](https://aka.ms/azure-ai-dev-newsletter)
+- [![The image is the blog RSS feed available icon]({{ static_img_folder }}/rss.png) Subscribe to the blog RSS XML feed](https://azureaidevs.github.io/hub/2023-aia/rss.xml)
