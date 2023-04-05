@@ -18,7 +18,6 @@ campaign:
       authors: [Dave]
       keywords: [Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai]
-      no_reference_section: true
       social_tag: "AzureOpenAI"
       tweet: "Today, we're excited to share the Global AI Dev Conf keynote featuring senior Azure AI leaders John Montgomery and Bob Breynaert discussing the future of AI."
 
@@ -84,9 +83,9 @@ campaign:
       keywords: [rai-accountable,  rai-inclusion, rai-transparency, rai-fairness, rai-privacy-security ]
       tags: [azure-ai,responsible-ai,30-days-of-azure-ai,ml-developers,app-developers]
       social_tag: "ResponsibleAI"
-      canonical: "https://medium.com/@ruyakubu/mission-of-responsible-ai-8b4f3cc4aaf6"
+      canonical: "https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/mission-of-responsible-ai/ba-p/3787728?WT.mc_id=aiml-89446-dglover"
       tweet: "Discover why Responsible AI matters, how Microsoft is leading the charge, and the principles guiding Microsoft's approach to AI."
-
+      
 
     - folder: "2023-04-08-ai-accessibility"
       emoji: 🏁
@@ -106,7 +105,6 @@ campaign:
       audience: "Azure AI Developers"
       title: "Recap: Azure AI Fundamentals Week✨"
       description: "Week 1 Recap - Fundamentals"
-      no_reference_section: true
       authors: [Dave, Meer, Valentina, Ruth, Bea, Henk]
       keywords: [Azure-OpenAI-Services, Azure-AI,  Machine-Learning, Cognitive-Services, vscode, rai, Accessibility-Human-Connection]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai,]

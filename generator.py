@@ -23,6 +23,12 @@ DAYS_FILE = "blog.yaml"
 banner = banner_1080p.Banner1080p("authors.yml", "https://aka-ms/ai-april")
 
 
+def path_exists(path):
+    """ This function is used in the template to check if a file exists """
+
+    return os.path.exists(path)
+
+
 def validate_data(data):
     """Validate the yaml file."""
 
@@ -103,6 +109,8 @@ def main(website_folder, content_name, folder_item):
     # Read the template file
     template_loader = jinja2.FileSystemLoader(searchpath="./")
     template_env = jinja2.Environment(loader=template_loader)
+
+    template_env.filters['path_exists'] = path_exists
 
     template = template_env.get_template(TEMPLATE_FILE)
 

@@ -88,11 +88,13 @@ The following list is the main points of the post. There should be 3-4 main poin
 Add or update a list relevant references here. These could be links to other blog posts, Microsoft Learn Module, videos, or other resources.
 -->
 
-{% if no_reference_section != true %}
+{% set reference_file = 'content/' ~ folder ~ '/references.md' -%}
+{% set reference_file_exists = reference_file|path_exists -%}
+{% if reference_file_exists %}
 
 ## 📚 References
 
-{% include 'content/' + folder + '/references.md' ignore missing %}
+{% include reference_file ignore missing %}
 {% endif %}
 
 <!-- README
