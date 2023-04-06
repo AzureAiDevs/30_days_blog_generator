@@ -91,21 +91,21 @@ class Banner1080p:
 
     def __add_banner_text(self, draw, blog_item):
         """Add text to the banner image"""
-        audience_loc = (310, 180)
-        date_loc = (50, 305)
-        day_loc = (50, 221)
-        divider_loc = (236, 150)
-        title_loc = (310, 312)
-        week_loc = (50, 221)
-        week_number_loc = (50, 305)
+        audience_loc = (380, 180)
+        day_loc = (80, 180)
+        date_loc = (70, 312)  
+        divider_loc = (320, 150)
+        title_loc = (380, 312)
+        week_loc = (32, 180)
+        week_number_loc = (174, 312)
 
         audience_font_size = 110
-        date_font_size = 55
-        day_font_size = 80
+        date_font_size = 74
+        day_font_size = 110
         divider_font_size = 220
-        title_font_size = 80
-        week_font_size = 60
-        week_number_font_size = 55
+        title_font_size = 74
+        week_font_size = 110
+        week_number_font_size = 74
 
         audience = blog_item.get("audience")
         title = blog_item.get("title")
@@ -119,14 +119,14 @@ class Banner1080p:
         date = date_string.strftime('%b %d')
 
         if blog_item.get("recap"):
-            self.__add_text(draw, 'Recap', week_loc, week_font_size, self.font_bold_name, (111, 61, 212))
+            self.__add_text(draw, 'Week', week_loc, week_font_size, self.font_bold_name, (96,	96,	96))
             # format the week number with four leading spaces
-            self.__add_text(draw, 'Week {:d}'.format(blog_item.get("recap")), week_number_loc, week_number_font_size, self.font_bold_name, (111, 61, 212))
+            self.__add_text(draw, '{:d}'.format(blog_item.get("recap")), week_number_loc, week_number_font_size, self.font_bold_name, (96,	96,	96))
             self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (0, 0, 0))
 
         else:
-            self.__add_text(draw, date_string.strftime('%a'), day_loc, day_font_size, self.font_bold_name, (111, 61, 212))
-            self.__add_text(draw, date, date_loc, date_font_size, self.font_bold_name, (111, 61, 212))
+            self.__add_text(draw, date_string.strftime('%a'), day_loc, day_font_size, self.font_bold_name, (96,	96,	96))
+            self.__add_text(draw, date, date_loc, date_font_size, self.font_bold_name, (96,	96,	96))
             self.__add_text(draw, "|", divider_loc, divider_font_size, self.font_name, (0, 0, 0))
 
         self.__add_text(draw, audience, audience_loc, audience_font_size, self.font_bold_name, (0, 0, 0))
@@ -154,8 +154,8 @@ class Banner1080p:
 
     def __add_keyword_image(self, img, blog_item):
         """Add keyword image to the banner image"""
-        keyword_loc = [(320, 800), (520, 800), (720, 800), (920, 800),
-                       (1120, 800), (1320, 800), (1520, 800), (1720, 800)]
+        keyword_loc = [(960, 815), (1160, 815), (760, 815), (1360, 815),
+                       (560, 815), (1560, 815), (360, 815), (1760, 815)]
         keyword_count = 0
 
         keywords = blog_item.get("keywords")
@@ -168,7 +168,9 @@ class Banner1080p:
             filename = 'assets/icons/' + keyword + '.png'
             if os.path.exists(filename):
                 keyword_img = Image.open(filename)
-                img.paste(keyword_img, keyword_loc[keyword_count], keyword_img)
+                offset = 0 if len(keywords) % 2 == 1 else 100
+                location = (keyword_loc[keyword_count][0] - round(keyword_img.size[0] / 2) - offset, keyword_loc[keyword_count][1])
+                img.paste(keyword_img, location, keyword_img)
                 keyword_count += 1
             else:
                 print("Keyword image not found: " + filename)

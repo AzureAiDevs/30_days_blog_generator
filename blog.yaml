@@ -62,6 +62,7 @@ campaign:
       tweet: "Today, we're diving into GitHub Copilot and Azure #FormRecognizer to build a receipts app. Learn how Copilot can increase productivity."
 
     - folder: "2023-04-06-azure-ml-intro"
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "Learn key Azure ML Concepts"
@@ -194,9 +195,9 @@ campaign:
       visible: false
       recap: 2
       audience: "Azure AI App Developers"
-      title: "Recap: Azure AI App Developers✨"
-      description: "30DaysOfAzureAI Recap for Azure AI App Developers Week"
-      authors: [Dave]
+      title: "Recap: Azure AI for App Developers"
+      description: "Week 2 Recap - Azure AI App Developers Week"
+      authors: [Dave, Arun, Heidi, Henk, Bea, Cassie, Shuyin, Michael]
       keywords: [Azure-OpenAI-Services, Cognitive-Services, Azure-AI, Cognitive-Search, onnx, dotnet, Blazor, CoPilot]
       tags: [ai-april, 30-days-of-azure-ai,app-developers,azure-open-ai,azure-cognitive-services]
       canonical:
@@ -272,8 +273,8 @@ campaign:
       recap: 3
       audience: "Azure ML Developers"
       title: "Recap: Azure ML Week✨"
-      description: "30DaysOfAzureAI Recap for Azure Machine Learning Week"
-      authors: [Dave]
+      description: "Week 3 Recap - Azure Machine Learning Week"
+      authors: [Dave, Bea, Vlad, Ruth, Cassie]
       keywords: [Azure-AI, Machine-Learning, MLOps, rai]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-mlops]
       canonical:
@@ -363,7 +364,7 @@ campaign:
       audience: "Azure AI Developers"
       title: "Continuing your AI Journey✨"
       description: "Continuing your Azure AI Journey"
-      authors: [Dave]
-      keywords: [ Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, MLOps, rai, CoPilot, Blazor ]
+      authors: [Dave, Bea, Vlad, Ruth, Cassie, Meer, Valentina, Arun, Heidi, Henk, Shuyin, Michael, Bethany, Arafat]
+      keywords: [ Azure-AI, Azure-OpenAI-Services, Cognitive-Services, Machine-Learning, MLOps, rai, CoPilot, Blazor, Setu,  ]
       tags: [ai-april,30-days-of-azure-ai,ml-developers,app-developers,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals]
       canonical: 

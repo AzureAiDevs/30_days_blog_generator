@@ -23,6 +23,12 @@ import Social from '@site/src/components/social';
 
 <head>
 
+  <meta name="twitter:url" content="{{ blog_url }}" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }}" />
+  <meta name="twitter:image" content="{{ image_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   {% if canonical -%}
   <link rel="canonical" {% if canonical %}href="{{ canonical }}" {% else %} href="{{ daily_blog_url }}/day{{ day }}" {% endif %} />
   {% endif -%}
@@ -31,6 +37,7 @@ import Social from '@site/src/components/social';
 
 {% if canonical -%}- 👓 [View today's article]({{ canonical }}){% endif %}
 - 🍿 [Tune into the AI Show](https://aka.ms/ai-april-ai-show)
+- 🧬 [Connect with Humans in AI](/hub/humans-in-ai)
 - 🌤️ [Continue the Azure AI Cloud Skills Challenge](https://aka.ms/30-days-of-azure-ai-challenge)
 - 🏫 [Bookmark the Azure AI Technical Community](https://aka.ms/ai-april-tech-community)
 - ❤️ [Learn about the Microsoft MVP Program](https://aka.ms/ai-april-mvp-program)
