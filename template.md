@@ -16,7 +16,7 @@ toc_max_heading_level: 3
 {% if tags %}tags: {{ tags }}{% endif %}
 
 image: {{ image_url }}
-description: "{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }} {{ daily_blog_url }}/day{{ day }}"
+description: "{{ twitter_description }}"
 ---
 
 import Social from '@site/src/components/social';
@@ -25,7 +25,7 @@ import Social from '@site/src/components/social';
 
   <meta name="twitter:url" content="{{ blog_url }}" />
   <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ emoji }}Welcome to day {{day}} of #{{ campaign }}. {{ description }}" />
+  <meta name="twitter:description" content="{{ twitter_description }}" />
   <meta name="twitter:image" content="{{ image_url }}" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -49,7 +49,7 @@ import Social from '@site/src/components/social';
     page_url="{{ blog_url }}"
     image_url="{{ image_url }}"
     title="{{ title }}"
-    description= "{% if tweet %}{{ emoji}}Day {{ day }} of #{{ campaign }}. {{ tweet }}{% else %}{{ twitter_description }}{% endif %}"
+    description= "{{ twitter_description }}"
     hashtags="{% if social_tag %}{{ social_tag }}{% endif %}"
     hashtag="#30DaysOfAzureAi"
 />
@@ -91,8 +91,13 @@ import Social from '@site/src/components/social';
 
 <!-- Body section -->
 
-{% set template = '## 🚌 Introduction' %}
-{% include 'content/' + folder + '/body.md' ignore missing %}
+{% set recap_file = 'content/' ~ folder ~ '/recap.md' -%}
+{% set recap_file_exists = recap_file|path_exists -%}
+{% if recap_file_exists %}
+{% include recap_file ignore missing -%}
+{%else%}
+{% include 'content/' + folder + '/body.md' ignore missing -%}
+{% endif %}
 
 {% if canonical -%}
 

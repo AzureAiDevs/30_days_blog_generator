@@ -97,6 +97,7 @@ def main(website_folder, content_name, folder_item):
     pathlib.Path(static_image_folder).mkdir(parents=True, exist_ok=True)
 
     day = 0
+    week = 0
 
     # Read the yaml file
     with open(DAYS_FILE, encoding='utf8') as f:
@@ -143,6 +144,12 @@ def main(website_folder, content_name, folder_item):
         item['static_image_folder'] = static_image_folder
         item['day'] = day
         item['date'] = item['folder'][:10]
+
+        recap_filename = os.path.join('./content', item['folder'], 'recap.md')
+
+        if os.path.isfile(recap_filename):
+            week += 1
+            item['recap'] = week
 
         banner.create_banner(item)
 

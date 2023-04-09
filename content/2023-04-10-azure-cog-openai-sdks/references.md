@@ -1,3 +1,4 @@
+- [Introduction to prompt engineering](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/prompt-engineering?WT.mc_id=aiml-89446-dglover)
 - [Learn Module: Introduction to Azure OpenAI Service](https://learn.microsoft.com/en-us/training/modules/explore-azure-openai/?WT.mc_id=aiml-89446-dglover)
 - [Learn Module: Learn about Azure Cognitive Services](https://learn.microsoft.com/training/browse/?products=azure-cognitive-services&WT.mc_id=aiml-89446-dglover)
 - [Case Study: CarMax uses car research tools powered by Azure OpenAI Service](https://customers.microsoft.com/en-us/story/1501304071775762777-carmax-retailer-azure-openai-service&WT.mc_id=aiml-89446-dglover)

@@ -76,6 +76,7 @@ campaign:
 
 
     - folder: "2023-04-07-rai-mission"
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "The Mission of Responsible AI"
@@ -89,6 +90,7 @@ campaign:
       
 
     - folder: "2023-04-08-ai-accessibility"
+      visible: true
       emoji: 🏁
       audience: "Azure AI Developers"
       title: "Improve accessibility with Azure AI"
@@ -101,8 +103,8 @@ campaign:
       tweet: "Join Microsoft's mission to break down barriers! Learn about the 6 ways to improve accessibility with Azure AI and empower the 1 billion ppl living with disabilities."
 
     - folder: "2023-04-09-recap-fundamentals"
+      visible: true
       emoji: 🏁
-      recap: 1
       audience: "Azure AI Developers"
       title: "Recap: Azure AI Fundamentals Week✨"
       description: "Week 1 Recap - Fundamentals"
@@ -110,6 +112,7 @@ campaign:
       keywords: [Azure-OpenAI-Services, Azure-AI,  Machine-Learning, Cognitive-Services, vscode, rai, Accessibility-Human-Connection]
       tags: [azure-ai,azure-ml,azure-open-ai,azure-cognitive-services,responsible-ai,azure-ai-fundamentals,30-days-of-azure-ai,]
       canonical:
+      tweet: "Today we recap week 1 of Azure AI Fundamentals. We covered Generative AI with the Azure OpenAI Service, an introduction to Azure ML, plus Responsible AI, and AI for Accessibility."
 
 
     - folder: "2023-04-10-azure-cog-openai-sdks"
@@ -193,7 +196,6 @@ campaign:
     - folder: "2023-04-16-recap-week-two"
       emoji: 🧑‍💻
       visible: false
-      recap: 2
       audience: "Azure AI App Developers"
       title: "Recap: Azure AI for App Developers"
       description: "Week 2 Recap - Azure AI App Developers Week"
@@ -270,7 +272,6 @@ campaign:
     - folder: "2023-04-23-recap-week-three"
       emoji: 🧑🏽‍🔬
       visible: false
-      recap: 3
       audience: "Azure ML Developers"
       title: "Recap: Azure ML Week✨"
       description: "Week 3 Recap - Azure Machine Learning Week"
@@ -360,7 +361,6 @@ campaign:
     - folder: "2023-04-30-recap-final"
       emoji: 🏭
       visible: false
-      recap: 4
       audience: "Azure AI Developers"
       title: "Continuing your AI Journey✨"
       description: "Continuing your Azure AI Journey"
