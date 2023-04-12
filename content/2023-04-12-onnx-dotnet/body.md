@@ -1,6 +1,6 @@
 ## 🚌 Build cross-platform intelligent apps with ONNX and .NET
 
-Learn about machine learning models using the ONNX runtime and .NET Maui. The presenters, Bea and Henk, start with an overview of AI and machine learning, explaining that machine learning is a subset of AI that involves creating a model that can learn from data and make predictions without being explicitly programmed. They discuss deep learning, a subset of machine learning that uses artificial neural network and is well-suited to big data.
+Learn how to build an intelligent cross platform .NET MAUI app running a local ML model on the ONNX runtime. The presenters, Bea and Henk, overview AI and machine learning, how to create models that learn from data to makes predictions, and how to integrate a model into a cross platform .NET MAUI app.
 
 ## Accompanying source code
 

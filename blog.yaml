@@ -151,8 +151,8 @@ campaign:
       authors: [Henk, Bea]
       keywords: [dotnet, onnx, vscode, Azure-AI]
       tags: [ai-april, 30-days-of-azure-ai, app-developers]
-      social_tag: "ONNXRuntime,dotnet"
-      tweet: "Cross-platform AI support is here! Build intelligent apps with ONNX and .NET. Learn how AI integrates with traditional programming in today's video!"
+      social_tag: "ONNXRuntime"
+      tweet: "Learn how to create ML models and embed them into intelligent cross platform apps with the ONNX runtime and .NET MAUI."
 
 
     - folder: "2023-04-13-inside-onnx-excel"
