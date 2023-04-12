@@ -143,6 +143,7 @@ campaign:
       tweet: "Microsoft Distinguished engineer Pablo Castro shows you how to build your own ChatGPT with the power of Azure Cognitive Search and Azure OpenAI Service."
 
     - folder: "2023-04-12-onnx-dotnet"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "Cross-Platform AI with ONNX and .NET"
