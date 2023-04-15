@@ -156,6 +156,7 @@ campaign:
 
 
     - folder: "2023-04-13-inside-onnx-excel"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "NLP Models in Excel with ONNX Runtime"
@@ -168,6 +169,7 @@ campaign:
       tweet: "Excel + NLP + ONNX = 🔥! Get ready to build a powerful Excel add-in with BERT NLP using the ONNX Runtime."
 
     - folder: "2023-04-14-copilot"
+      visible: true
       emoji: 🧑‍💻
       audience: "Azure AI App Developers"
       title: "GitHub Copilot's updated AI model"
@@ -195,7 +197,7 @@ campaign:
 
     - folder: "2023-04-16-recap-week-two"
       emoji: 🧑‍💻
-      visible: false
+      visible: true
       audience: "Azure AI App Developers"
       title: "Recap: Azure AI for App Developers"
       description: "Week 2 Recap - Azure AI App Developers Week"
