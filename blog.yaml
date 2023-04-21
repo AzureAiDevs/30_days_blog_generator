@@ -222,6 +222,7 @@ campaign:
 
 
     - folder: "2023-04-18-azureml-pipelines"
+      visible: true
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Streamline Model Dev with Azure ML"
@@ -231,10 +232,11 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "AzureML"
       canonical: https://bea.stollnitz.com/blog/aml-pipeline/
-      tweet: "Unlock the potential of your ML projects with Azure ML Components & Pipelines. Streamline your development, boost productivity and take your hardwork to new heights. Begin with Azure ML today!"
+      tweet: "Unlock the potential of your ML projects with Azure ML Components & Pipelines. Streamline your development and boost productivity."
 
 
     - folder: "2023-04-19-azureml-endpoints"
+      visible: true
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Azure ML Managed Online Endpoints"
@@ -244,10 +246,11 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, azure-ml, data-scientist]
       social_tag: "AzureML"
       canonical: https://vladiliescu.net/aml-managed-endpoints-quickstart/
-      tweet: "Check out Azure Machine Learning's managed online endpoints feature! With built-in security, blue/green deployments, and auto-scaling, it's the perfect way to deploy and scale your models. 🚀"
+      tweet: "Learn about Azure Machine Learning's managed online endpoints! With built-in security, blue/green deployments, and auto-scaling, it's the perfect way to deploy and scale your models."
 
 
     - folder: "2023-04-20-rai-part-1"
+      visible: true
       emoji: 🧑🏽‍🔬
       audience: "Azure AI Developers"
       title: "Debug models with Responsible AI"
@@ -260,6 +263,7 @@ campaign:
       tweet: "Unlock the power of Responsible AI with the RAI Dashboard, a suite of open-source tools for model debugging, fairness assessment, and more, now available on Azure Machine Learning."
 
     - folder: "2023-04-21-mlops-intro"
+      visible: true
       emoji: 🧑🏽‍🔬
       audience: "Azure ML Developers"
       title: "Streamline Ops with Azure MLOps"
@@ -272,8 +276,8 @@ campaign:
       tweet: "Unleash your #MachineLearning potential! Join Cassie and Korey in today's #LearnLive and discover #Azure MLOps. Streamline your ML lifecycle with open source tooling, and take your models to the next level!"
 
     - folder: "2023-04-23-recap-week-three"
+      visible: true
       emoji: 🧑🏽‍🔬
-      visible: false
       audience: "Azure ML Developers"
       title: "Recap: Azure ML Week✨"
       description: "Week 3 Recap - Azure Machine Learning Week"
