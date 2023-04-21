@@ -273,7 +273,7 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers]
       social_tag: "AzureMLOps"
       canonical: "https://learn.microsoft.com/events/ignite-2022/cll99-learn-live-start-machine-learning-lifecycle-with-mlops?WT.mc_id=aiml-89446-dglover"
-      tweet: "Unleash your #MachineLearning potential! Join Cassie and Korey in today's #LearnLive and discover #Azure MLOps. Streamline your ML lifecycle with open source tooling, and take your models to the next level!"
+      tweet: "Unleash your MachineLearning potential! Join Cassie and Korey in today's LearnLive and discover Azure MLOps. Streamline your ML lifecycle with open source tooling, and take your models to the next level!"
 
     - folder: "2023-04-23-recap-week-three"
       visible: true
