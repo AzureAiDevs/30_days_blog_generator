@@ -302,6 +302,7 @@ campaign:
 
 
     - folder: "2023-04-25-data-science-beginners"
+      visible: true
       emoji: 🏭
       audience: "Azure AI Workshops"
       title: "Data Science for Beginners"
