@@ -310,11 +310,12 @@ campaign:
       authors: [Bethany]
       keywords: [Data_Science_Beginners]
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
-      social_tag: "DataScience"
+      social_tag: ""
       canonical: "https://microsoft.github.io/Data-Science-For-Beginners?WT.mc_id=aiml-89446-dglover"
       tweet: "Just starting your #DataScience journey? Check out Microsoft's free 10-week, 20-lesson course for beginners! Learn about ethics, preparation, visualization, and more. Dive in and extract insights from data today!"
 
     - folder: "2023-04-26-ml-ai-workshops"
+      visible: true
       emoji: 🏭
       audience: "Azure AI Workshops"
       title: "Machine Learning for Beginners"
@@ -324,10 +325,11 @@ campaign:
       tags: [ai-april, 30-days-of-azure-ai, ml-developers, workshop]
       social_tag: "MachineLearning"
       canonical: "https://microsoft.github.io/ML-For-Beginners?WT.mc_id=aiml-89446-dglover"
-      tweet: "Are you interested in starting your journey into Machine Learning? Check out the Microsoft Machine Learning for Beginners Curriculum, a free 12-week, 26-lesson course covering classic ML with Scikit-learn, NLP, and Time Series analysis. Let's dive in!"
+      tweet: "Check out the Microsoft Machine Learning for Beginners Curriculum, a free 12-week, 26-lesson course covering classic ML with Scikit-learn, NLP, and Time Series analysis. Let's dive in!"
 
 
     - folder: "2023-04-27-patient-rego-workshop"
+      visible: true
       emoji: 🏭
       audience: "Azure AI Workshops"
       title: "Build a Patient Registration App"
@@ -337,7 +339,7 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,azure-cognitive-services,app-developers,workshop]
       social_tag: "AzureFormRecognizer"
       canonical: https://newpatiente2e.github.io/docs/
-      tweet: "Learn how to automate patient registration using Azure Form Recognizer with our one-hour hands-on lab. Develop a custom model, integrate it with a web app, and define application roles. Say goodbye to manual form filling and hello to the power of AI."
+      tweet: "Build a patient registration app using Azure Form Recognizer with our one-hour hands-on lab. Develop a custom model, integrate it with a web app, and define application roles."
 
 
     - folder: "2023-04-28-stable-diffusion"
