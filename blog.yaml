@@ -343,6 +343,7 @@ campaign:
 
 
     - folder: "2023-04-28-stable-diffusion"
+      visible: true
       emoji: 🏭
       audience: "Azure AI Workshops"
       title: "Stable Diffusion on Azure ML"
@@ -356,6 +357,7 @@ campaign:
 
 
     - folder: "2023-04-29-azure-personalizer"
+      visible: true
       emoji: 🏭
       audience: "Azure AI Workshops"
       title: "Enhance CX with Azure Personalizer"
@@ -365,7 +367,7 @@ campaign:
       tags: [ai-april,30-days-of-azure-ai,app-developers,workshop,azure-cognitive-services]
       social_tag: "AzurePersonalizer"
       canonical: https://www.arafattehsin.com/reinforcement-learning-in-apps-bots-websites-with-azure-personalizer-part-1
-      tweet: "Maximize your business results with Azure Personalizer - a machine learning-based service that creates personalized experiences for your customers based on their preferences and behavior. Learn how to build and integrate this powerful tool to provide tailored content and actions to a large user base."
+      tweet: "🏭Welcome to day 27 of #30DaysOfAzureAI. Maximize your business results with Azure Personalizer - a machine learning-based service that creates personalized experiences for your customers based on their preferences and behavior."
 
     - folder: "2023-04-30-recap-final"
       emoji: 🏭
