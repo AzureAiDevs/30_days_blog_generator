@@ -19,6 +19,7 @@ The daily post content folder contains the following files:
 - covered.md - The daily post covered section.
 - reference.md - The daily post reference section.
 - body.md - The daily post body section.
+- recap.md - If a content folder contains a recap.md file, then the generator will generate a recap banner for the daily post instead of the regular banner for a daily post.
 - media folder - The media folder contains the images for the daily post.
 
 ### The assets folder
