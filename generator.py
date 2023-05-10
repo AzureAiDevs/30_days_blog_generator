@@ -20,7 +20,7 @@ parser.add_argument("-c", "--content_name")
 TEMPLATE_FILE = "template.md"
 DAYS_FILE = "blog.yaml"
 
-banner = banner_1080p.Banner1080p("authors.yml", "https://aka-ms/ai-april")
+banner = banner_1080p.Banner1080p("authors.yml")
 
 
 def path_exists(path):

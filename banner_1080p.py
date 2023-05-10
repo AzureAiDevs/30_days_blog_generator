@@ -17,11 +17,9 @@ AUTHOR_FILEPATH = 'assets/authors/{author}.png'
 class Banner1080p:
     """Load YAML file"""
 
-    def __init__(self, file_path, blog_url):
+    def __init__(self, file_path):
         random.seed()
         self.hero_id = 1
-
-        self.blog_url = blog_url
 
         self.font_folder = '/System/Library/Fonts/Supplemental'
         self.font_name = 'Arial.ttf'
