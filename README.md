@@ -1,6 +1,6 @@
 # 30DaysOf Blog Generator
 
-The #30DaysOf Python generator simplifies the creation of the 30DaysOf blog posts for Docusaurus and makes it very easy to change the structure of the daily blog posts by hand which can be a very time-consuming task. 
+The #30DaysOf Python generator simplifies the creation of the 30DaysOf blog posts for Docusaurus and makes it very easy to change the structure of the daily blog posts by hand which can be a very time-consuming task.
 
 The other main benefit is that content authors can focus on creating the content for the daily blog posts and not worry about the structure of the daily blog posts or the complexities of Docusaurus.
 
@@ -88,26 +88,30 @@ campaign:
 
 ```
 
-## Workflow
-
-1. Clone the 30_days_blog_generator repo `git clone https://github.com/AzureAiDevs/30_days_blog_generator.git`
-2. Delete the .git folder, and then initialize a new git repo. `rm -rf .git` then `git init`
-3. Update the blog.yaml file with the new blog campaign name. For example, 2023-swa and update the daily blog metadata.
-4. Run the generator.py script to generate the blog posts. 
-   1. If the daily blog content folder doesn't exists, the generator will create a empty folder structure ready for the content authors to update.
-   2. The generator will create the Docusaurus blog post structure for each daily blog post.
-
-## Installation
+## Install prerequisites
 
 Tested on:
 
-1. macOS (Venture)
-1. Windows 11 on Intel and Windows 11 on ARM
-1. Ubuntu 20.04/22.04 on Intel and ARM.
+- macOS (Venture)
+- Windows 11 on Intel and Windows 11 on ARM
+- Ubuntu 20.04/22.04 on Intel and ARM.
 
-```bash
-pip3 install -r requirements.txt
-```
+1. Clone the 30_days_blog_generator repo `git clone git clone https://github.com/AzureAiDevs/30_days_blog_generator.git`
+2. Delete the .git folder, and then git initialize the folder. `rm -rf .git` then `git init`
+3. Install the latest release of Python. At the time of writing, this was Python 3.11.3.
+4. Pip install the requirements.txt file.
+
+  ```bash
+  pip3 install -r requirements.txt
+  ```
+
+## Workflow
+
+1. Clone the 30_days_blog_generator repo
+1. Update the blog.yaml file with the new blog campaign name. For example, 2023-swa and update the daily blog metadata.
+1. Run the generator.py script to generate the blog posts.
+   1. If the daily blog content folder doesn't exists, the generator will create a empty folder structure ready for the content authors to update.
+   1. The generator will create the Docusaurus blog post structure for each daily blog post.
 
 ## Usage
 
@@ -150,30 +154,30 @@ The following sections describe the blog.yaml file.
 
 ### Global metadata
 
-| Property | Description |
-| --- | --- |
-| name | The name of the blog campaign. For example, `30DaysOfAzureAI` |
-| static_img_folder | This is the path to the Docusaurus static images folder. |
-| static_img_path | This is the url path used when sharing daily banner posts on social media. For example, https://raw.githubusercontent.com/AzureAiDevs/hub/main/website/static/img/2023-aia |
-| daily_blog_url | The URL to the daily blog posts. The url is used when sharing blogs via social media. For example, https://azureaidevs.github.io/hub/2023-aia |
-| social_tags | The social tags for the blog campaign. For example, `30DaysOfAzureAI` |
+| Property          | Description                                                                                                                                                                |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name              | The name of the blog campaign. For example, `30DaysOfAzureAI`                                                                                                              |
+| static_img_folder | This is the path to the Docusaurus static images folder.                                                                                                                   |
+| static_img_path   | This is the url path used when sharing daily banner posts on social media. For example, https://raw.githubusercontent.com/AzureAiDevs/hub/main/website/static/img/2023-aia |
+| daily_blog_url    | The URL to the daily blog posts. The url is used when sharing blogs via social media. For example, https://azureaidevs.github.io/hub/2023-aia                              |
+| social_tags       | The social tags for the blog campaign. For example, `30DaysOfAzureAI`                                                                                                      |
 
 ### Daily blog metadata
 
-| Property | Description |
-| --- | --- |
-| folder | The folder name for the daily blog post. For example, `2023-04-03-azure-openai-services` |
-| visible | Set to `true` to generate the daily blog post. |
-| emoji | The emoji for the daily blog post. For example, `🏁` |
-| audience | The audience for the daily blog post. For example, `Azure AI Developers` |
-| title | The title for the daily blog post. For example, `Unleash the power of Azure OpenAI` |
-| description | The description for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI: A simple guide to get started` |
-| authors | The authors for the daily blog post. For example, `[Meer]`. You can specify more than one author, for example, `[Meer, Dave]`  |
-| keywords | The keywords are used to reference the product image icons from the `assets/icons` folder. For example, `[Azure-OpenAI-Services, Machine-Learning, Azure-AI]` will add .pngs for each of the names listed.|
-| tags | The tags for the daily blog post. For example, `[azure-ai, azure-open-ai, 30-days-of-azure-ai]` |
-| social_tag | The social tag for the daily blog post. For example, `AzureOpenAI` |
-| canonical | The canonical URL for the daily blog post. For example, `https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover` |
-| tweet | The tweet for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI! Data Scientists, ML, MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, and DALL-E 2` |
+| Property    | Description                                                                                                                                                                                                                                        |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| folder      | The folder name for the daily blog post. For example, `2023-04-03-azure-openai-services`                                                                                                                                                           |
+| visible     | Set to `true` to generate the daily blog post.                                                                                                                                                                                                     |
+| emoji       | The emoji for the daily blog post. For example, `🏁`                                                                                                                                                                                                |
+| audience    | The audience for the daily blog post. For example, `Azure AI Developers`                                                                                                                                                                           |
+| title       | The title for the daily blog post. For example, `Unleash the power of Azure OpenAI`                                                                                                                                                                |
+| description | The description for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI: A simple guide to get started`                                                                                                                |
+| authors     | The authors for the daily blog post. For example, `[Meer]`. You can specify more than one author, for example, `[Meer, Dave]`                                                                                                                      |
+| keywords    | The keywords are used to reference the product image icons from the `assets/icons` folder. For example, `[Azure-OpenAI-Services, Machine-Learning, Azure-AI]` will add .pngs for each of the names listed.                                         |
+| tags        | The tags for the daily blog post. For example, `[azure-ai, azure-open-ai, 30-days-of-azure-ai]`                                                                                                                                                    |
+| social_tag  | The social tag for the daily blog post. For example, `AzureOpenAI`                                                                                                                                                                                 |
+| canonical   | The canonical URL for the daily blog post. For example, `https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover`                       |
+| tweet       | The tweet for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI! Data Scientists, ML, MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, and DALL-E 2` |
 
 ## Including Videos
 
@@ -190,7 +194,7 @@ import ReactPlayer from 'react-player'
 
 The [Azure architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) link provides an excellent source of high quality Azure icons in SVG format.
 
-You will need to convert the SVG to PNG format. I use the [Inkscape](https://inkscape.org/) application to convert the SVG to PNG format. It's available for Windows, macOS, and Linux. It's a free, open-source, and an excellent app for batch converting SVG to PNG format. 
+You will need to convert the SVG to PNG format. I use the [Inkscape](https://inkscape.org/) application to convert the SVG to PNG format. It's available for Windows, macOS, and Linux. It's a free, open-source, and an excellent app for batch converting SVG to PNG format.
 
 ### Converting SVG to PNG format
 
