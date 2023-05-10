@@ -19,6 +19,7 @@ The daily post content folder contains the following files:
 - covered.md - The daily post covered section.
 - reference.md - The daily post reference section.
 - body.md - The daily post body section.
+- media folder - The media folder contains the images for the daily post.
 
 ### The assets folder
 
