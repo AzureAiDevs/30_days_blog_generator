@@ -172,7 +172,7 @@ The following sections describe the blog.yaml file.
 | title       | The title for the daily blog post. For example, `Unleash the power of Azure OpenAI`                                                                                                                                                                |
 | description | The description for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI: A simple guide to get started`                                                                                                                |
 | authors     | The authors for the daily blog post. For example, `[Meer]`. You can specify more than one author, for example, `[Meer, Dave]`                                                                                                                      |
-| keywords    | The keywords are used to reference the product image icons from the `assets/icons` folder. For example, `[Azure-OpenAI-Services, Machine-Learning, Azure-AI]` will add .pngs for each of the names listed.                                         |
+| keywords    | Keywords serve two purposes. Firstly the keywords are will generate metadata used by search engines. Secondly, the keywords are the filename of images in the `assets/icons` folder that will be added to the daily post banner. The daily banner builder expects to find a matching .png file for each of the keywords listed. The image files should be 130px in height. See [Azure Service Icons](#azure-service-icons).   |
 | tags        | The tags for the daily blog post. For example, `[azure-ai, azure-open-ai, 30-days-of-azure-ai]`                                                                                                                                                    |
 | social_tag  | The social tag for the daily blog post. For example, `AzureOpenAI`                                                                                                                                                                                 |
 | canonical   | The canonical URL for the daily blog post. For example, `https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover`                       |
@@ -193,7 +193,7 @@ import ReactPlayer from 'react-player'
 
 The [Azure architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) link provides an excellent source of high quality Azure icons in SVG format.
 
-You will need to convert the SVG to PNG format. I use the [Inkscape](https://inkscape.org/) application to convert the SVG to PNG format. It's available for Windows, macOS, and Linux. It's a free, open-source, and an excellent app for batch converting SVG to PNG format.
+You will need to convert the SVG to PNG format with a height of 130px. I use the [Inkscape](https://inkscape.org/) application to convert the SVG to PNG format. It's available for Windows, macOS, and Linux. It's a free, open-source, and an excellent app for batch converting SVG to PNG format.
 
 ### Converting SVG to PNG format
 
