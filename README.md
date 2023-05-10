@@ -1,6 +1,6 @@
 # 30DaysOf Blog Generator
 
-The #30DaysOf Python generator simplifies the creation of the 30DaysOf blog posts for Docusaurus and makes it very easy to change the structure of the daily blog posts by hand which can be a very time-consuming task.
+The #30DaysOf Python generator simplifies the creation of the 30DaysOf blog posts for Docusaurus and makes it very easy to change the structure of the daily blog posts that otherwise would be very time-consuming and error prone.
 
 The other main benefit is that content authors can focus on creating the content for the daily blog posts and not worry about the structure of the daily blog posts or the complexities of Docusaurus.
 
