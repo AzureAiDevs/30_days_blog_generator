@@ -126,7 +126,6 @@
             "required": [
                 "audience",
                 "authors",
-                "canonical",
                 "description",
                 "emoji",
                 "folder",
