@@ -4,12 +4,11 @@ The #30DaysOf Python generator simplifies the creation of the 30DaysOf blog post
 
 The other main benefit is that content authors can focus on creating the content for the daily blog posts and not worry about the structure of the daily blog posts or the complexities of Docusaurus.
 
-
 ## 30DaysOf Generator Architecture
 
 The 30DaysOf Generator is a Python script that uses the blog.yaml file to generate the blog posts. The blog.yaml file is used to configure the structure and the metadata of the blog posts.
 
-Each daily post article is defined in the blog.yaml file. The order of the daily posts is defined in the blog.yaml. Having 30DaysOf blog structure defined in one place makes it easy to change the order of the daily blogs, and to add or remove daily posts. The blog.yaml file declares the following:
+Each daily post article is defined in the blog.yaml file. The order of the daily posts is defined by their order in the blog.yaml. Having 30DaysOf blog structure defined in **one** place makes it easy to change the order of the daily blogs, and to add or remove daily posts. The blog.yaml file declares the following:
 - Global metadata for the blog campaign.
 - The daily posts metadata. The daily posts metadata is used to generate the daily posts. The most important metadata is the folder property. The folder property references the folder that contains the daily post content.
 
