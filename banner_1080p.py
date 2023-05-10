@@ -157,6 +157,9 @@ class Banner1080p:
         keyword_count = 0
 
         keywords = blog_item.get("keywords")
+        
+        if not keywords:
+            return
 
         for keyword in keywords:
 

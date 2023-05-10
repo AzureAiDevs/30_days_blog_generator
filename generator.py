@@ -7,9 +7,11 @@ import datetime
 import os
 import pathlib
 import argparse
+import shutil
 import jinja2   # https://pypi.org/project/Jinja2/
 import oyaml as yaml
 import banner_1080p
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--folder_item")
@@ -27,6 +29,54 @@ def path_exists(path):
     """ This function is used in the template to check if a file exists """
 
     return os.path.exists(path)
+
+def copy_media_files(folder_name, output_folder):
+    """Copy project assets to MS Learning format"""
+
+    # check if the media folder exists
+    src = os.path.join('./content', folder_name, 'media')
+
+    if os.path.exists(src):
+        # Copy all the media files to the media folder
+        dst = os.path.join(output_folder, 'media')
+        shutil.rmtree(os.path.join(dst), ignore_errors=True)
+        shutil.copytree(src, dst)
+
+
+def create_content_folder(content_folder):
+    """Create the content folder structure"""
+
+    # create the content folder
+    print(f"Creating content folder {content_folder}.")
+    pathlib.Path(content_folder).mkdir(parents=True, exist_ok=True)
+
+    # create the media folder
+    media_folder = os.path.join(content_folder, "media")
+    pathlib.Path(media_folder).mkdir(parents=True, exist_ok=True)
+
+    filename = os.path.join(content_folder, 'media', 'README.txt')
+    with open(filename, encoding='utf8', mode='w') as file:
+        file.write('Add all your media files to media directory.')
+
+    # create the a intro.md file
+    filename = os.path.join(content_folder, 'intro.md')
+    with open(filename, encoding='utf8', mode='w') as file:
+        file.write('[//]: # (Add your blog markdown introduction here)\n')
+
+    # create the a covered.md file
+    filename = os.path.join(content_folder, 'covered.md')
+    with open(filename, encoding='utf8', mode='w') as file:
+        file.write('[//]: # (Add the main areas covered as markdown bullet points.)\n')
+
+    # create the a references.md file
+    filename = os.path.join(content_folder, 'references.md')
+    with open(filename, encoding='utf8', mode='w') as file:
+        file.write('[//]: # (Add tagged references to docs/learn/tech as markdown bullet points)\n')
+
+
+    filename = os.path.join(content_folder, 'body.md')
+    with open(filename, encoding='utf8', mode='w') as file:
+        file.write('[//]: # (This is where you write the body of the blog post in markdown)\n')
 
 
 def validate_data(data):
@@ -64,6 +114,10 @@ def validate_data(data):
             print("Missing authors in yaml file")
             print(item)
             return False
+        if 'audience' not in item:
+            print("Missing audience in yaml file. Audience is used for banner generation")
+            print(item)
+            return False
 
         try:
 
@@ -83,6 +137,11 @@ def validate_data(data):
                 "Invalid date in yaml file - the folder name must be in the format YYYY-MM-DD and optionally, followed with a dash and short description.")
             print(item)
             return False
+
+        ## check if the folder exists
+        content_folder = os.path.join('./content', item['folder'])
+        if not os.path.exists(content_folder):
+            create_content_folder(content_folder)
 
     return True
 
@@ -137,6 +196,8 @@ def main(website_folder, content_name, folder_item):
         with open(filename, 'w', encoding='utf8') as f:
             f.write(output_text)
 
+        copy_media_files(item['folder'], folder_name)
+
         # add an value to the item dictionary
 
         item['folder_name'] = folder_name
@@ -150,6 +211,8 @@ def main(website_folder, content_name, folder_item):
         if os.path.isfile(recap_filename):
             week += 1
             item['recap'] = week
+
+
 
         banner.create_banner(item)
 
