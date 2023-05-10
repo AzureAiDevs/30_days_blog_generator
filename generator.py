@@ -174,6 +174,7 @@ def main(website_folder, content_name, folder_item):
 
     # check if the template file exists
     template_file = data.get('campaign').get('template', TEMPLATE_FILE)
+    template_file = os.path.join('assets', 'templates', template_file)
 
     if not os.path.isfile(template_file):
         print(f"Template file {template_file} does not exist.")
