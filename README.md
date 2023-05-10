@@ -165,19 +165,19 @@ The following sections describe the blog.yaml file.
 
 ### Daily blog metadata
 
-| Property    | Description                                                                                                                                                                                                                                        |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| folder      | The folder name for the daily blog post. For example, `2023-04-03-azure-openai-services`                                                                                                                                                           |
-| visible     | Set to `true` to generate the daily blog post.                                                                                                                                                                                                     |
-| emoji       | The emoji for the daily blog post. For example, `🏁`                                                                                                                                                                                                |
-| audience    | The audience for the daily blog post. For example, `Azure AI Developers`                                                                                                                                                                           |
-| title       | The title for the daily blog post. For example, `Unleash the power of Azure OpenAI`                                                                                                                                                                |
-| description | The description for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI: A simple guide to get started`                                                                                                                |
-| authors     | The authors for the daily blog post. For example, `[Meer]`. You can specify more than one author, for example, `[Meer, Dave]`                                                                                                                      |
+| Property    | Description  |
+| ----------- | ---------- |
+| folder      | The folder name for the daily blog post. For example, `2023-04-03-azure-openai-services`. The folder name must start with a date in `YYYY-MM-DD` format followed by the name of descriptive name of the folder. The date in the folder name is used as the blog post date by Docusaurus.|
+| visible     | Set to `true` to generate the daily blog post.|
+| emoji       | The emoji for the daily blog post. For example, `🏁` |
+| audience    | The audience for the daily blog post. For example, `Azure AI Developers` |
+| title       | The title for the daily blog post. For example, `Unleash the power of Azure OpenAI` |
+| description | The description for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI: A simple guide to get started` |
+| authors     | The authors for the daily blog post. For example, `[Meer]`. You can specify more than one author, for example, `[Meer, Dave] |
 | keywords    | Keywords serve two purposes. Firstly the keywords are will generate metadata used by search engines. Secondly, the keywords are the filename of images in the `assets/icons` folder that will be added to the daily post banner. The daily banner builder expects to find a matching .png file for each of the keywords listed. The image files should be 130px in height. See [Azure Service Icons](#azure-service-icons).   |
-| tags        | The tags for the daily blog post. For example, `[azure-ai, azure-open-ai, 30-days-of-azure-ai]`                                                                                                                                                    |
-| social_tag  | The social tag for the daily blog post. For example, `AzureOpenAI`                                                                                                                                                                                 |
-| canonical   | The canonical URL for the daily blog post. For example, `https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover`                       |
+| tags        | The tags for the daily blog post. For example, `[azure-ai, azure-open-ai, 30-days-of-azure-ai]` |
+| social_tag  | The social tag for the daily blog post. For example, `AzureOpenAI` |
+| canonical   | The canonical URL for the daily blog post. For example, `https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unleashing-the-power-of-ai-with-azure-openai-a-simple-guide-to/ba-p/3725706?WT.mc_id=aiml-89446-dglover` |
 | tweet       | The tweet for the daily blog post. For example, `Unleashing the power of AI with Azure OpenAI! Data Scientists, ML, MLOps Engineers, or App Developers, this for you. We'll cover large-scale generative AI models, code generation, and DALL-E 2` |
 
 ## Including Videos
