@@ -56,7 +56,7 @@ def create_content_folder(content_folder):
 
     filename = os.path.join(content_folder, 'media', 'README.txt')
     with open(filename, encoding='utf8', mode='w') as file:
-        file.write('Add all your media files to media directory.')
+        file.write('Add all your media files to the media directory.')
 
     # create the a intro.md file
     filename = os.path.join(content_folder, 'intro.md')
