@@ -19,7 +19,7 @@ parser.add_argument("-w", "--website_folder")
 parser.add_argument("-c", "--content_name")
 
 
-TEMPLATE_FILE = "template.md"
+TEMPLATE_FILE = "template_lite.md"
 DAYS_FILE = "blog.yaml"
 
 banner = banner_1080p.Banner1080p("authors.yml")
@@ -172,7 +172,14 @@ def main(website_folder, content_name, folder_item):
 
     template_env.filters['path_exists'] = path_exists
 
-    template = template_env.get_template(TEMPLATE_FILE)
+    # check if the template file exists
+    template_file = data.get('campaign').get('template', TEMPLATE_FILE)
+
+    if not os.path.isfile(template_file):
+        print(f"Template file {template_file} does not exist.")
+        return
+
+    template = template_env.get_template(template_file)
 
     for item in data['campaign']['days']:
         day += 1
@@ -211,8 +218,6 @@ def main(website_folder, content_name, folder_item):
         if os.path.isfile(recap_filename):
             week += 1
             item['recap'] = week
-
-
 
         banner.create_banner(item)
 

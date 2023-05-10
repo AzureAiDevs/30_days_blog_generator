@@ -2,6 +2,8 @@
 
 campaign:
   name: "30DaysOfAzureAI"
+  # template: "template_original.md"
+  template: "template_lite.md"
   static_img_folder: "./../../static/img/2023-aia"
   static_img_path: "https://raw.githubusercontent.com/AzureAiDevs/hub/main/website/static/img/2023-aia"
   daily_blog_url: "https://azureaidevs.github.io/hub/2023-aia"
