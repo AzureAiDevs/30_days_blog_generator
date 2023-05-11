@@ -11,7 +11,7 @@
             "program": "generator.py",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["-w", "/Users/dave/GitHub/AzureAiDevelopers/hub/website", "-c", "2023-aia"]
+            "args": []
         }
     ]
 }

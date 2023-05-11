@@ -13,10 +13,10 @@ import oyaml as yaml
 import banner_1080p
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-f", "--folder_item")
-parser.add_argument("-w", "--website_folder")
-parser.add_argument("-c", "--content_name")
+# parser = argparse.ArgumentParser()
+# parser.add_argument("-f", "--folder_item")
+# parser.add_argument("-w", "--website_folder")
+# parser.add_argument("-c", "--content_name")
 
 
 TEMPLATE_FILE = "template_lite.md"
@@ -78,6 +78,39 @@ def create_content_folder(content_folder):
     with open(filename, encoding='utf8', mode='w') as file:
         file.write('[//]: # (This is where you write the body of the blog post in markdown)\n')
 
+def create_authors_yml(data, website_folder):
+    """Create the authors.yml file"""
+
+    docusaurus_authors = {}
+    static_img_path = data.get('campaign').get('static_img_path')
+
+    with open('authors.yml', "r", encoding="utf8") as f:
+        authors = yaml.load(f, Loader=yaml.Loader)
+
+    for author in authors:
+        author_item = authors.get(author)
+        docusaurus_authors[author] = {
+            'name': author_item['name'],
+            'title': author_item['title'],
+            'image_url': static_img_path + '/authors/' + author + '.png',
+            'url': author_item['url']
+        }
+
+    # save the docusaurus authors file as a yml file
+    output_yaml = yaml.dump(docusaurus_authors, default_flow_style=False)
+    filename = os.path.join(website_folder, 'authors.yml')
+    with open(filename, encoding='utf8', mode='w') as file:
+        file.write(output_yaml)
+
+    # copy the author images to the docusaurus static folder
+    src = os.path.join('./assets', 'authors')
+    dst = os.path.join(data.get('campaign').get('docusaurus_website_folder'), 'static', 'img', data.get(
+        'campaign').get('docusaurus_blog_folder'), 'authors')
+
+    if os.path.exists(src):
+        shutil.rmtree(dst, ignore_errors=True)
+        shutil.copytree(src, dst)
+
 
 def validate_data(data):
     """Validate the yaml file."""
@@ -87,9 +120,17 @@ def validate_data(data):
     if 'campaign' not in data:
         print("Missing campaign in yaml file")
         return False
-    # if 'slug' not in data['campaign']:
-    #     print("Missing slug in yaml file")
-    #     return False
+
+    # check the docusaurus_blog_folder exists
+    if data.get('campaign').get('docusaurus_website_folder') is None:
+        print("Missing docusaurus_blog_folder in yaml file")
+        return False
+    
+    # check the docusaurus_blog_folder exists
+    if not os.path.exists(data.get('campaign').get('docusaurus_website_folder')):
+        print("docusaurus_website_folder does not exist")
+        return False
+    
     if 'name' not in data['campaign']:
         print("Missing name in yaml file")
         return False
@@ -146,14 +187,8 @@ def validate_data(data):
     return True
 
 
-def main(website_folder, content_name, folder_item):
+def main():
     """Generate blog items from yaml file."""
-
-    blog_folder = os.path.join(website_folder, content_name) if website_folder else 'blog'
-    static_image_folder = os.path.join(website_folder, "static", "img", content_name) if content_name else 'img'
-
-    pathlib.Path(blog_folder).mkdir(parents=True, exist_ok=True)
-    pathlib.Path(static_image_folder).mkdir(parents=True, exist_ok=True)
 
     day = 0
     week = 0
@@ -165,6 +200,16 @@ def main(website_folder, content_name, folder_item):
     if not validate_data(data):
         print("Error in yaml file")
         return
+
+    # generate the docusaurus blog folder folder
+    content_name = data.get('campaign').get('docusaurus_blog_folder', 'blog')
+    website_folder = data.get('campaign').get('docusaurus_website_folder')
+
+    blog_folder = os.path.join(website_folder, content_name)
+    static_image_folder = os.path.join(website_folder, "static", "img", content_name)
+
+    pathlib.Path(blog_folder).mkdir(parents=True, exist_ok=True)
+    pathlib.Path(static_image_folder).mkdir(parents=True, exist_ok=True)
 
     # Read the template file
     template_loader = jinja2.FileSystemLoader(searchpath="./")
@@ -191,8 +236,8 @@ def main(website_folder, content_name, folder_item):
         item['daily_blog_url'] = data['campaign']['daily_blog_url']
         item['social_tags'] = data['campaign']['social_tags']
 
-        if folder_item and item['folder'] != folder_item:
-            continue
+        # if folder_item and item['folder'] != folder_item:
+        #     continue
 
         output_text = template.render(item)
 
@@ -224,11 +269,12 @@ def main(website_folder, content_name, folder_item):
 
         # return
 
+    create_authors_yml(data, blog_folder)
     print("Done")
 
 
 if __name__ == '__main__':
 
-    args = parser.parse_args()
+    # args = parser.parse_args()
 
-    main(args.website_folder, args.content_name, args.folder_item)
+    main()

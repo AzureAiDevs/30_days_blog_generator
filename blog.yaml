@@ -2,6 +2,8 @@
 
 campaign:
   name: "30DaysOfAzureAI"
+  docusaurus_website_folder: "/Users/dave/GitHub/AzureAiDevelopers/hub/website"
+  docusaurus_blog_folder: "2023-aia"
   # template: "original.md"
   template: "lite.md"
   static_img_folder: "./../../static/img/2023-aia"

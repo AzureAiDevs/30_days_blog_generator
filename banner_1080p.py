@@ -191,7 +191,7 @@ class Banner1080p:
                 continue
 
             self.__add_profile_image(
-                img, draw, item, author, author_item["name"], author_item["tag"], author_item["source_image_url"])
+                img, draw, item, author, author_item["name"], author_item["tag"], author_item["image_url"])
             item += 1
 
         if item < 2:
