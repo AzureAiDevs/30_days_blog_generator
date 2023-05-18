@@ -1,3 +1,4 @@
 oyaml
 jinja2
 pillow
+requests
